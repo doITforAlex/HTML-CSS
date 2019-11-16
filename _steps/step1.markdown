@@ -33,4 +33,4 @@ Niektóre z edytorów kodu dodatkowo potrafią znaleźć i wskazać błąd w two
 
 Przyjmiemy, że na potrzeby tych warsztatów będziesz korzystać z VSC, ale oczywiście istnieje wiele innych, świetnych edytorów kodu (Sublime, Atom itp.). Wszystkie mają swoje plusy i minusy oraz oddanych użytkowników. Wybór narzędzia zależy już od osobistych preferencji.
 
-Jeśli nie posiadasz jeszcze VSO, [zainstaluj](http://code.visualstudio.com) go teraz i przejdź do następnego kroku.
+Jeśli nie posiadasz jeszcze VSC, [zainstaluj](http://code.visualstudio.com) go teraz i przejdź do następnego kroku.
