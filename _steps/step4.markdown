@@ -127,7 +127,7 @@ Odśwież stronę. Teraz lista powinna zawierać hyperlinki, które zwykle wyśw
 
 Jeśli klikniesz jeden z odnośników, przeglądarka przejdzie do strony odnośnika. Zobaczysz niesformatowaną treść. Nie dodaliśmy w końcu tam jeszcze żadnych znaczników. Kliknij przycisk Wstecz w przeglądarce, aby wrócić do oryginalnej strony.
 
-Widzisz w tagu część `href =" muffins.html`? Nazywamy ją atrybutem. W szczególności jest to atrybut **odwołania hipertekstowego**. Cytaty zawierają adres URL, do którego prowadzi łącze. Tutaj po prostu umieszczamy tylko nazwę pliku strony bez protokołu i nazwy hosta, ponieważ wszystkie nasze pliki znajdują się w tym samym katalogu.
+Widzisz w tagu część `href="muffins.html"`? Nazywamy ją atrybutem. W szczególności jest to atrybut **odwołania hipertekstowego**. Cytaty zawierają adres URL, do którego prowadzi łącze. Tutaj po prostu umieszczamy tylko nazwę pliku strony bez protokołu (http) i nazwy hosta (mojadomena.pl), ponieważ wszystkie nasze pliki znajdują się w tym samym katalogu.
 
 Gdybyśmy chcieli dać odnośnik do innej strony niż nasza, to wtedy musimy podać kompletny już adres:
 
