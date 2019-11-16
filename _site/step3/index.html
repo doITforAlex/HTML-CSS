@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML: Marking it up</title>
+  <meta name="description" content="So let’s get started with our first page, index.html which is our site’s homepage.">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="http://localhost:4000/step3/">
+  <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('div.solution').each( function(){
+      $(this).prepend('<h5 class="toggle hiding"><i class="fa fa-chevron-up" aria-hidden="true"></i> Click to <span class="action"></span> solution</h5>');
+    });
+    $('div.solution .highlight').first().addClass('hidden');
+    $('h5.toggle').click(function(e){
+      $(this).parent().children('.highlight').first().slideToggle('show');
+      $(this).toggleClass('showing');
+      $(this).toggleClass('hiding');
+      $(this).children('i.fa').toggleClass('fa-chevron-up');
+      $(this).children('i.fa').toggleClass('fa-chevron-down');
+
+    });
+  });
+  </script>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    
+    <a class="site-title" href="https://flynerd.pl/alex">Do IT for Alex</a>
+    <a class="site-title" href="/"><span>HTML i CSS</span></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/">Strona główna</a>
+           <a class="page-link go-link" href="/step0/">Start <i class="fa fa-rocket" aria-hidden="true"></i> </a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+<div class="step-nav">
+  <ul class="main">
+    <li class=""><a  href="/">Strona główna</a></li>
+  </ul>
+
+  <h3>Etapy:</h3>
+  <ul>
+  
+      <li class=''>
+        <a href="/step0/">
+          0 - What is the Web?
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step1/">
+          1 - Tools of the Trade
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step2/">
+          2 - Get Setup
+        </a>
+      </li>
+  
+      <li class='active'>
+        <a href="/step3/">
+          3 - Marking it up
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step4/">
+          4 - Formatting the Homepage
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step5/">
+          5 - Formatting Recipes
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step6/">
+          6 - Images
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step7/">
+          7 - Stylin&#39; with CSS
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step8/">
+          8 - CSS Selectors
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step9/">
+          9 - Styling Links
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step10/">
+          10 - div and span
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step11/">
+          11 - And What Now?
+        </a>
+      </li>
+  
+  </ul>
+
+  <h3>Useful Links</h3>
+  <ul>
+  <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN Javascript Reference</a></li>
+
+</ul>
+
+
+</div>
+
+        <article class="post">
+  
+  <header class="post-header">
+      
+    <h2 class="post-title"> Step 3 - Marking it up</h2>
+    </header>
+
+  <div class="post-content">
+    <p>So let’s get started with our first page, <code class="highlighter-rouge">index.html</code> which is our site’s homepage.</p>
+
+<p>Open up <code class="highlighter-rouge">index.html</code> in your browser.</p>
+
+<p><img src="../assets/browser-unformatted.png" alt="The un-marked-up home page" title="The un-marked-up home page" class="img-responsive imgbox" /></p>
+
+<p>Ok … so that looks like a hot mess. What’s with that?</p>
+
+<p>Your browser assumes that a file with <code class="highlighter-rouge">.html</code> or <code class="highlighter-rouge">.htm</code> contains HTML content and it treats it as such.<br />
+Because we didn’t actually include any HTML tags in the file, the browser just displays the raw text and since HTML ignores newline characters it gets displayed like one big paragraph.</p>
+
+<p>Oh and notice how the browser tab has the file path in it, prefixed with <code class="highlighter-rouge">file://</code>?  Not great either right?</p>
+
+<p>So since that isn’t quite what we had in mind, lets add some HTML to it.</p>
+
+<p>Update <code class="highlighter-rouge">index.html</code> so it has :</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Tiny Cakes!<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  Tiny Cakes!
+  -----------
+
+  Welcome to my recipes web site all about Tiny Cakes!
+
+  Here are the recipes that we have:
+
+   * Traditional cupcakes
+   * Muffins
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>Save it, refresh our browser window &amp; it does look the same, but if you look closely you’ll see that the browser tab now reads “Tiny Cakes!” instead of the filename.</p>
+
+<p><img src="../assets/browser-unformatted-title.png" alt="The titled but un-marked-up home page" title="The titled but un-marked-up home page" class="img-responsive imgbox" /></p>
+
+<p>We’ve added a few pieces of HTML here which are like the scaffolding or frame of the document.  We haven’t actually added any formatting instructions yet which is why it looks mostly the same.</p>
+
+<p>So let’s look at what we did and what they mean.</p>
+
+<ol>
+  <li>
+    <p><code class="highlighter-rouge"><span class="cp">&lt;!DOCTYPE html&gt;</span></code></p>
+
+    <p>The very first line is the document type declaration.  This tells the browser the version of HTML it should expect this document to be in.</p>
+
+    <p>The <code class="highlighter-rouge">html</code> in the declaration means “the latest version of html”. Right now the latest version is version 5, and that will probably be the latest version for a long time to come.</p>
+
+    <p>You might also see declarations about older versions. Those are more complicated, like this:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</span>
+</code></pre></div>    </div>
+
+    <p>Technically this line is optional.  But if you don’t include it, most browsers default to “quirks mode” which basically means “turn on all the weird non-standard stuff from the 90s that we mostly agreed was a bad idea but we keep around for backwards compatibility”. Which is mostly fine … but specifying a doctype lets you be a bit more certain that your page will work the same in different browsers.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code></p>
+
+    <p>Every HTML document should start with <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> and finish with <code class="highlighter-rouge">&lt;/html&gt;</code>.  Everything between them is considered to be part of the document.  Most tags work like this with an opening tag and a closing tag.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">&lt;head&gt;</code> and <code class="highlighter-rouge">&lt;title&gt;</code></p>
+
+    <p>Inside the document we have two main parts, the document head and the document body.  The document head is enclosed by the <code class="highlighter-rouge">&lt;head&gt;</code> tags and can contain several other tags which provide mostly contains information about the document.  In this case we have two tags within the head: <code class="highlighter-rouge">&lt;title&gt;</code> and <code class="highlighter-rouge">&lt;meta&gt;</code>.</p>
+
+    <p><code class="highlighter-rouge">&lt;title&gt;</code> tells the browser what the title of the document is.  Most browsers display this in the browser tab and window title. It also gets used when bookmarking a page.  See how the browser tab is now <em>Tiny Cakes!</em> instead of the filename? The <code class="highlighter-rouge">&lt;title&gt;</code> tag is why.</p>
+
+    <p><code class="highlighter-rouge">&lt;meta&gt;</code> is a way of providing some additional information to the browser about the page.  Here we are using it to tell the browser that we will be using the UTF-8 character set.  This is optional but recommended to ensure unicode characters are displayed correctly.</p>
+
+    <p>There are a few other tags that can be used in head but we aren’t going to deal with those yet.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">&lt;body&gt;</code></p>
+
+    <p>The <code class="highlighter-rouge">&lt;body&gt;</code> tag contains the content that the page is going to display.</p>
+  </li>
+</ol>
+
+<p>That sets out the basic framework of a HTML document. Now, let’s look at formatting the content in <code class="highlighter-rouge">&lt;body&gt;</code> so that the browser displays it nicely.</p>
+
+    
+
+
+<div class="page-nav">
+  <a class='go-link' href='../step4'>Przejdź do kroku → 4</a>
+</div>
+
+
+    
+
+    
+
+    
+  </div>
+
+</article>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="social-media centered">
+      <ul>
+        <li>
+          <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https:/flynerd.pl/alex" target="_blank">flynerd.pl/alex</a>
+        </li>
+        <li>
+          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="mailto:hello@flynerd.pl">hello@flynerd.pl</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+          <a href="https://www.facebook.com/flynerdpl" target="_blank">facebook.com/flynerdpl</a>
+        </li>
+        <li>
+          <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https://instagram.com/flynerdpl" target="_blank">instagram.com/flynerdpl</a>
+        </li>
+        <li>
+          <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https://twitter.com/flynerdpl" target="_blank">twitter.com/flynerdpl</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <h2 class="footer-heading">Do IT for Alex</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Do IT for Alex
+            
+            </li>
+            
+            <li><a href="mailto:hello@flynerd.pl">hello@flynerd.pl</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Poznaj z nami podstawy tworzenia stron www
+</p>
+      </div>
+    </div>
+
+  </div> -->
+
+</footer>
+
+
+  </body>
+
+</html>

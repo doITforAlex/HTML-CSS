@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML: Formatting the Homepage</title>
+  <meta name="description" content="For a browser to know how to display content, we need to tell it what each piece of content actually is, e.g. a heading, a paragraph, a list etc.">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="http://localhost:4000/step4/">
+  <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('div.solution').each( function(){
+      $(this).prepend('<h5 class="toggle hiding"><i class="fa fa-chevron-up" aria-hidden="true"></i> Click to <span class="action"></span> solution</h5>');
+    });
+    $('div.solution .highlight').first().addClass('hidden');
+    $('h5.toggle').click(function(e){
+      $(this).parent().children('.highlight').first().slideToggle('show');
+      $(this).toggleClass('showing');
+      $(this).toggleClass('hiding');
+      $(this).children('i.fa').toggleClass('fa-chevron-up');
+      $(this).children('i.fa').toggleClass('fa-chevron-down');
+
+    });
+  });
+  </script>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    
+    <a class="site-title" href="https://flynerd.pl/alex">Do IT for Alex</a>
+    <a class="site-title" href="/"><span>HTML i CSS</span></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/">Strona główna</a>
+           <a class="page-link go-link" href="/step0/">Start <i class="fa fa-rocket" aria-hidden="true"></i> </a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+<div class="step-nav">
+  <ul class="main">
+    <li class=""><a  href="/">Strona główna</a></li>
+  </ul>
+
+  <h3>Etapy:</h3>
+  <ul>
+  
+      <li class=''>
+        <a href="/step0/">
+          0 - What is the Web?
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step1/">
+          1 - Tools of the Trade
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step2/">
+          2 - Get Setup
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step3/">
+          3 - Marking it up
+        </a>
+      </li>
+  
+      <li class='active'>
+        <a href="/step4/">
+          4 - Formatting the Homepage
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step5/">
+          5 - Formatting Recipes
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step6/">
+          6 - Images
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step7/">
+          7 - Stylin&#39; with CSS
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step8/">
+          8 - CSS Selectors
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step9/">
+          9 - Styling Links
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step10/">
+          10 - div and span
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step11/">
+          11 - And What Now?
+        </a>
+      </li>
+  
+  </ul>
+
+  <h3>Useful Links</h3>
+  <ul>
+  <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN Javascript Reference</a></li>
+
+</ul>
+
+
+</div>
+
+        <article class="post">
+  
+  <header class="post-header">
+      
+    <h2 class="post-title"> Step 4 - Formatting the Homepage</h2>
+    </header>
+
+  <div class="post-content">
+    <p>For a browser to know how to display content, we need to tell it what each piece of content actually is, e.g. a heading, a paragraph, a list etc.</p>
+
+<p>Looking at the content in our homepage we can see that we have a heading, two single sentence paragraphs, and then a bulleted list of two items.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tiny Cakes!
+-----------
+
+Welcome to my recipes web site all about Tiny Cakes!
+
+Here are the recipes that we have:
+
+ * Traditional cupcakes
+ * Muffins
+</code></pre></div></div>
+
+<p>So let’s add HTML to reflect that.  We call the act of adding HTML to content like this “marking up the document”.</p>
+
+<p>The terms “markup” &amp; “marking up” come from the book publishing world, where an editor would review the typed pages of a manuscript and write notes on the text about how it should be formatted for printing. https://en.wikipedia.org/wiki/Markup_language#Etymology</p>
+
+<p>Replace the content inside the <code class="highlighter-rouge">&lt;body&gt;</code> tags in <code class="highlighter-rouge">index.html</code> with the following:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nt">&lt;h1&gt;</span>Tiny Cakes!<span class="nt">&lt;/h1&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>
+  Welcome to <span class="nt">&lt;em&gt;</span>my<span class="nt">&lt;/em&gt;</span> recipes web site all
+  about <span class="nt">&lt;strong&gt;</span>Tiny Cakes!<span class="nt">&lt;/strong&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>
+  Here are the recipes that we have:
+  <span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Traditional Cupcakes<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Muffins<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>Save the file and refresh your browser. It should look a bit nicer.</p>
+
+<p><img src="../assets/browser-formatted-homepage.png" alt="The marked-up home page" title="The marked-up home page" class="img-responsive imgbox" /></p>
+
+<p>Much better, so lets talk about the HTML tags we used here.</p>
+
+<dl>
+  <dt><code class="highlighter-rouge">&lt;h1&gt;</code></dt>
+  <dd>This is a heading tag.  Specifically it is the <strong>Level 1 Heading</strong>.  There is also a <code class="highlighter-rouge">&lt;h2&gt;</code>, <code class="highlighter-rouge">&lt;h3&gt;</code>, etc. up to <code class="highlighter-rouge">&lt;h6&gt;</code>.  You use them to indicate headings and sub-headings. A bigger number indicates a deeper level, and the size of a heading on the page usually decreases as its number goes up.</dd>
+  <dt><code class="highlighter-rouge">&lt;p&gt;</code></dt>
+  <dd>The <strong>paragraph</strong> tag indicates a single block of text.<br />
+<!-- Note that HTML doesn't display line breaks. --></dd>
+  <dt><code class="highlighter-rouge">&lt;strong&gt;</code></dt>
+  <dd>The <strong>strong</strong> tag indicates text that is important.  Browsers usually display this as bold by default.</dd>
+  <dt><code class="highlighter-rouge">&lt;em&gt;</code></dt>
+  <dd>The <strong>emphasis</strong> tag indicates text that requires emphasis (no really).  Browsers usually display this as italics by default.</dd>
+  <dt><code class="highlighter-rouge">&lt;ul&gt;</code></dt>
+  <dd>The <strong>unordered list</strong> tag is used for a list with bullet points.</dd>
+</dl>
+
+<p>You can also create numbered lists with the <strong>ordered list</strong> tag <code class="highlighter-rouge">&lt;ol&gt;</code>.</p>
+
+<dl>
+  <dt><code class="highlighter-rouge">&lt;li&gt;</code></dt>
+  <dd>The <strong>list item</strong> tag is used for each item in an ordered or unordered list.</dd>
+</dl>
+
+<p>And that is mostly as hard as HTML gets.  There are a lot more tags than just these few but the same basic concept applies:</p>
+
+<ol>
+  <li>You use HTML tags to specify how a web browser should treat different pieces of content.</li>
+  <li>You use opening &amp; closing tags to indicate where to start and finish doing it.</li>
+</ol>
+
+<h2 id="nesting-tags--inline-vs-block-tags">Nesting tags &amp; Inline vs Block tags</h2>
+
+<p>There are two primary types of tags: <strong>inline</strong> and <strong>block</strong>.</p>
+
+<p>You can think of block tags as always starting on a new line and taking up the whole line.  Inline tags don’t start a new line and only take up the minimum space required.  (it is more complicated than that but it’s not completely inaccurate)</p>
+
+<p>All of the tags we used above except for <code class="highlighter-rouge">&lt;em&gt;</code> &amp; <code class="highlighter-rouge">&lt;strong&gt;</code> are block tags.</p>
+
+<p>Notice how we used <code class="highlighter-rouge">&lt;em&gt;</code> and <code class="highlighter-rouge">&lt;strong&gt;</code> inside of a <code class="highlighter-rouge">&lt;p&gt;</code>?  We call this <strong>nesting</strong> tags.</p>
+
+<p>You <em>can</em> nest any tags however you want.  But they don’t always make complete sense, even if they might still look how you expect.</p>
+
+<p>For example:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
+Welcome to <span class="nt">&lt;em&gt;</span>my<span class="nt">&lt;/em&gt;</span> recipes web site all
+about <span class="nt">&lt;strong&gt;</span>Tiny Cakes!<span class="nt">&lt;/strong&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Recipes:<span class="nt">&lt;/h2&gt;</span>
+Here are the recipes that we have:
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>But this will create some problems for you.  Browsers are a bit inconsistent with handling weird combinations like this. And when we get to using CSS later on, CSS isn’t going to like it either.</p>
+
+<p>Also, some tags must be nested inside others, because they don’t make sense without them - like <code class="highlighter-rouge">&lt;li&gt;</code>, which has to be inside of either <code class="highlighter-rouge">&lt;ol&gt;</code> or <code class="highlighter-rouge">&lt;ul&gt;</code>. You can’t have a list item without a list!</p>
+
+<h2 id="hyperlinks">Hyperlinks</h2>
+
+<p>There is one more super important HTML tag we need to mention before we head on to the next step: <code class="highlighter-rouge">&lt;a&gt;</code> the <strong>anchor</strong> tag AKA the hyperlink tag.</p>
+
+<p>The <code class="highlighter-rouge">&lt;a&gt;</code> tag is how we create hyperlinks, i.e. links to other pages on our site or on the internet.</p>
+
+<p>Let’s make our list of recipes into a list of hyperlinks to our other recipes pages.  Replace our <code class="highlighter-rouge">&lt;ul&gt;</code> with:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"traditional-cupcakes.html"</span><span class="nt">&gt;</span>Traditional Cupcakes<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"muffins.html"</span><span class="nt">&gt;</span>Muffins<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>Now refresh your page and the list should be hyperlinks, which are usually blue and underlined by default.</p>
+
+<p><img src="../assets/browser-formatted-home-links.png" alt="Adding links to the list" title="Adding links to the list" class="img-responsive imgbox" /></p>
+
+<p>If you click on one of them, your browser will navigate to that page and you’ll see the unformatted content because we haven’t added any markup to those yet.  Click the back button in your browser to get back to the original page.</p>
+
+<p>Notice the <code class="highlighter-rouge">href="muffins.html"</code> part of the tag?  This is called an attribute.  Specifically it is the <strong>hypertext reference</strong> attribute.  The quotes contain the URL that clicking on the link will navigate to.  Here we just put the file name of the page with nothing else because your files are all in the same directory.</p>
+
+<p>If you want to link to a different site, you have to put the whole URL like:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://nodegirls.com.au/brisbane.html"</span><span class="nt">&gt;</span>Node Girls: Brisbane<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p>Some tags require attributes for specific features.</p>
+
+<p>Ok, let’s move on to marking up our recipes pages.</p>
+
+    
+
+
+<div class="page-nav">
+  <a class='go-link' href='../step5'>Przejdź do kroku → 5</a>
+</div>
+
+
+    
+
+    
+
+    
+  </div>
+
+</article>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="social-media centered">
+      <ul>
+        <li>
+          <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https:/flynerd.pl/alex" target="_blank">flynerd.pl/alex</a>
+        </li>
+        <li>
+          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="mailto:hello@flynerd.pl">hello@flynerd.pl</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+          <a href="https://www.facebook.com/flynerdpl" target="_blank">facebook.com/flynerdpl</a>
+        </li>
+        <li>
+          <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https://instagram.com/flynerdpl" target="_blank">instagram.com/flynerdpl</a>
+        </li>
+        <li>
+          <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https://twitter.com/flynerdpl" target="_blank">twitter.com/flynerdpl</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <h2 class="footer-heading">Do IT for Alex</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Do IT for Alex
+            
+            </li>
+            
+            <li><a href="mailto:hello@flynerd.pl">hello@flynerd.pl</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Poznaj z nami podstawy tworzenia stron www
+</p>
+      </div>
+    </div>
+
+  </div> -->
+
+</footer>
+
+
+  </body>
+
+</html>

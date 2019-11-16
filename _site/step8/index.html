@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML: CSS Selectors</title>
+  <meta name="description" content="Selectors">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="http://localhost:4000/step8/">
+  <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('div.solution').each( function(){
+      $(this).prepend('<h5 class="toggle hiding"><i class="fa fa-chevron-up" aria-hidden="true"></i> Click to <span class="action"></span> solution</h5>');
+    });
+    $('div.solution .highlight').first().addClass('hidden');
+    $('h5.toggle').click(function(e){
+      $(this).parent().children('.highlight').first().slideToggle('show');
+      $(this).toggleClass('showing');
+      $(this).toggleClass('hiding');
+      $(this).children('i.fa').toggleClass('fa-chevron-up');
+      $(this).children('i.fa').toggleClass('fa-chevron-down');
+
+    });
+  });
+  </script>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    
+    <a class="site-title" href="https://flynerd.pl/alex">Do IT for Alex</a>
+    <a class="site-title" href="/"><span>HTML i CSS</span></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/">Strona główna</a>
+           <a class="page-link go-link" href="/step0/">Start <i class="fa fa-rocket" aria-hidden="true"></i> </a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+<div class="step-nav">
+  <ul class="main">
+    <li class=""><a  href="/">Strona główna</a></li>
+  </ul>
+
+  <h3>Etapy:</h3>
+  <ul>
+  
+      <li class=''>
+        <a href="/step0/">
+          0 - What is the Web?
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step1/">
+          1 - Tools of the Trade
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step2/">
+          2 - Get Setup
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step3/">
+          3 - Marking it up
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step4/">
+          4 - Formatting the Homepage
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step5/">
+          5 - Formatting Recipes
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step6/">
+          6 - Images
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step7/">
+          7 - Stylin&#39; with CSS
+        </a>
+      </li>
+  
+      <li class='active'>
+        <a href="/step8/">
+          8 - CSS Selectors
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step9/">
+          9 - Styling Links
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step10/">
+          10 - div and span
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step11/">
+          11 - And What Now?
+        </a>
+      </li>
+  
+  </ul>
+
+  <h3>Useful Links</h3>
+  <ul>
+  <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN Javascript Reference</a></li>
+
+</ul>
+
+
+</div>
+
+        <article class="post">
+  
+  <header class="post-header">
+      
+    <h2 class="post-title"> Step 8 - CSS Selectors</h2>
+    </header>
+
+  <div class="post-content">
+    <h2 id="selectors">Selectors</h2>
+
+<p>Selectors are what let us specify (or select) the parts of the page which a set of style declarations will apply to.</p>
+
+<p>So far we’ve only specified tag names as selectors.
+This is useful because it means the styles will be applied to every one of those elements.
+But sometimes you only want to a set of rules to apply to specific elements.
+We do this with different types of selectors.</p>
+
+<p>Let’s make our site title (“Tiny Cakes!”) hot pink.
+It was a <code class="highlighter-rouge">&lt;h1&gt;</code> so add the following to our stylesheet:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff69b4</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Refresh the homepage and it should look how we want it it.</p>
+
+<p><img src="../assets/css-home-title-color.png" alt="A pink heading" title="A pink heading" class="img-responsive imgbox" /></p>
+
+<p>But then if you look on the recipe pages the recipe titles are also hot pink and we don’t want that.
+So what do we do?</p>
+
+<p>There are two attributes that we can add to any element to allow us to apply styles more specifically: <code class="highlighter-rouge">class</code> and <code class="highlighter-rouge">id</code>.</p>
+
+<p>Use <code class="highlighter-rouge">class</code> when there might be multiple of the element on one page.</p>
+
+<p>Use <code class="highlighter-rouge">id</code> when there should only be a single one of the element on each page.</p>
+
+<p>So let’s update our <code class="highlighter-rouge">&lt;h1&gt;</code> on the homepage to have an <code class="highlighter-rouge">id</code>:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"sitetitle"</span><span class="nt">&gt;</span>Tiny Cakes!<span class="nt">&lt;/h1&gt;</span>
+</code></pre></div></div>
+
+<p>And now update our CSS so our h1 selector is more specific:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span><span class="nf">#sitetitle</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff69b4</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">#</code> in the selector means what follows the <code class="highlighter-rouge">#</code> is an <code class="highlighter-rouge">id</code>.</p>
+
+<p>Now only the <code class="highlighter-rouge">&lt;h1&gt;</code> with the id of <code class="highlighter-rouge">sitetitle</code> should be hot pink.  The ones on the recipes pages should be the default black.</p>
+
+<p>That’s better, now how about the headings on the recipe pages for ingredients, etc.?  Let’s fancy them up a bit.</p>
+
+<p>First, update the ingredients, method, and variations headings to have the <code class="highlighter-rouge">recipepart</code> class like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"recipepart"</span><span class="nt">&gt;</span>Ingredients:<span class="nt">&lt;/h2&gt;</span>
+</code></pre></div></div>
+
+<p>Make sure you do that for each <code class="highlighter-rouge">&lt;h2&gt;</code> on both recipe pages.</p>
+
+<p>Now add the following CSS to our stylesheet:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h2</span><span class="nc">.recipepart</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#f5f5f5</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#dcdcdc</span><span class="p">;</span>
+  <span class="nl">border-left</span><span class="p">:</span> <span class="m">10px</span> <span class="nb">solid</span> <span class="n">grey</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">0px</span> <span class="m">8px</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">.</code> in the selector means the next part is a class.</p>
+
+<p><img src="../assets/css-fancy-subheadings.png" alt="Fancy second-level headings" title="Fancy second-level headings" class="img-responsive imgbox" /></p>
+
+<p>So what did we do here?</p>
+
+<ol>
+  <li>Set the background colour to a very light grey (<code class="highlighter-rouge">#f5f5f5</code>).</li>
+  <li>Put a 1px grey (<code class="highlighter-rouge">#dcdcdc</code>) border around it.</li>
+  <li>Changed the left border specifically to be 10px thick and the color <code class="highlighter-rouge">grey</code></li>
+  <li>Set the padding so it looks nicer.</li>
+</ol>
+
+<p>When we set the padding, we supplied four values at once.
+You can do this with <code class="highlighter-rouge">padding</code> and <code class="highlighter-rouge">margin</code>.
+There are four different ways you can supply values to these properties:</p>
+
+<ol>
+  <li>One value gets applies to all four sides.</li>
+  <li>For two values, it uses the first one for top and bottom, and the second for left and right.</li>
+  <li>For three, the first one is the top, the second is both left and right, and the third is the bottom.</li>
+  <li>And for four, they are used for top, right, bottom, left respectively.</li>
+</ol>
+
+<p>There are also four extra properties for <code class="highlighter-rouge">padding</code> and <code class="highlighter-rouge">margin</code> for each side of the element:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">padding-top</code>, <code class="highlighter-rouge">padding-left</code>, <code class="highlighter-rouge">padding-right</code> &amp; <code class="highlighter-rouge">padding-bottom</code></li>
+  <li><code class="highlighter-rouge">margin-top</code>, <code class="highlighter-rouge">margin-left</code>, <code class="highlighter-rouge">margin-right</code> &amp; <code class="highlighter-rouge">margin-bottom</code></li>
+</ul>
+
+<p>You could also use these individually to set a side when the style should only affect one.</p>
+
+<p>We also set the border twice here.
+We did this because we wanted three sides to be the same, but the left one different.
+We could have set all four sides individually, but this is shorter.
+This works because the order of style declarations matters.
+If you reverse the order of those two lines, the <code class="highlighter-rouge">border-left</code> declaration gets overwritten by the <code class="highlighter-rouge">border</code> one.</p>
+
+<p>So that looks cool but a bit “grey”.
+Lets make the thicker left border a different colour for each them.</p>
+
+<p>Elements can have more than one class, you just need to put a space between them.</p>
+
+<p>So now update the <code class="highlighter-rouge">&lt;h2&gt;</code> tags so they each have the additional class that matches their subject:</p>
+
+<p>Like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"recipepart ingredients"</span><span class="nt">&gt;</span>Ingredients:<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"recipepart method"</span><span class="nt">&gt;</span>Method:<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"recipepart variations"</span><span class="nt">&gt;</span>Variations:<span class="nt">&lt;/h2&gt;</span>
+</code></pre></div></div>
+
+<p>Then add the following CSS to our stylesheet:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h2</span><span class="nc">.ingredients</span> <span class="p">{</span>
+  <span class="nl">border-left-color</span><span class="p">:</span> <span class="m">#00ced1</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span><span class="nc">.method</span> <span class="p">{</span>
+  <span class="nl">border-left-color</span><span class="p">:</span> <span class="m">#00bfff</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span><span class="nc">.variations</span> <span class="p">{</span>
+  <span class="nl">border-left-color</span><span class="p">:</span> <span class="m">#3cb371</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><img src="../assets/css-fancier-subheadings.png" alt="Fancier second-level headings" title="Fancier second-level headings" class="img-responsive imgbox" /></p>
+
+<p>CSS lets us write multiple different styles whose selectors overlap.
+This lets us apply a set of styles to multiple elements, and then additional styles individually.
+This is much nicer than having to write all of those styles out for each.</p>
+
+<h2 id="the-global-selector">The Global Selector</h2>
+
+<p>There are much more powerful types of selectors than just these ones, you can also combine different types too.  We aren’t going to be using those but you can learn more about them at https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors</p>
+
+<p>However there is one special selector, <code class="highlighter-rouge">*</code> the <strong>global selector</strong> which targets all elements which warrants talking about here.</p>
+
+<p>The global selector is mostly useful in combination with other selectors, but can be it is really useful when experimenting. Especially with borders.</p>
+
+<p>For example try adding the following CSS at the bottom of your stylesheet file:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">*</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>That will draw a solid black border around every element on the page that can have a border.
+This is useful for getting a feel for what space different elements occupy on your page.</p>
+
+<p><img src="../assets/css-border-all-the-things.png" alt="Border all the things" title="Border all the things" class="img-responsive imgbox" /></p>
+
+<p>You would of course remove this style before uploading your pages anywhere.</p>
+
+<h2 id="how-weird-html-can-break-your-styles">How weird HTML can break your styles</h2>
+
+<p>Before we head on to the next step, remember back in step 3 we mentioned that nesting some tags together might look okay at first glance but not work well with CSS?</p>
+
+<p>I showed this example.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
+Welcome to <span class="nt">&lt;em&gt;</span>my<span class="nt">&lt;/em&gt;</span> recipes web site all
+about <span class="nt">&lt;strong&gt;</span>Tiny Cakes!<span class="nt">&lt;/strong&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Recipes:<span class="nt">&lt;/h2&gt;</span>
+Here are the recipes that we have:
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>By default this will look like two paragraphs with a heading between them.
+But if you add the following style (which gives all paragraphs a green background) you still see something strange.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><img src="../assets/css-when-you-split-elements.png" alt="What happens when you split elements" title="What happens when you split elements" class="img-responsive imgbox" /></p>
+
+<p>The second paragraph doesn’t have the green background.  Why?</p>
+
+<p>If you use your browser dev tools to inspect the page you will see that the second paragraph isn’t actually in <code class="highlighter-rouge">&lt;p&gt;</code> tags.
+This happens because what the HTML didn’t actually make sense (a heading in a paragraph) so the browser did some fiddling to try to get something it could render.</p>
+
+<p>Be very careful of trying to do any weird tricks with your HTML.
+Try to keep things simple because you don’t want the browser to have to do any tricks to get it to work because it might not work the way you expect.</p>
+
+<p>And it might turn out very differently in different browsers too.</p>
+
+    
+
+
+<div class="page-nav">
+  <a class='go-link' href='../step9'>Przejdź do kroku → 9</a>
+</div>
+
+
+    
+
+    
+
+    
+  </div>
+
+</article>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="social-media centered">
+      <ul>
+        <li>
+          <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https:/flynerd.pl/alex" target="_blank">flynerd.pl/alex</a>
+        </li>
+        <li>
+          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="mailto:hello@flynerd.pl">hello@flynerd.pl</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+          <a href="https://www.facebook.com/flynerdpl" target="_blank">facebook.com/flynerdpl</a>
+        </li>
+        <li>
+          <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https://instagram.com/flynerdpl" target="_blank">instagram.com/flynerdpl</a>
+        </li>
+        <li>
+          <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https://twitter.com/flynerdpl" target="_blank">twitter.com/flynerdpl</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <h2 class="footer-heading">Do IT for Alex</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Do IT for Alex
+            
+            </li>
+            
+            <li><a href="mailto:hello@flynerd.pl">hello@flynerd.pl</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Poznaj z nami podstawy tworzenia stron www
+</p>
+      </div>
+    </div>
+
+  </div> -->
+
+</footer>
+
+
+  </body>
+
+</html>

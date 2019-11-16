@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML: Styling Links</title>
+  <meta name="description" content="Our links are pretty plain. Just the default underlined blue text which turns purple once you have visited the link. Let’s make it more inline with our Tiny ...">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="http://localhost:4000/step9/">
+  <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('div.solution').each( function(){
+      $(this).prepend('<h5 class="toggle hiding"><i class="fa fa-chevron-up" aria-hidden="true"></i> Click to <span class="action"></span> solution</h5>');
+    });
+    $('div.solution .highlight').first().addClass('hidden');
+    $('h5.toggle').click(function(e){
+      $(this).parent().children('.highlight').first().slideToggle('show');
+      $(this).toggleClass('showing');
+      $(this).toggleClass('hiding');
+      $(this).children('i.fa').toggleClass('fa-chevron-up');
+      $(this).children('i.fa').toggleClass('fa-chevron-down');
+
+    });
+  });
+  </script>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    
+    <a class="site-title" href="https://flynerd.pl/alex">Do IT for Alex</a>
+    <a class="site-title" href="/"><span>HTML i CSS</span></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/">Strona główna</a>
+           <a class="page-link go-link" href="/step0/">Start <i class="fa fa-rocket" aria-hidden="true"></i> </a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+<div class="step-nav">
+  <ul class="main">
+    <li class=""><a  href="/">Strona główna</a></li>
+  </ul>
+
+  <h3>Etapy:</h3>
+  <ul>
+  
+      <li class=''>
+        <a href="/step0/">
+          0 - What is the Web?
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step1/">
+          1 - Tools of the Trade
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step2/">
+          2 - Get Setup
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step3/">
+          3 - Marking it up
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step4/">
+          4 - Formatting the Homepage
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step5/">
+          5 - Formatting Recipes
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step6/">
+          6 - Images
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step7/">
+          7 - Stylin&#39; with CSS
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step8/">
+          8 - CSS Selectors
+        </a>
+      </li>
+  
+      <li class='active'>
+        <a href="/step9/">
+          9 - Styling Links
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step10/">
+          10 - div and span
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step11/">
+          11 - And What Now?
+        </a>
+      </li>
+  
+  </ul>
+
+  <h3>Useful Links</h3>
+  <ul>
+  <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN Javascript Reference</a></li>
+
+</ul>
+
+
+</div>
+
+        <article class="post">
+  
+  <header class="post-header">
+      
+    <h2 class="post-title"> Step 9 - Styling Links</h2>
+    </header>
+
+  <div class="post-content">
+    <p>Our links are pretty plain.
+Just the default underlined blue text which turns purple once you have visited the link.
+Let’s make it more inline with our Tiny Cakes! brand.</p>
+
+<p>First let’s just change the default appearance of <code class="highlighter-rouge">&lt;a&gt;</code>:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#2f4f4f</span><span class="p">;</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#ffe4e1</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">2px</span> <span class="m">4px</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">dashed</span> <span class="m">#ffb6c1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Save and refresh the homepage to check it out.</p>
+
+<p><img src="../assets/css-fancy-links.png" alt="Fancy links" title="Fancy links" class="img-responsive imgbox" /></p>
+
+<p>The <code class="highlighter-rouge">text-decoration</code> declaration is what controls the underlining of a link.  Here we set that to <code class="highlighter-rouge">none</code> to turn it off.  Then we use <code class="highlighter-rouge">border-bottom</code> to create our own underline, and we use the <code class="highlighter-rouge">dashed</code> border system.  That is what lets us have the dashed-style underline.</p>
+
+<p>Hmmm, that looks nicer but if you look at the homepage they are kind of mashed together a bit in the list.
+So let’s space out our lists a little, the items were a little too close together for my liking anyway.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><img src="../assets/css-spaced-links.png" alt="Spaced links" title="Spaced links" class="img-responsive imgbox" /></p>
+
+<p>(You can’t see the cursor in this screenshot, but it’s hovering over the bottom link.)</p>
+
+<p>Ok.
+That’s a bit better.
+But there is much more you can do with links.</p>
+
+<p>The <code class="highlighter-rouge">&lt;a&gt;</code> element is interesting because it exists in multiple states:</p>
+
+<ol>
+  <li>When the page the link points to hasn’t been visited.</li>
+  <li>When the page has been visited.</li>
+  <li>When the mouse is over it.</li>
+  <li>When the keyboard focus on it.</li>
+  <li>When the mouse is actually clicking on it.</li>
+</ol>
+
+<p>Each of these states is styled independently using <strong>pseudo classes</strong>.
+Pseudo classes are like special classes that the browser uses to identify each state.</p>
+
+<p>The pseudo-classes for the <code class="highlighter-rouge">&lt;a&gt;</code> states listed above are:</p>
+
+<ol>
+  <li><code class="highlighter-rouge">link</code></li>
+  <li><code class="highlighter-rouge">visited</code></li>
+  <li><code class="highlighter-rouge">hover</code></li>
+  <li><code class="highlighter-rouge">focus</code></li>
+  <li><code class="highlighter-rouge">active</code></li>
+</ol>
+
+<p>Now let’s style each one.</p>
+
+<p>To use a pseudo-class you put a <code class="highlighter-rouge">:</code> between the element name and it’s pseudo-class.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#778899</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="nd">:focus</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">3px</span> <span class="nb">dashed</span> <span class="m">#ffb6c1</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">3px</span> <span class="nb">solid</span> <span class="m">#ffb6c1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="nd">:active</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">3px</span> <span class="nb">solid</span> <span class="m">#ffb6c1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>We didn’t style <code class="highlighter-rouge">:link</code> here because styling <code class="highlighter-rouge">a</code> does the same thing for our case.</p>
+
+<p><img src="../assets/css-fancier-links.png" alt="Fancier links" title="Fancier links" class="img-responsive imgbox" /></p>
+
+<p>This order is important because the link styles build on one another, for example the styles in the first rule will apply to all the subsequent ones, and when a link is being activated, it is also being hovered over.  If you put the styles in a different order than you might get weird effects.</p>
+
+<p>Note that these are pretty dramatic changes to link styling.  People are mostly used to the underlined text style so be careful changing it too dramatically. It can confuse and annoy people - and if the change is too dramatic, such as a change in font size that moves the text away from the tip of the mouse cursor, it might actually make your link impossible to click on.</p>
+
+<p>You can learn much more about styling of links at
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links</p>
+
+    
+
+
+<div class="page-nav">
+  <a class='go-link' href='../step10'>Przejdź do kroku → 10</a>
+</div>
+
+
+    
+
+    
+
+    
+  </div>
+
+</article>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="social-media centered">
+      <ul>
+        <li>
+          <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https:/flynerd.pl/alex" target="_blank">flynerd.pl/alex</a>
+        </li>
+        <li>
+          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="mailto:hello@flynerd.pl">hello@flynerd.pl</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+          <a href="https://www.facebook.com/flynerdpl" target="_blank">facebook.com/flynerdpl</a>
+        </li>
+        <li>
+          <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https://instagram.com/flynerdpl" target="_blank">instagram.com/flynerdpl</a>
+        </li>
+        <li>
+          <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https://twitter.com/flynerdpl" target="_blank">twitter.com/flynerdpl</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <h2 class="footer-heading">Do IT for Alex</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Do IT for Alex
+            
+            </li>
+            
+            <li><a href="mailto:hello@flynerd.pl">hello@flynerd.pl</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Poznaj z nami podstawy tworzenia stron www
+</p>
+      </div>
+    </div>
+
+  </div> -->
+
+</footer>
+
+
+  </body>
+
+</html>

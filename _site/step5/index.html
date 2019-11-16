@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML: Formatting Recipes</title>
+  <meta name="description" content="Ok now that our homepage is looking better lets get our recipe pages looking nice.">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="http://localhost:4000/step5/">
+  <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('div.solution').each( function(){
+      $(this).prepend('<h5 class="toggle hiding"><i class="fa fa-chevron-up" aria-hidden="true"></i> Click to <span class="action"></span> solution</h5>');
+    });
+    $('div.solution .highlight').first().addClass('hidden');
+    $('h5.toggle').click(function(e){
+      $(this).parent().children('.highlight').first().slideToggle('show');
+      $(this).toggleClass('showing');
+      $(this).toggleClass('hiding');
+      $(this).children('i.fa').toggleClass('fa-chevron-up');
+      $(this).children('i.fa').toggleClass('fa-chevron-down');
+
+    });
+  });
+  </script>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    
+    <a class="site-title" href="https://flynerd.pl/alex">Do IT for Alex</a>
+    <a class="site-title" href="/"><span>HTML i CSS</span></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/">Strona główna</a>
+           <a class="page-link go-link" href="/step0/">Start <i class="fa fa-rocket" aria-hidden="true"></i> </a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+<div class="step-nav">
+  <ul class="main">
+    <li class=""><a  href="/">Strona główna</a></li>
+  </ul>
+
+  <h3>Etapy:</h3>
+  <ul>
+  
+      <li class=''>
+        <a href="/step0/">
+          0 - What is the Web?
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step1/">
+          1 - Tools of the Trade
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step2/">
+          2 - Get Setup
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step3/">
+          3 - Marking it up
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step4/">
+          4 - Formatting the Homepage
+        </a>
+      </li>
+  
+      <li class='active'>
+        <a href="/step5/">
+          5 - Formatting Recipes
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step6/">
+          6 - Images
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step7/">
+          7 - Stylin&#39; with CSS
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step8/">
+          8 - CSS Selectors
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step9/">
+          9 - Styling Links
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step10/">
+          10 - div and span
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step11/">
+          11 - And What Now?
+        </a>
+      </li>
+  
+  </ul>
+
+  <h3>Useful Links</h3>
+  <ul>
+  <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN Javascript Reference</a></li>
+
+</ul>
+
+
+</div>
+
+        <article class="post">
+  
+  <header class="post-header">
+      
+    <h2 class="post-title"> Step 5 - Formatting Recipes</h2>
+    </header>
+
+  <div class="post-content">
+    <p>Ok now that our homepage is looking better lets get our recipe pages looking nice.</p>
+
+<p>Let’s do <code class="highlighter-rouge">traditional-cupcakes.html</code> first.</p>
+
+<p>Instead of showing you the completed page I’m going to provide some direction and let you figure out the right markup.</p>
+
+<ol>
+  <li>The document title should be <code class="highlighter-rouge">Traditional Cupcakes</code>.</li>
+  <li><code class="highlighter-rouge">Traditional Cupcakes</code> in the first line should be a level 1 heading.  Remove the line of <code class="highlighter-rouge">-</code>.</li>
+  <li>Before the level 1 heading, put a link back to our <code class="highlighter-rouge">index.html</code> with the text of <code class="highlighter-rouge">HOME</code>.</li>
+  <li>Description should be a paragraph.</li>
+  <li>Make <code class="highlighter-rouge">Ingredients:</code> a level 2 heading. The ingredients should be in an unordered list.</li>
+  <li><code class="highlighter-rouge">Method:</code> should be a level 2 heading as well, but the method directions should be an ordered list.</li>
+</ol>
+
+<p>Step 7 of the method is trickier, right? The good news is, you can nest most things inside of list items - including other lists.</p>
+
+<p>When you’re done, your file should look something like this:</p>
+
+<p><img src="../assets/browser-cupcakes-formatted.png" alt="The marked-up cupcakes page" title="The marked-up cupcakes page" class="img-responsive imgbox" /></p>
+
+<p>Refer to our completed <code class="highlighter-rouge">traditional-cupcakes.html</code> for hints.</p>
+
+<div class="language-html solution highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Traditional Cupcakes<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"index.html"</span><span class="nt">&gt;</span>HOME<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Traditional cupcakes<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      Traditional cupcakes are always a crowd-pleaser.
+    <span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;h2&gt;</span>Ingredients:<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>2 cups self-raising flour, sifted<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>3/4 cup CSR Caster Sugar<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>2 eggs, beaten<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>3/4 cup milk<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>125g butter, melted, cooled<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>1 teaspoon vanilla essence<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Sprinkles, to decorate<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>1 1/2 cups CSR Pure Icing Sugar<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>1-1 1/2 tablespoons water<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>food colouring, optional<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+
+    <span class="nt">&lt;h2&gt;</span>Method:<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;ol&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Preheat oven to 200°C or 180°C fan-forced.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Grease a 12 x 1/3-cup capacity muffin pan. Alternatively, line holes with paper cases.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Combine flour and caster sugar in a bowl. Make a well in the centre.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Add milk, butter, eggs and vanilla to flour mixture. Using a large metal spoon, stir gently to combine.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Spoon mixture into prepared muffin pan. Bake for 12 to 15 minutes, or until a skewer inserted into the centre comes out clean.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Stand in pan for 5 minutes before transferring to a wire rack to cool.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Make icing:
+          <span class="nt">&lt;ol&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Sift icing sugar into a bowl.<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Add food colouring and water.<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Stir until smooth and well combined.<span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ol&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Spoon icing over cupcakes.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Decorate with sprinkles.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>How did you go?</p>
+
+<p>Now do <code class="highlighter-rouge">muffins.html</code> as well.  Use the same directions plus the following:</p>
+
+<ol>
+  <li>Make sure the document has an appropriate title.</li>
+  <li><code class="highlighter-rouge">Variations:</code> should be a level 2 heading.</li>
+  <li>Each variation name (i.e. Blueberry, Pecan, etc.) should be a level 3 heading.</li>
+  <li>Make the variant steps an unordered list.</li>
+</ol>
+
+<p>When you’re done, your file should look something like this:</p>
+
+<p><img src="../assets/browser-muffins-formatted.png" alt="The marked-up muffins page" title="The marked-up muffins page" class="img-responsive imgbox" /></p>
+
+<p>Refer to our completed <code class="highlighter-rouge">muffins.html</code> for hints.</p>
+
+<div class="language-html solution highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Muffins<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"index.html"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Muffins<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>This recipe makes 12 plain muffins.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Refer to directions at the bottom for how to modify the recipe for different types of muffins.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;h2&gt;</span>Ingredients:<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;ul&gt;</span>
+     <span class="nt">&lt;li&gt;</span>2 cups white flour<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>1 tablespoon baking powder<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>1/2 teaspoon salt<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>2 tablespoons sugar<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>1 egg, slightly beaten<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>1 cup milk<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>1/4 cup melted butter<span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;/ul&gt;</span>
+
+    <span class="nt">&lt;h2&gt;</span>Method:<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;ol&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Preheat the oven to 375°F.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Butter muffin pans.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Mix the flour, baking powder, salt, and sugar in a large bowl.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Add the egg, milk, and butter, stirring only enough to dampen the flour; the batter should not be smooth.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Spoon into the muffin pans, filling each cup about two-thirds full.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Bake for about 20 to 25 minutes each.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+
+    <span class="nt">&lt;h2&gt;</span>Variations:<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Blueberry Muffins:<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Use 1/2 cup sugar.<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Reserve 1/4 cup of the flour, sprinkle it over 1 cup blueberries, and stir them into the batter last.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Pecan Muffins:<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+     <span class="nt">&lt;li&gt;</span>Use 1/4 cup sugar.<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>Add 1/2 cup chopped pecans to the batter.<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>After filling the cups, sprinkle with sugar, cinnamon, and more chopped nuts.<span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Whole-Wheat Muffins:<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Use 3/4 cup whole-wheat flour and 1 cup white flour.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Date or Raisin Muffins:<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Add 1/2 cup chopped pitted dates or 1/3 cup raisins to the batter.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Bacon Muffins:<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+     <span class="nt">&lt;li&gt;</span>Add 3 strips bacon, fried crisp and crumbled, to the batter.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>Ok.  Now we have our three pages: two recipes and a homepage.</p>
+
+<p>But it’s a bit plain isn’t it?  Most recipe sites have images.  Let’s look at them in the next step.</p>
+
+    
+
+
+<div class="page-nav">
+  <a class='go-link' href='../step6'>Przejdź do kroku → 6</a>
+</div>
+
+
+    
+
+    
+
+    
+  </div>
+
+</article>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="social-media centered">
+      <ul>
+        <li>
+          <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https:/flynerd.pl/alex" target="_blank">flynerd.pl/alex</a>
+        </li>
+        <li>
+          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="mailto:hello@flynerd.pl">hello@flynerd.pl</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+          <a href="https://www.facebook.com/flynerdpl" target="_blank">facebook.com/flynerdpl</a>
+        </li>
+        <li>
+          <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https://instagram.com/flynerdpl" target="_blank">instagram.com/flynerdpl</a>
+        </li>
+        <li>
+          <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https://twitter.com/flynerdpl" target="_blank">twitter.com/flynerdpl</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <h2 class="footer-heading">Do IT for Alex</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Do IT for Alex
+            
+            </li>
+            
+            <li><a href="mailto:hello@flynerd.pl">hello@flynerd.pl</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Poznaj z nami podstawy tworzenia stron www
+</p>
+      </div>
+    </div>
+
+  </div> -->
+
+</footer>
+
+
+  </body>
+
+</html>

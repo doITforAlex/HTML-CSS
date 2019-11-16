@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML: div and span</title>
+  <meta name="description" content="Ok let’s jump back to HTML for a moment and look at two more tags that are really useful with CSS: &amp;lt;div&amp;gt; and &amp;lt;span&amp;gt;.">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="http://localhost:4000/step10/">
+  <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('div.solution').each( function(){
+      $(this).prepend('<h5 class="toggle hiding"><i class="fa fa-chevron-up" aria-hidden="true"></i> Click to <span class="action"></span> solution</h5>');
+    });
+    $('div.solution .highlight').first().addClass('hidden');
+    $('h5.toggle').click(function(e){
+      $(this).parent().children('.highlight').first().slideToggle('show');
+      $(this).toggleClass('showing');
+      $(this).toggleClass('hiding');
+      $(this).children('i.fa').toggleClass('fa-chevron-up');
+      $(this).children('i.fa').toggleClass('fa-chevron-down');
+
+    });
+  });
+  </script>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    
+    <a class="site-title" href="https://flynerd.pl/alex">Do IT for Alex</a>
+    <a class="site-title" href="/"><span>HTML i CSS</span></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/">Strona główna</a>
+           <a class="page-link go-link" href="/step0/">Start <i class="fa fa-rocket" aria-hidden="true"></i> </a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+<div class="step-nav">
+  <ul class="main">
+    <li class=""><a  href="/">Strona główna</a></li>
+  </ul>
+
+  <h3>Etapy:</h3>
+  <ul>
+  
+      <li class=''>
+        <a href="/step0/">
+          0 - What is the Web?
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step1/">
+          1 - Tools of the Trade
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step2/">
+          2 - Get Setup
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step3/">
+          3 - Marking it up
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step4/">
+          4 - Formatting the Homepage
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step5/">
+          5 - Formatting Recipes
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step6/">
+          6 - Images
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step7/">
+          7 - Stylin&#39; with CSS
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step8/">
+          8 - CSS Selectors
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step9/">
+          9 - Styling Links
+        </a>
+      </li>
+  
+      <li class='active'>
+        <a href="/step10/">
+          10 - div and span
+        </a>
+      </li>
+  
+      <li class=''>
+        <a href="/step11/">
+          11 - And What Now?
+        </a>
+      </li>
+  
+  </ul>
+
+  <h3>Useful Links</h3>
+  <ul>
+  <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN Javascript Reference</a></li>
+
+</ul>
+
+
+</div>
+
+        <article class="post">
+  
+  <header class="post-header">
+      
+    <h2 class="post-title"> Step 10 - div and span</h2>
+    </header>
+
+  <div class="post-content">
+    <p>Ok let’s jump back to HTML for a moment and look at two more tags that are really useful with CSS: <code class="highlighter-rouge">&lt;div&gt;</code> and <code class="highlighter-rouge">&lt;span&gt;</code>.</p>
+
+<p><code class="highlighter-rouge">&lt;div&gt;</code> is a general purpose block element which you can use as a container for related content.
+It is most useful to group together content so those elements can be targeted more easily with CSS.
+You can also set borders, padding, margins and colours on <code class="highlighter-rouge">&lt;div&gt;</code>s themselves.</p>
+
+<p><code class="highlighter-rouge">&lt;span&gt;</code> is the inline version of <code class="highlighter-rouge">&lt;div&gt;</code>.</p>
+
+<p>Let’s look at how to use them.</p>
+
+<h2 id="using-div">Using <code class="highlighter-rouge">&lt;div&gt;</code></h2>
+
+<p>If you look at our recipe pages, I want the <code class="highlighter-rouge">&lt;h2&gt;</code>s, the titles for ingredients, etc. to go right across the white <code class="highlighter-rouge">&lt;body&gt;</code> area.
+Unfortunately we can’t do that easily because the reason they don’t reach right across is because of the padding set on the body element.</p>
+
+<p>So let’s update our CSS to set the left and right padding on <code class="highlighter-rouge">&lt;body&gt;</code> to 0.</p>
+
+<!-- We could just remove the padding style but we are going to be implementing changes here that assume that it is going to be zero.
+Someone might have a browser that doesn't have a zero value for body padding. -->
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">800px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">);</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span> <span class="m">0px</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Save and refresh and you will see that our headings to what we want them to now.</p>
+
+<p><img src="../assets/css-no-side-padding.png" alt="Headings span entire body" title="Headings span entire body" class="img-responsive imgbox" /></p>
+
+<p>But we have a new problem, all of our other content is right up against the left and side without any padding.</p>
+
+<p>This is where a <code class="highlighter-rouge">&lt;div&gt;</code> can help.</p>
+
+<p>Then let’s put everything that we want to have padding on either side in a <code class="highlighter-rouge">&lt;div&gt;</code> with the class of <code class="highlighter-rouge">container</code></p>
+
+<p>Let’s start with the top content of the page: the home link, recipe title and description:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"index.html"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+
+    <span class="nt">&lt;h1&gt;</span>Muffins<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>This recipe makes 12 plain muffins.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>Refer to directions at the bottom for how to modify the recipe for different types of muffins.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>Add the style for <code class="highlighter-rouge">div.container</code>:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0px</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Refresh and now you should see that first part is inset from the edge.</p>
+
+<p>Now add a <code class="highlighter-rouge">&lt;div&gt;</code> with the class of <code class="highlighter-rouge">container</code> to each of the ingredients, method and variations.</p>
+
+<p>For example, for ingredients:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"recipepart ingredients"</span><span class="nt">&gt;</span>Ingredients:<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+     <span class="nt">&lt;li&gt;</span>2 cups white flour<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>1 tablespoon baking powder<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>1/2 teaspoon salt<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>2 tablespoons sugar<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>1 egg, slightly beaten<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>1 cup milk<span class="nt">&lt;/li&gt;</span>
+     <span class="nt">&lt;li&gt;</span>1/4 cup melted butter<span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>Update each of them (in both the cupcakes and muffins pages) and we should see our content nicely spaced from the edges and the headings going all the way across.</p>
+
+<p><img src="../assets/css-extra-internal-padding.png" alt="Headings span, div content doesn't" title="Headings span, div content doesn't" class="img-responsive imgbox" /></p>
+
+<p>But oops, if we look at our homepage we have a problem because we removed the body padding.</p>
+
+<p><img src="../assets/css-broken-homepage.png" alt="Homepage without padding" title="Homepage without padding" class="img-responsive imgbox" /></p>
+
+<p>Easy to fix, just add <code class="highlighter-rouge">&lt;div&gt;</code> with class <code class="highlighter-rouge">container</code> around all the content we want to be inset like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"tinycakes.png"</span> <span class="na">title=</span><span class="s">"Tiny Cakes!"</span> <span class="na">alt=</span><span class="s">"The Tiny Cakes logo, a stylized cartoon cupcake."</span> <span class="na">height=</span><span class="s">"128px"</span> <span class="na">width=</span><span class="s">"128px"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"sitetitle"</span><span class="nt">&gt;</span>Tiny Cakes!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      Welcome to <span class="nt">&lt;em&gt;</span>my<span class="nt">&lt;/em&gt;</span> recipes web site all about <span class="nt">&lt;strong&gt;</span>Tiny Cakes!<span class="nt">&lt;/strong&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+    Here are the recipes that we have:
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"traditional-cupcakes.html"</span><span class="nt">&gt;</span>Traditional Cupcakes<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"muffins.html"</span><span class="nt">&gt;</span>Muffins<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</code></pre></div></div>
+
+<p><img src="../assets/css-fixed-homepage.png" alt="Homepage with a div" title="Homepage with a div" class="img-responsive imgbox" /></p>
+
+<p>Much better.</p>
+
+<p><code class="highlighter-rouge">&lt;div&gt;</code> basically gives you a general purpose box that you can put around any elements you want to apply styles to.  It’s very useful.</p>
+
+<h2 id="using-span">Using <code class="highlighter-rouge">&lt;span&gt;</code></h2>
+
+<p><code class="highlighter-rouge">&lt;span&gt;</code> is a bit like a <code class="highlighter-rouge">&lt;div&gt;</code> in that it is a general purpose container, but an inline one instead of a block one.  You can use this to attach styles to any piece of text you want.</p>
+
+<p>Let’s do some special formatting for temperatures in recipes.</p>
+
+<p>Add the following CSS:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">span</span><span class="nc">.temp</span> <span class="p">{</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="no">red</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">5px</span> <span class="m">8px</span> <span class="m">4px</span> <span class="m">8px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Now add a <code class="highlighter-rouge">&lt;span&gt;</code> with the class of <code class="highlighter-rouge">temp</code> around all the temperatures in the recipes.</p>
+
+<p>Like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;li&gt;</span>Preheat oven to <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"temp"</span><span class="nt">&gt;</span>200°C<span class="nt">&lt;/span&gt;</span> or <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"temp"</span><span class="nt">&gt;</span>180°C<span class="nt">&lt;/span&gt;</span> fan-forced.<span class="nt">&lt;/li&gt;</span>
+</code></pre></div></div>
+
+<p><img src="../assets/css-fancy-temperatures.png" alt="Fancy temperatures" title="Fancy temperatures" class="img-responsive imgbox" /></p>
+
+<p>Any text you want to apply specific styles to just wrap it in a span, give it a class and write a style for the class.</p>
+
+    
+
+
+<div class="page-nav">
+  <a class='go-link' href='../step11'>Przejdź do kroku → 11</a>
+</div>
+
+
+    
+
+    
+
+    
+  </div>
+
+</article>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="social-media centered">
+      <ul>
+        <li>
+          <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https:/flynerd.pl/alex" target="_blank">flynerd.pl/alex</a>
+        </li>
+        <li>
+          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="mailto:hello@flynerd.pl">hello@flynerd.pl</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+          <a href="https://www.facebook.com/flynerdpl" target="_blank">facebook.com/flynerdpl</a>
+        </li>
+        <li>
+          <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https://instagram.com/flynerdpl" target="_blank">instagram.com/flynerdpl</a>
+        </li>
+        <li>
+          <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;
+          <a href="https://twitter.com/flynerdpl" target="_blank">twitter.com/flynerdpl</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <h2 class="footer-heading">Do IT for Alex</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Do IT for Alex
+            
+            </li>
+            
+            <li><a href="mailto:hello@flynerd.pl">hello@flynerd.pl</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Poznaj z nami podstawy tworzenia stron www
+</p>
+      </div>
+    </div>
+
+  </div> -->
+
+</footer>
+
+
+  </body>
+
+</html>
