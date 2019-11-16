@@ -25,7 +25,7 @@ Edytor tekstu to program, który zapisuje nasze komendy rozumiane przez komputer
 
 Prawdopodobnie posiadasz już jakiś edytor tekstu na swoim komputerze. To właśnie stary, poczciwy Notatnik w przypadku systemu Windows, bądź TexEdit w systemie macOS. Użytkownicy Linuxa zapewne posiadają Leafpad. Programy te oczywiście działają i choć wielu programistów zaczynało swoją karierę od nich to nie są polecane są do codziennego użytku. Lepsze będą **edytory kodu**, które posiadają specjalne udogodnienia ułatwiające pisanie kodu. Zostały one bowiem specjalnie zaprojektowane dla programistów by ułatwić im prace i posiadają przydatne funkcje:
 
-- Widok eksploratora projektu lub pliku, dzięki któremu nie musisz przełączać się między edytorem a menedżerem plików.
+- Widok kontekstu projektu lub pliku, dzięki któremu nie musisz przełączać się między edytorem a menedżerem plików.
 - Możliwość otworzenie wielu kart edytora, co ułatwia przełączanie się między plikami (np. między plikiem HTML a CSS).
 - Podświetlanie składni czyli różne zabarwienie części kodu w zależności od jego rodzaju. Pomaga to w odczytaniu kodu.
 
