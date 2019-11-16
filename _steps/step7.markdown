@@ -68,7 +68,7 @@ Kolory możemy zdefiniować na trzy sposoby:
 2. Możemy użyć notacji RGB: `rgb(255, 192, 203)` to różowy
 3. Możemy użyć zapisu heksadecymalnego HEX (szesnastkowego): `#ffc0cb` to też różowy.
 
-Notacja RGB używa trzech wartości, jednej dla barwy czerwonej, jednej dla barwy zielonej i jednej dla barwy niebieskiej, czyli wartości R(ed)G(reen)B(blue). Wartości znajdują się w przedziale od 0 do 255. Istnieje również rozszerzona wersja „RGBA”, w której można określić czwartą wartość, przeźroczystość, którą określamy w procentach (wartość ** alfa **).
+Notacja RGB używa trzech wartości, jednej dla barwy czerwonej, jednej dla barwy zielonej i jednej dla barwy niebieskiej, czyli wartości R(ed)G(reen)B(blue). Wartości znajdują się w przedziale od 0 do 255. Istnieje również rozszerzona wersja „RGBA”, w której można określić czwartą wartość, przeźroczystość, którą określamy w procentach (wartość **alfa**).
 
 Notacja szesnastkowa HEX zaczyna się znakiem #, po którym następują trzy liczby w formacie szesnastkowym, reprezentujące te same trzy wartości jak w przypadku RGB: czerwony, zielony i niebieski.
 
