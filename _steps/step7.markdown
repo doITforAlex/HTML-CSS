@@ -72,7 +72,8 @@ Notacja RGB używa trzech wartości, jednej dla barwy czerwonej, jednej dla barw
 
 Notacja szesnastkowa HEX zaczyna się znakiem #, po którym następują trzy liczby w formacie szesnastkowym, reprezentujące te same trzy wartości jak w przypadku RGB: czerwony, zielony i niebieski.
 
-Wiele aplikacji graficznych pozwala wybrać kolor i znaleźć dla niego wartości HEX lub RGB. Wygoogluj colour picker - znajdziesz wiele aplikacji i stron internetowych oferujących podobną funkcji.
+Wiele narzędzi pozwala wybrać kolor i znaleźć dla niego wartości HEX lub RGB. Wygoogluj prosty przykład: colour picker.
+Ponadto znajdziesz wiele aplikacji i stron internetowych oferujących podobne funkcje, jak na przykład: coolors.co/app, schemecolor.com, paletton.com.
 
 Polecamy poniższą dokumentację dotyczącą kolorów:
 https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
