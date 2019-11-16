@@ -40,7 +40,7 @@ Po utworzeniu trzech nowych plików o podanych wcześniej nazwach, otwórz każd
 
 ![Content added to files](../assets/atom-unformatted-files.png){:title="Content added to files" class="img-responsive imgbox"}
 
-Nie zapomnij zapisać zmian w swoich plikach.  Możesz to zrobić w menu `File`, bądź użyć skrótów klawiszowych: `ctrl`-`s` dla systemów Windows oraz Linux, `CMD`-`s` w przypadku systemu macOS.  
+Nie zapomnij zapisać zmian w swoich plikach.  Możesz to zrobić w menu `File`, bądź użyć skrótów klawiszowych: `CTRL`+`s` dla systemów Windows oraz Linux, `CMD ⌘`+`s` w przypadku systemu macOS.  
 
 Porada: Jeśli w pliku pojawiły się niezapisane zmiany zauważysz małą kropkę po prawej stronie zakładki.
 
