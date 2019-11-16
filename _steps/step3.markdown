@@ -78,6 +78,6 @@ Przeanalizujemy poszczególne elementy, które dodaliśmy i dowiedzmy się co on
 
 4. `<body>`
 
-    Znacznik `<body>` analogicznie to zawartość naszej strony web.
+    Znacznik `<body>` to zawartość naszej strony web. To część widoczna w przeglądarce.
 
 To na tyle jeśli chodzi o podstawową strukturę dokumentu HTML. Teraz przejdziemy już do formatowania zawartości sekcji `<body>`.
