@@ -17,7 +17,7 @@ Możesz użyć jakiejkolwiek popularnej przeglądarki (Firefox, Chrome, Internet
 
 Niestety, normalne edytory tekstu (właściwie procesory tekstu) jak Microsoft Word, Apple Page czy Google Docs nie nadają się do edycji kodu źródłowego strony web.
 
-Nie używamy procesora dokumentów tekstowych, ponieważ tego typu programy zapisują do plików znacznie więcej informacji niż tylko czysty tekst. W formatach dokumentów pojawiają się niewidoczne dla nas informacje o formatowaniu treści (styl tekstu, czcionka, rozkład marginesów itp.) zbędnych dla pliku pisanego w html. Niektóre z edytorów owszem, pozwolą Ci na zapisanie pliku jako strona web, ale wynik będzie daleki od tego co oczekujesz.   
+Nie używamy programu do edycji dokumentów tekstowych (np. Word), ponieważ tego typu programy zapisują do plików znacznie więcej informacji niż tylko czysty tekst. W formatach dokumentów pojawiają się niewidoczne dla nas informacje o formatowaniu treści (styl tekstu, czcionka, rozkład marginesów itp.) zbędnych dla pliku pisanego w html. Niektóre z edytorów owszem, pozwalają na zapisanie pliku na potrzeby *webowe*, ale wynik będzie daleki od oczekiwanego.   
 
 Program, którego potrzebujesz to  **edytor tekstu** lub **edytor kodu**. Na start polecamy przyjazny początkującym program Visual Studio Code (dalej w tekście będziemy używać skrótu VSC) o przyjemnym interfejsie. [Kliknij tutaj by pobrać VSC](http://code.visualstudio.com).
 
