@@ -145,4 +145,4 @@ Bacon Muffins:
  * Add 3 strips bacon, fried crisp and crumbled, to the batter.
 ```
 
-Once you've added the content to each file continue to the next step.
+Pod dodaniu zawartości do każdego pliku przejdź do kolejnego etapu :)
