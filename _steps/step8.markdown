@@ -134,8 +134,7 @@ CSS pozwala nam na utworzenie wielu różnych stylów, których selektory się n
 
 ## Selektor uniwersalny
 
-Istnieje wiele różnych typów selektorów niż grupy i klasy, które możesz łączyć ze sobą. Nie będziemy ich dzisiaj omawiać. Jeśli Cię to zaciekawiło, możesz poczytać więcej tutaj:
- https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors
+Istnieje wiele różnych typów selektorów niż grupy i klasy, które możesz łączyć ze sobą. Nie będziemy ich dzisiaj omawiać. Jeśli Cię to zaciekawiło, możesz poczytać więcej [tutaj](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors)
 
 Istnieje jednak specjalny selektor o którym warto wspomnieć. Jest to `*`, tzw. **global selector/selektor uniwersalny** i dotyczy on wszystkich elementów.
 

@@ -22,7 +22,7 @@ Here are the recipes that we have:
 ```
 Musimy teraz dodać odpowiednie znaczniki HTML by to oddać. Taki zabieg nazywamy znakowaniem/oznaczaniem tekstu (marking up).
 
-Sama koncepcja oznaczania tekstu istniała w przemyśle wydawniczego, gdzie edytor zapisywał na manuskrypcie w jaki sposób tekst powinien zostać sformatowany do wydruku. Wraz z rozwojem technologii możliwe stało się skomputeryzowanie procesu wydruku a przepisywanie ponownie tekstu stało się zbędne.  https://pl.wikipedia.org/wiki/J%C4%99zyk_znacznik%C3%B3w#Historia
+Sama koncepcja oznaczania tekstu istniała w przemyśle wydawniczego, gdzie edytor zapisywał na manuskrypcie w jaki sposób tekst powinien zostać sformatowany do wydruku. Wraz z rozwojem technologii możliwe stało się skomputeryzowanie procesu wydruku a przepisywanie ponownie tekstu stało się zbędne. [Wikipedia](https://pl.wikipedia.org/wiki/J%C4%99zyk_znacznik%C3%B3w#Historia)
 
 Zamieńmy teraz treść naszego `<body>` dokumentu `index.html` na poniższy tekst:
 
@@ -46,7 +46,7 @@ Zamieńmy teraz treść naszego `<body>` dokumentu `index.html` na poniższy tek
 
 Zapisz plik i odśwież przeglądarkę. Wygląda to teraz znacznie lepiej, prawda?
 
-![The marked-up home page](../assets/browser-formatted-homepage.png){:title="The marked-up home page" class="img-responsive imgbox"}
+![Znakowanie strony](../assets/browser-formatted-homepage.png){:title="znakowanie strony" class="img-responsive imgbox"}
 
 Przeanalizujemy teraz poszczególne znaczniki HTML, które zostały użyte w powyższym tekście.
 
@@ -73,9 +73,8 @@ Dla porównania **ordered list/numerowaną listę** stworzysz tagiem `<ol>`.
 : **list item/element listy** to znacznik używany przy wymienianiu kolejnych elementów list, zarówno numerowanej jak i wypunktowanej.
 
 Czy jest to tak trudne jak się wydaje? Oczywiście istnieje więcej znaczników niż te, które wymieniliśmy przed chwilą ale obowiązują je te same zasady: 
-<!-- And that is mostly as hard as HTML gets.  There are a lot more tags than just these few but the same basic concept applies: -->
 
-1. Używamy znaczników HTML aby sprecyzować w jaki sposób przeglądarka powinna wyświetlać poszczególne elementy zawartości strony .
+1. Używamy znaczników HTML aby sprecyzować w jaki sposób przeglądarka powinna wyświetlać poszczególne elementy zawartości strony.
 2. Używamy znaczników otwierających i zamykających by wskazać miejsce działania kodu.
 
 ## Zagnieżdżanie elementów. Znaczniki liniowe a blokowe.
