@@ -52,7 +52,7 @@ Przeanalizujemy poszczególne elementy, które dodaliśmy i dowiedzmy się co on
 
     Pierwszy wiersz to deklaracja typu dokumentu. To informuje przeglądarkę, w jakiej wersji HTML został napisany dokument.
 
-    Samo słowo „Html” w deklaracji oznacza najnowszą wersję html. Obecnie najnowszą wersją jest wersja 5,i nie wygląda na to by zmieniło się to w najbliższym czasie.
+    Samo słowo „html” w deklaracji oznacza najnowszą wersję html. Obecnie najnowszą wersją jest wersja 5, i nie wygląda na to by zmieniło się to w najbliższym czasie.
 
     Możesz natknąć się na deklaracje dotyczące starszych wersji HTML. Są one bardziej skomplikowane:
 
