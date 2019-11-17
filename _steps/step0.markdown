@@ -64,11 +64,11 @@ Każdy adres URL składa się z trzech części:
 
 Części składowe adresu URL zapewniają Twojej przeglądarce wszystkie potrzebne informacje aby ta wysłała żądanie o zapytana stronę do odpowiedniego komputera. Komputery, które zawierają informację o danych stronach i dostarczają informację o nich na żądanie nazywamy serwerami sieci Web. (dopisek -) Taki komputer-serwer jest podłączony na stałe do sieci.
 
-Przeanalizujmy adres URL strony FlyNerd dla Alexa `http://flynerd.pl/alex/index.html`:
+Przeanalizujmy adres URL strony FlyNerd dla Alexa `https://flynerd.pl/alex/index.html`:
 
-W tym przypadku naszym protokołem jest `http`, `flynerd.pl` odpowiada nazwie serwera, natomiast końcówka `alex/index.html` zawiera informacje o ścieżce do zasobu. Innymi słowy, serwer sieci Web o nazwie `flynerd.pl` przesłał do nas plik `index.html` z katalogu `alex` za pomocą protokołu `http`.
+W tym przypadku naszym protokołem jest `https`, `flynerd.pl` odpowiada nazwie serwera, natomiast końcówka `alex/index.html` zawiera informacje o ścieżce do zasobu. Innymi słowy, serwer sieci Web o nazwie `flynerd.pl` przesłał do nas plik `index.html` z katalogu `alex` za pomocą protokołu `https`.
 
-Protokół to umowny zbiór zasad. W tym przypadku oznacza zbiór zasad opisujących sposób wysyłania żądań na temat stron web i odpowiedzi na te żądania. To ** http ** je określa, a ** https ** rozszerza ten protokół o obsługę zabezpieczeń.
+Protokół to umowny zbiór zasad. W tym przypadku oznacza zbiór zasad opisujących sposób wysyłania żądań na temat stron web i odpowiedzi na te żądania. To **http** je określa, a **https** rozszerza ten protokół o obsługę zabezpieczeń.
 
 Spójrz teraz na pasek adresu swojej przeglądarki.
 Czy potrafisz teraz powiedzieć, jakie są poszczególne części adresu URL strony, którą aktualnie właśnie czytasz?
