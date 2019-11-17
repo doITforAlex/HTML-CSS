@@ -155,5 +155,3 @@ Popatrz na poniższy kod `muffins.html` jeśli potrzebujesz pomocy.
 
 
 Super, stworzyliśmy 3 strony: jedną domową i dwie podstrony z przepisami.
-
-Nasze strony są jednak trochę za proste, prawda? Większość stron kulinarnych posiada obrazki. Tym zajmiemy się w kolejnym kroku.

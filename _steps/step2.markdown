@@ -5,6 +5,8 @@ title: Konfiguracja
 permalink: step2/
 ---
 
+Zaczynamy naszą pracę od przytowania środowiska pracy.
+
 ## Co fajnego stworzymy?
 
 Naszym zadaniem jest nauczenie się HTML i CSS poprzez stworzenie prostej strony z przepisami.

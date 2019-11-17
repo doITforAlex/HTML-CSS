@@ -4,6 +4,7 @@ number: 6
 title: Obrazki
 permalink: step6/
 ---
+Nasze strony są jednak trochę za proste, prawda? Większość stron kulinarnych posiada obrazki. Tym zajmiemy się w kolejnym kroku.
 
 ## Obrazki
 

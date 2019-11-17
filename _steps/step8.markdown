@@ -5,9 +5,7 @@ title: Selektory CSS
 permalink: step8/
 ---
 
-## Selektory
-
-Selektory pozwala nam określić (lub wybrać) części strony, dla których chcemy ustalić deklaracje stylu.
+Selektor pozwala nam określić (lub wybrać) części strony, dla których chcemy ustalić deklaracje stylu.
 
 Do tej pory używaliśmy tylko nazwy znaczników jako selektory.
 Jest to przydatne, ponieważ oznacza, że dane style zostaną zastosowane do każdego z tych elementów. Ale czasami chcemy ustalić dany zestaw reguł tylko do wybranych elementów. Możemy to zrobić za pomocą różnych typów selektorów.

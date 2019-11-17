@@ -5,10 +5,12 @@ title: Czym jest sieć web?
 permalink: step0/
 ---
 
+Obecnie każdy korzysta z Internetu, ale rzadko zastanawiamy się, co się dzieje pod spodem, dlaczego nasz komputer i nasza przeglądarka są wstanie pokazać coś, co napisała osoba setki kilometrów stąd.
+
 ## Co będziemy dzisiaj robić?
 
 Celem dzisiejszych warsztatów jest nauczenie się jak tworzyć strony www.
-
+ 
 W tym celu użyjemy dwóch języków komputerowych:
 
 - HTML (HyperText Markup Language po polsku hipertekstowy język znaczników), oraz
