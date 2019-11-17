@@ -132,7 +132,7 @@ Widzisz w tagu część `href="muffins.html"`? Nazywamy ją atrybutem. W szczeg�
 Gdybyśmy chcieli dać odnośnik do innej strony niż nasza, to wtedy musimy podać kompletny już adres:
 
 ```html
-<a href="http://nodegirls.com.au/brisbane.html">Node Girls: Brisbane</a>
+<a href="http://flynerd.pl/alex/index.html">Do IT for Alex</a>
 ```
 Niektóre tagi wymagają atrybutów aby wywołać określone funkcje.
 
