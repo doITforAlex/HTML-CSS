@@ -5,7 +5,7 @@ title: Czym jest sieć web?
 permalink: step0/
 ---
 
-Obecnie każdy korzysta z Internetu, ale rzadko zastanawiamy się, co się dzieje pod spodem, dlaczego nasz komputer i nasza przeglądarka są wstanie pokazać coś, co napisała osoba setki kilometrów stąd.
+Obecnie każdy korzysta z Internetu, ale rzadko zastanawiamy się, co się dzieje pod spodem, dlaczego nasz komputer i nasza przeglądarka są wstanie pokazać coś, co napisała osoba setki kilometrów stąd. Czy wiesz, że... World Wide Web (czyli WWW) powstało w 1989! Tak w tym roku obchodziło swoje [30-lecie](https://www.flynerd.pl/2019/03/krotka-historia-30-urodziny-sieci-www.html).
 
 ## Co będziemy dzisiaj robić?
 
