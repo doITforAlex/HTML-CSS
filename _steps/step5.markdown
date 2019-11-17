@@ -1,7 +1,7 @@
 ---
 layout: step
 number: 5
-title: Formatowanie przepisów.
+title: Formatowanie przepisów
 permalink: step5/
 ---
 Nasza strona domowa wygląda zdecydowanie lepiej, więc teraz czas zająć się upiększaniem naszych podstron z przepisami.
