@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML: div and span</title>
-  <meta name="description" content="Ok let’s jump back to HTML for a moment and look at two more tags that are really useful with CSS: &amp;lt;div&amp;gt; and &amp;lt;span&amp;gt;.">
+  <title>HTML: div i span</title>
+  <meta name="description" content="Wrócimy teraz na moment do HTML i przyjrzymy się bliżej dwóm znacznikom, które są naprawdę przydatne przy pisaniu CSS. Są to &amp;lt;div&amp;gt; i &amp;lt;span&amp;gt;.">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step10/">
+  <link rel="canonical" href="/step10/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -84,73 +84,73 @@
   
       <li class=''>
         <a href="/step0/">
-          0 - What is the Web?
+          0 - Czym jest sieć web?
         </a>
       </li>
   
       <li class=''>
         <a href="/step1/">
-          1 - Tools of the Trade
+          1 - Narzędzia
         </a>
       </li>
   
       <li class=''>
         <a href="/step2/">
-          2 - Get Setup
+          2 - Konfiguracja
         </a>
       </li>
   
       <li class=''>
         <a href="/step3/">
-          3 - Marking it up
+          3 - Znaczniki
         </a>
       </li>
   
       <li class=''>
         <a href="/step4/">
-          4 - Formatting the Homepage
+          4 - Formatowanie strony głównej
         </a>
       </li>
   
       <li class=''>
         <a href="/step5/">
-          5 - Formatting Recipes
+          5 - Formatowanie przepisów.
         </a>
       </li>
   
       <li class=''>
         <a href="/step6/">
-          6 - Images
+          6 - Obrazki
         </a>
       </li>
   
       <li class=''>
         <a href="/step7/">
-          7 - Stylin&#39; with CSS
+          7 - Używamy CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step8/">
-          8 - CSS Selectors
+          8 - Selektory CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step9/">
-          9 - Styling Links
+          9 - Hiperłącza
         </a>
       </li>
   
       <li class='active'>
         <a href="/step10/">
-          10 - div and span
+          10 - div i span
         </a>
       </li>
   
       <li class=''>
         <a href="/step11/">
-          11 - And What Now?
+          11 - Co teraz?
         </a>
       </li>
   
@@ -161,29 +161,25 @@
   
   <header class="post-header">
       
-    <h2 class="post-title"> Step 10 - div and span</h2>
+    <h2 class="post-title"> Step 10 - div i span</h2>
     </header>
 
   <div class="post-content">
-    <p>Ok let’s jump back to HTML for a moment and look at two more tags that are really useful with CSS: <code class="highlighter-rouge">&lt;div&gt;</code> and <code class="highlighter-rouge">&lt;span&gt;</code>.</p>
+    <p>Wrócimy teraz na moment do HTML i przyjrzymy się bliżej dwóm znacznikom, które są naprawdę przydatne przy pisaniu CSS. Są to <code class="highlighter-rouge">&lt;div&gt;</code> i <code class="highlighter-rouge">&lt;span&gt;</code>.</p>
 
-<p><code class="highlighter-rouge">&lt;div&gt;</code> is a general purpose block element which you can use as a container for related content.
-It is most useful to group together content so those elements can be targeted more easily with CSS.
-You can also set borders, padding, margins and colours on <code class="highlighter-rouge">&lt;div&gt;</code>s themselves.</p>
+<p><code class="highlighter-rouge">&lt;div&gt;</code> to element blokowy ogólnego przeznaczenia. Div można użyć jako kontener dla podobnych treści. Grupowanie podobnej treści ułatwi późniejsze stylizowanie za pomocą CSS danych elementów. Oczywiście możemy ustawić ramkę, odstępy, marginesy i kolory dla <code class="highlighter-rouge">&lt;div&gt;</code>.</p>
 
-<p><code class="highlighter-rouge">&lt;span&gt;</code> is the inline version of <code class="highlighter-rouge">&lt;div&gt;</code>.</p>
+<p><code class="highlighter-rouge">&lt;span&gt;</code> możemy nazwać liniową wersją <code class="highlighter-rouge">&lt;div&gt;</code>.</p>
 
-<p>Let’s look at how to use them.</p>
+<p>Teraz dowiesz się jak ich używać:</p>
 
-<h2 id="using-div">Using <code class="highlighter-rouge">&lt;div&gt;</code></h2>
+<h2 id="używanie-div">Używanie <code class="highlighter-rouge">&lt;div&gt;</code></h2>
 
-<p>If you look at our recipe pages, I want the <code class="highlighter-rouge">&lt;h2&gt;</code>s, the titles for ingredients, etc. to go right across the white <code class="highlighter-rouge">&lt;body&gt;</code> area.
-Unfortunately we can’t do that easily because the reason they don’t reach right across is because of the padding set on the body element.</p>
+<p>Jeśli spojrzysz na nasze strony z przepisami, to zauważysz, że tekst jest w pewnym odstępie od białego obszaru, czyli naszego <code class="highlighter-rouge">&lt;body&gt;</code>. Chcemy dokonać zmian, aby <code class="highlighter-rouge">&lt;h2&gt;</code>, nasze podtytuły zaczynały się zaraz od <code class="highlighter-rouge">&lt;body&gt;</code>. Na chwilę obecną przeszkadza w tym wartość <code class="highlighter-rouge">padding</code>, czyli odległość zawartości od krawędzi body, tzw. margines wewnętrzny.</p>
 
-<p>So let’s update our CSS to set the left and right padding on <code class="highlighter-rouge">&lt;body&gt;</code> to 0.</p>
+<p>Zaktualizujmy więc nasz CSS i ustawimy lewe i prawe <code class="highlighter-rouge">padding</code> w <code class="highlighter-rouge">&lt;body&gt;</code> na 0.</p>
 
-<!-- We could just remove the padding style but we are going to be implementing changes here that assume that it is going to be zero.
-Someone might have a browser that doesn't have a zero value for body padding. -->
+<!--- Moglibyśmy po prostu usunąć padding, ale my zmienimy wartość prawą i lewą na zero. W końcu użytkownik może korzystać z  przeglądarki, która nie ma przewiduje zerowej wartości `padding` dla body.  --->
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
   <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span> <span class="nb">auto</span><span class="p">;</span>
@@ -193,18 +189,15 @@ Someone might have a browser that doesn't have a zero value for body padding. --
   <span class="nl">font-family</span><span class="p">:</span> <span class="nb">sans-serif</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
-
-<p>Save and refresh and you will see that our headings to what we want them to now.</p>
+<p>Zapisz i odśwież. Na pewno zauważysz, że nasze nagłówki przesunęły się do początku lewej krawędzi body, tak jak chcieliśmy.</p>
 
 <p><img src="../assets/css-no-side-padding.png" alt="Headings span entire body" title="Headings span entire body" class="img-responsive imgbox" /></p>
 
-<p>But we have a new problem, all of our other content is right up against the left and side without any padding.</p>
+<p>Ale pojawił się nowy problem. Cała reszta zawartości też jest skierowana do lewej bez żadnego odstępu. Chcieliśmy wprowadzić zmiany tylko dla nagłówka…</p>
 
-<p>This is where a <code class="highlighter-rouge">&lt;div&gt;</code> can help.</p>
+<p>Tutaj może nam pomóc umiejętne wykorzystanie <code class="highlighter-rouge">&lt;div&gt;</code>.</p>
 
-<p>Then let’s put everything that we want to have padding on either side in a <code class="highlighter-rouge">&lt;div&gt;</code> with the class of <code class="highlighter-rouge">container</code></p>
-
-<p>Let’s start with the top content of the page: the home link, recipe title and description:</p>
+<p>Umieśćmy wszystko, co będzie miało odstęp od lewej do <code class="highlighter-rouge">&lt;div&gt;</code> z klasą <code class="highlighter-rouge">container</code>. Zacznijmy od pliku muffins.html i umieścimy w <code class="highlighter-rouge">&lt;div&gt;</code> odnośnik do strony głównej, tytuł i opis przepisu.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
@@ -218,18 +211,18 @@ Someone might have a browser that doesn't have a zero value for body padding. --
   <span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
-<p>Add the style for <code class="highlighter-rouge">div.container</code>:</p>
+<p>Dodajmy teraz styl <code class="highlighter-rouge">div.container</code> do naszego CSS:</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span><span class="nc">.container</span> <span class="p">{</span>
   <span class="nl">padding</span><span class="p">:</span> <span class="m">0px</span> <span class="m">20px</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>Refresh and now you should see that first part is inset from the edge.</p>
+<p>Odśwież. Pierwsza część tekstu naszego pliku muffins.html powinna być osunięta od krawędzi.</p>
 
-<p>Now add a <code class="highlighter-rouge">&lt;div&gt;</code> with the class of <code class="highlighter-rouge">container</code> to each of the ingredients, method and variations.</p>
+<p>Teraz dodamy <code class="highlighter-rouge">&lt;div&gt;</code> o klasie <code class="highlighter-rouge">container</code> osobno dla sekcji ingredients, method i variations.</p>
 
-<p>For example, for ingredients:</p>
+<p>Dla przykładu, tak to powinno wyglądać dla sekcji ingredients:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"recipepart ingredients"</span><span class="nt">&gt;</span>Ingredients:<span class="nt">&lt;/h2&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
@@ -245,15 +238,15 @@ Someone might have a browser that doesn't have a zero value for body padding. --
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
-<p>Update each of them (in both the cupcakes and muffins pages) and we should see our content nicely spaced from the edges and the headings going all the way across.</p>
+<p>Zaktualizuj każdą z sekcji (zarówno na stronie cupcakes, jak i muffins) tak aby nasza zawartość była oddalona od krawędzi a podtytuły zaczynały się od krawędzi.</p>
 
 <p><img src="../assets/css-extra-internal-padding.png" alt="Headings span, div content doesn't" title="Headings span, div content doesn't" class="img-responsive imgbox" /></p>
 
-<p>But oops, if we look at our homepage we have a problem because we removed the body padding.</p>
+<p>Powinno wyglądać tak jak zaplanowaliśmy. Wróćmy do strony głównej… Nie mamy odstępów. Nie wygląda najlepiej.</p>
 
 <p><img src="../assets/css-broken-homepage.png" alt="Homepage without padding" title="Homepage without padding" class="img-responsive imgbox" /></p>
 
-<p>Easy to fix, just add <code class="highlighter-rouge">&lt;div&gt;</code> with class <code class="highlighter-rouge">container</code> around all the content we want to be inset like this:</p>
+<p>Ale wiemy jak to łatwo naprawić. Dodaj <code class="highlighter-rouge">&lt;div&gt;</code> z klasą <code class="highlighter-rouge">container</code> wokół wszystkich treści, dla których chcemy ustawić odstęp:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
@@ -275,17 +268,17 @@ Someone might have a browser that doesn't have a zero value for body padding. --
 
 <p><img src="../assets/css-fixed-homepage.png" alt="Homepage with a div" title="Homepage with a div" class="img-responsive imgbox" /></p>
 
-<p>Much better.</p>
+<p>Znacznie lepiej.</p>
 
-<p><code class="highlighter-rouge">&lt;div&gt;</code> basically gives you a general purpose box that you can put around any elements you want to apply styles to.  It’s very useful.</p>
+<p><code class="highlighter-rouge">&lt;div&gt;</code> to taki zbiornik, który pozwala Ci umieszczenie w nim elementów dla których chcemy ustalić konkretny styl. Jest bardzo przydatny.</p>
 
-<h2 id="using-span">Using <code class="highlighter-rouge">&lt;span&gt;</code></h2>
+<h2 id="używanie-span">Używanie <code class="highlighter-rouge">&lt;span&gt;</code></h2>
 
-<p><code class="highlighter-rouge">&lt;span&gt;</code> is a bit like a <code class="highlighter-rouge">&lt;div&gt;</code> in that it is a general purpose container, but an inline one instead of a block one.  You can use this to attach styles to any piece of text you want.</p>
+<p><code class="highlighter-rouge">&lt;span&gt;</code> jest trochę podobny do <code class="highlighter-rouge">&lt;div&gt;</code>, ponieważ jest to również element ogólnego przeznaczenia, ale liniowy a nie blokowy jak <code class="highlighter-rouge">&lt;div&gt;</code>. Możesz użyć <code class="highlighter-rouge">&lt;span&gt;</code> do określenia stylu dla konkretnego fragmentu tekstu.</p>
 
-<p>Let’s do some special formatting for temperatures in recipes.</p>
+<p>Wykorzystamy znacznik <span> do stworzenia specjalnego formatowania temperatur w przepisach.</span></p>
 
-<p>Add the following CSS:</p>
+<p>Dodaj poniższy CSS:</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">span</span><span class="nc">.temp</span> <span class="p">{</span>
   <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
@@ -296,16 +289,16 @@ Someone might have a browser that doesn't have a zero value for body padding. --
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>Now add a <code class="highlighter-rouge">&lt;span&gt;</code> with the class of <code class="highlighter-rouge">temp</code> around all the temperatures in the recipes.</p>
+<p>Teraz dodaj <code class="highlighter-rouge">&lt;span&gt;</code> o klasie <code class="highlighter-rouge">temp</code> wszędzie, gdzie w tekście pojawia się temperatura.</p>
 
-<p>Like this:</p>
+<p>W ten sposób:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;li&gt;</span>Preheat oven to <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"temp"</span><span class="nt">&gt;</span>200°C<span class="nt">&lt;/span&gt;</span> or <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"temp"</span><span class="nt">&gt;</span>180°C<span class="nt">&lt;/span&gt;</span> fan-forced.<span class="nt">&lt;/li&gt;</span>
 </code></pre></div></div>
 
 <p><img src="../assets/css-fancy-temperatures.png" alt="Fancy temperatures" title="Fancy temperatures" class="img-responsive imgbox" /></p>
 
-<p>Any text you want to apply specific styles to just wrap it in a span, give it a class and write a style for the class.</p>
+<p>Możesz dodać określony styl dla konkretnego tekstu. Wystraczy, że wrzucisz między znaczniki <code class="highlighter-rouge">&lt;span&gt;</code> i <code class="highlighter-rouge">&lt;/span&gt;</code>, nadasz klasę i napiszesz styl dla danej klasy w CSS.</p>
 
     
 

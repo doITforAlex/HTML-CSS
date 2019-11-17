@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML: Marking it up</title>
-  <meta name="description" content="So let’s get started with our first page, index.html which is our site’s homepage.">
+  <title>HTML: Znaczniki</title>
+  <meta name="description" content="Zacznijmy od naszej pierwszej strony index.html, która będzie naszą stroną główną.">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step3/">
+  <link rel="canonical" href="/step3/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -84,73 +84,73 @@
   
       <li class=''>
         <a href="/step0/">
-          0 - What is the Web?
+          0 - Czym jest sieć web?
         </a>
       </li>
   
       <li class=''>
         <a href="/step1/">
-          1 - Tools of the Trade
+          1 - Narzędzia
         </a>
       </li>
   
       <li class=''>
         <a href="/step2/">
-          2 - Get Setup
+          2 - Konfiguracja
         </a>
       </li>
   
       <li class='active'>
         <a href="/step3/">
-          3 - Marking it up
+          3 - Znaczniki
         </a>
       </li>
   
       <li class=''>
         <a href="/step4/">
-          4 - Formatting the Homepage
+          4 - Formatowanie strony głównej
         </a>
       </li>
   
       <li class=''>
         <a href="/step5/">
-          5 - Formatting Recipes
+          5 - Formatowanie przepisów.
         </a>
       </li>
   
       <li class=''>
         <a href="/step6/">
-          6 - Images
+          6 - Obrazki
         </a>
       </li>
   
       <li class=''>
         <a href="/step7/">
-          7 - Stylin&#39; with CSS
+          7 - Używamy CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step8/">
-          8 - CSS Selectors
+          8 - Selektory CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step9/">
-          9 - Styling Links
+          9 - Hiperłącza
         </a>
       </li>
   
       <li class=''>
         <a href="/step10/">
-          10 - div and span
+          10 - div i span
         </a>
       </li>
   
       <li class=''>
         <a href="/step11/">
-          11 - And What Now?
+          11 - Co teraz?
         </a>
       </li>
   
@@ -161,26 +161,25 @@
   
   <header class="post-header">
       
-    <h2 class="post-title"> Step 3 - Marking it up</h2>
+    <h2 class="post-title"> Step 3 - Znaczniki</h2>
     </header>
 
   <div class="post-content">
-    <p>So let’s get started with our first page, <code class="highlighter-rouge">index.html</code> which is our site’s homepage.</p>
+    <p>Zacznijmy od naszej pierwszej strony <code class="highlighter-rouge">index.html</code>, która będzie naszą stroną główną.</p>
 
-<p>Open up <code class="highlighter-rouge">index.html</code> in your browser.</p>
+<p>Otwórz plik <code class="highlighter-rouge">index.html</code> w swojej przeglądarce.</p>
 
 <p><img src="../assets/browser-unformatted.png" alt="The un-marked-up home page" title="The un-marked-up home page" class="img-responsive imgbox" /></p>
 
-<p>Ok … so that looks like a hot mess. What’s with that?</p>
+<p>No to nie wygląda za dobrze…</p>
 
-<p>Your browser assumes that a file with <code class="highlighter-rouge">.html</code> or <code class="highlighter-rouge">.htm</code> contains HTML content and it treats it as such.<br />
-Because we didn’t actually include any HTML tags in the file, the browser just displays the raw text and since HTML ignores newline characters it gets displayed like one big paragraph.</p>
+<p>Twoja przeglądarka traktuje pliki z rozszerzeniem <code class="highlighter-rouge">.html</code> oraz <code class="highlighter-rouge">.htm</code> jako pliki zawierające kod HTML i wyświetla je w ten sposób. Nie zamieściliśmy w naszym pliku żadnego kodu HTML, więc przeglądarka interpretuje jedynie surowy tekst. HTML ignoruje znaki białej linii (enter, tabulator, multi spacja itp.), dlatego cały tekst wyświetlony jest w jednym akapicie.</p>
 
-<p>Oh and notice how the browser tab has the file path in it, prefixed with <code class="highlighter-rouge">file://</code>?  Not great either right?</p>
+<p>Zauważ, że karta przeglądarki pokazuje ścieżkę do pliku, z prefiksem <code class="highlighter-rouge">file: //</code>. Nie wygląda to ładnie, prawda?</p>
 
-<p>So since that isn’t quite what we had in mind, lets add some HTML to it.</p>
+<p>Nie o to nam chodziło. Dodamy do naszego pliku trochę HTML.</p>
 
-<p>Update <code class="highlighter-rouge">index.html</code> so it has :</p>
+<p>Zaktualizuj plik <code class="highlighter-rouge">index.html</code> i wklej do niego poniższy kod:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
@@ -201,54 +200,53 @@ Because we didn’t actually include any HTML tags in the file, the browser just
   <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
+<p>Zapisz i odśwież swoją przeglądarkę. Niby wygląda tak samo, ale popatrz znowu na kartę przeglądarki. Teraz zamiast ścieżki pliku pojawił się napis “Tiny Cakes!”.</p>
 
-<p>Save it, refresh our browser window &amp; it does look the same, but if you look closely you’ll see that the browser tab now reads “Tiny Cakes!” instead of the filename.</p>
+<p><img src="../assets/browser-unformatted-title.png" alt="Zatytułowana strona " title="The titled but un-marked-up home page" class="img-responsive imgbox" /></p>
 
-<p><img src="../assets/browser-unformatted-title.png" alt="The titled but un-marked-up home page" title="The titled but un-marked-up home page" class="img-responsive imgbox" /></p>
+<p>Dodaliśmy kilka fragmentów HTML, które są jak szkielet lub ramkę dokumentu. Nie dodaliśmy jeszcze żadnych instrukcji formatowania, dlatego sam tekst wygląda nadal tak samo.</p>
 
-<p>We’ve added a few pieces of HTML here which are like the scaffolding or frame of the document.  We haven’t actually added any formatting instructions yet which is why it looks mostly the same.</p>
-
-<p>So let’s look at what we did and what they mean.</p>
+<p>Przeanalizujemy poszczególne elementy, które dodaliśmy i dowiedzmy się co one oznaczają.</p>
 
 <ol>
   <li>
     <p><code class="highlighter-rouge"><span class="cp">&lt;!DOCTYPE html&gt;</span></code></p>
 
-    <p>The very first line is the document type declaration.  This tells the browser the version of HTML it should expect this document to be in.</p>
+    <p>Pierwszy wiersz to deklaracja typu dokumentu. To informuje przeglądarkę, w jakiej wersji HTML został napisany dokument.</p>
 
-    <p>The <code class="highlighter-rouge">html</code> in the declaration means “the latest version of html”. Right now the latest version is version 5, and that will probably be the latest version for a long time to come.</p>
+    <p>Samo słowo „html” w deklaracji oznacza najnowszą wersję html. Obecnie najnowszą wersją jest wersja 5, i nie wygląda na to by zmieniło się to w najbliższym czasie.</p>
 
-    <p>You might also see declarations about older versions. Those are more complicated, like this:</p>
+    <p>Możesz natknąć się na deklaracje dotyczące starszych wersji HTML. Są one bardziej skomplikowane:</p>
 
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</span>
 </code></pre></div>    </div>
 
-    <p>Technically this line is optional.  But if you don’t include it, most browsers default to “quirks mode” which basically means “turn on all the weird non-standard stuff from the 90s that we mostly agreed was a bad idea but we keep around for backwards compatibility”. Which is mostly fine … but specifying a doctype lets you be a bit more certain that your page will work the same in different browsers.</p>
+    <p>Z technicznego punktu widzenia ta linia kodu jest opcjonalna. Jednak, jeśli jej nie zamieśmy, większość przeglądarek z automatu wejdzie w “quirks mode” (pl. tryb osobliwości), czyli zacznie interpretować kod zakładając wykorzystywanie przestarzałych konstrukcji z lat 90 niezgodnych ze obowiązującymi standardami. Quirks mode pozwala na zachowanie kompatybilności wstecznej względem starych stron internetowych. Nie jest to do końca złe, ale dzięki sprecyzowaniu deklaracji dokumenty będziemy mieć pewność, że nasza strona wyświetli się w podobny sposób niezależnie od przeglądarki, którą użyjemy.</p>
   </li>
   <li>
     <p><code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code></p>
 
-    <p>Every HTML document should start with <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> and finish with <code class="highlighter-rouge">&lt;/html&gt;</code>.  Everything between them is considered to be part of the document.  Most tags work like this with an opening tag and a closing tag.</p>
+    <p>Każdy dokument powinien zacząć się od znacznika <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> a skończyć znacznikiem <code class="highlighter-rouge">&lt;/html&gt;</code>. Wszystko co zamieścimy między tymi znacznikami będzie uznane za część dokumentu. Większość znaczników (tagów) posiada znacznik otwierający(<code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code>) i zamykający (<code class="highlighter-rouge">&lt;/html&gt;</code>).</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">&lt;head&gt;</code> and <code class="highlighter-rouge">&lt;title&gt;</code></p>
+    <p><code class="highlighter-rouge">&lt;head&gt;</code> i <code class="highlighter-rouge">&lt;title&gt;</code></p>
 
-    <p>Inside the document we have two main parts, the document head and the document body.  The document head is enclosed by the <code class="highlighter-rouge">&lt;head&gt;</code> tags and can contain several other tags which provide mostly contains information about the document.  In this case we have two tags within the head: <code class="highlighter-rouge">&lt;title&gt;</code> and <code class="highlighter-rouge">&lt;meta&gt;</code>.</p>
+    <p>Nasz dokument HTML składa się z dwóch głównych części: “głowy” (head)  oraz “ciała” (body). Głowa dokumentu umieszczamy w znacznikach <code class="highlighter-rouge">&lt;head&gt;</code> <code class="highlighter-rouge">&lt;/head&gt;</code> i będzie zawierać kilka różnych znaczników, które zawierają informacje na temat dokumentu. W naszym przypadku zamieściliśmy dwa znaczniki <code class="highlighter-rouge">&lt;title&gt;</code> i <code class="highlighter-rouge">&lt;meta&gt;</code>.</p>
 
-    <p><code class="highlighter-rouge">&lt;title&gt;</code> tells the browser what the title of the document is.  Most browsers display this in the browser tab and window title. It also gets used when bookmarking a page.  See how the browser tab is now <em>Tiny Cakes!</em> instead of the filename? The <code class="highlighter-rouge">&lt;title&gt;</code> tag is why.</p>
+    <p><code class="highlighter-rouge">&lt;title&gt;</code> informuje przeglądarkę o tytule naszego dokumentu. Większość przeglądarek wyświetla tytuł dokumentu w zakładce lub oknie. Tytuł przydaje się również, kiedy zapisujemy daną stronę do zakładek. Rozumiesz już dlaczego przeglądarka wyświetla teraz <em>Tiny Cakes!</em> zamiast ścieżki? Dokładnie. Zdefiniowaliśmy nasz tytuł za pomocą znacznika <code class="highlighter-rouge">&lt;title&gt;</code>.</p>
 
-    <p><code class="highlighter-rouge">&lt;meta&gt;</code> is a way of providing some additional information to the browser about the page.  Here we are using it to tell the browser that we will be using the UTF-8 character set.  This is optional but recommended to ensure unicode characters are displayed correctly.</p>
+    <p>Tag <code class="highlighter-rouge">&lt;meta&gt;</code> to sposób na podanie przeglądarce dodatkowych informacji na temat strony. Tutaj używamy go w celu ustalenia jakiego kodowania znaków użyjemy. My zdecydowaliśmy się na UTF-8. Jest to opcjonalny krok, ale jeśli chcemy mieć pewność że znaki unicode (np. polskie znaki) będą wyświetlane prawidłowo to nie powinniśmy go ominąć.</p>
 
-    <p>There are a few other tags that can be used in head but we aren’t going to deal with those yet.</p>
+    <p>Istnieje oczywiście więcej znaczników, które możemy zamieścić w sekcji head naszej strony. Na dzisiaj wystarczą nam jednak te dwa.</p>
   </li>
   <li>
     <p><code class="highlighter-rouge">&lt;body&gt;</code></p>
 
-    <p>The <code class="highlighter-rouge">&lt;body&gt;</code> tag contains the content that the page is going to display.</p>
+    <p>Znacznik <code class="highlighter-rouge">&lt;body&gt;</code> to zawartość naszej strony web. To część widoczna w przeglądarce.</p>
   </li>
 </ol>
 
-<p>That sets out the basic framework of a HTML document. Now, let’s look at formatting the content in <code class="highlighter-rouge">&lt;body&gt;</code> so that the browser displays it nicely.</p>
+<p>To na tyle jeśli chodzi o podstawową strukturę dokumentu HTML. Teraz przejdziemy już do formatowania zawartości sekcji <code class="highlighter-rouge">&lt;body&gt;</code>.</p>
 
     
 

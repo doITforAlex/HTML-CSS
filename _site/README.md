@@ -4,7 +4,7 @@
 
 Podstawowe ustawienia Jekyll
 
-1. Zainstaluj ruby dla swojego systemu
+1. Zainstaluj język `Ruby` dla swojego systemu
 2. `gem install jekyll bundler`
 3. `bundle exec jekyll serve`
 

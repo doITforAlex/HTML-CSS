@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML: Styling Links</title>
-  <meta name="description" content="Our links are pretty plain. Just the default underlined blue text which turns purple once you have visited the link. Let’s make it more inline with our Tiny ...">
+  <title>HTML: Hiperłącza</title>
+  <meta name="description" content="Nasze hiperlinki wyglądają bardzo zwyczajnie. To podkreślony, niebieski tekst, który zmieni się na fiolet, gdy na niego klikniesz.">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step9/">
+  <link rel="canonical" href="/step9/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -84,73 +84,73 @@
   
       <li class=''>
         <a href="/step0/">
-          0 - What is the Web?
+          0 - Czym jest sieć web?
         </a>
       </li>
   
       <li class=''>
         <a href="/step1/">
-          1 - Tools of the Trade
+          1 - Narzędzia
         </a>
       </li>
   
       <li class=''>
         <a href="/step2/">
-          2 - Get Setup
+          2 - Konfiguracja
         </a>
       </li>
   
       <li class=''>
         <a href="/step3/">
-          3 - Marking it up
+          3 - Znaczniki
         </a>
       </li>
   
       <li class=''>
         <a href="/step4/">
-          4 - Formatting the Homepage
+          4 - Formatowanie strony głównej
         </a>
       </li>
   
       <li class=''>
         <a href="/step5/">
-          5 - Formatting Recipes
+          5 - Formatowanie przepisów.
         </a>
       </li>
   
       <li class=''>
         <a href="/step6/">
-          6 - Images
+          6 - Obrazki
         </a>
       </li>
   
       <li class=''>
         <a href="/step7/">
-          7 - Stylin&#39; with CSS
+          7 - Używamy CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step8/">
-          8 - CSS Selectors
+          8 - Selektory CSS
         </a>
       </li>
   
       <li class='active'>
         <a href="/step9/">
-          9 - Styling Links
+          9 - Hiperłącza
         </a>
       </li>
   
       <li class=''>
         <a href="/step10/">
-          10 - div and span
+          10 - div i span
         </a>
       </li>
   
       <li class=''>
         <a href="/step11/">
-          11 - And What Now?
+          11 - Co teraz?
         </a>
       </li>
   
@@ -161,15 +161,15 @@
   
   <header class="post-header">
       
-    <h2 class="post-title"> Step 9 - Styling Links</h2>
+    <h2 class="post-title"> Step 9 - Hiperłącza</h2>
     </header>
 
   <div class="post-content">
-    <p>Our links are pretty plain.
-Just the default underlined blue text which turns purple once you have visited the link.
-Let’s make it more inline with our Tiny Cakes! brand.</p>
+    <p>Nasze hiperlinki wyglądają bardzo zwyczajnie. To podkreślony, niebieski tekst, który zmieni się na fiolet, gdy na niego klikniesz.</p>
 
-<p>First let’s just change the default appearance of <code class="highlighter-rouge">&lt;a&gt;</code>:</p>
+<p>Zmieńmy to tak aby wpasowywało się w styl naszej strony Tiny Cakes!</p>
+
+<p>Najpierw zmieńmy wygląd <code class="highlighter-rouge">&lt;a&gt;</code>:</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span> <span class="p">{</span>
   <span class="nl">color</span><span class="p">:</span> <span class="m">#2f4f4f</span><span class="p">;</span>
@@ -179,15 +179,14 @@ Let’s make it more inline with our Tiny Cakes! brand.</p>
   <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">dashed</span> <span class="m">#ffb6c1</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
-
-<p>Save and refresh the homepage to check it out.</p>
+<p>Odświeżmy stronę i zobaczmy co się zmieniło.</p>
 
 <p><img src="../assets/css-fancy-links.png" alt="Fancy links" title="Fancy links" class="img-responsive imgbox" /></p>
 
-<p>The <code class="highlighter-rouge">text-decoration</code> declaration is what controls the underlining of a link.  Here we set that to <code class="highlighter-rouge">none</code> to turn it off.  Then we use <code class="highlighter-rouge">border-bottom</code> to create our own underline, and we use the <code class="highlighter-rouge">dashed</code> border system.  That is what lets us have the dashed-style underline.</p>
+<p>Deklaracja <code class="highlighter-rouge">text-decoration</code> wpływa na podkreślenie tekstu. Tutaj, ustawiliśmy wartość na <code class="highlighter-rouge">none</code> by pozbyć się podkreślenia. Następnie użyliśmy właściwości <code class="highlighter-rouge">border-bottom</code> aby zdefiniować nasze własne podkreślenie, któremu nadaliśmy wartość <code class="highlighter-rouge">dashed</code>. Pozwoliło nam to na otrzymanie lini przerywanej.</p>
 
-<p>Hmmm, that looks nicer but if you look at the homepage they are kind of mashed together a bit in the list.
-So let’s space out our lists a little, the items were a little too close together for my liking anyway.</p>
+<p>Hmmm, wygląda to ładniej, ale jeśli spojrzymy na stronę główną, to nasze hiperłącza trochę zlewają się ze sobą.
+Zróbmy trochę odstępu między elementami listy, są zdecydowanie za blisko siebie.</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">li</span> <span class="p">{</span>
   <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
@@ -196,38 +195,37 @@ So let’s space out our lists a little, the items were a little too close toget
 
 <p><img src="../assets/css-spaced-links.png" alt="Spaced links" title="Spaced links" class="img-responsive imgbox" /></p>
 
-<p>(You can’t see the cursor in this screenshot, but it’s hovering over the bottom link.)</p>
+<p>Na tym zrzucie ekranu nie widać kursora, ale najeżdża on na dolny link.</p>
 
-<p>Ok.
-That’s a bit better.
-But there is much more you can do with links.</p>
+<p>Znacznie lepiej.
+Ale możemy ulepszyć nasze linki jeszcze bardziej.</p>
 
-<p>The <code class="highlighter-rouge">&lt;a&gt;</code> element is interesting because it exists in multiple states:</p>
-
-<ol>
-  <li>When the page the link points to hasn’t been visited.</li>
-  <li>When the page has been visited.</li>
-  <li>When the mouse is over it.</li>
-  <li>When the keyboard focus on it.</li>
-  <li>When the mouse is actually clicking on it.</li>
-</ol>
-
-<p>Each of these states is styled independently using <strong>pseudo classes</strong>.
-Pseudo classes are like special classes that the browser uses to identify each state.</p>
-
-<p>The pseudo-classes for the <code class="highlighter-rouge">&lt;a&gt;</code> states listed above are:</p>
+<p>Element <code class="highlighter-rouge">&lt;a&gt;</code> jest ciekawy, ponieważ istnieje w wielu “stanach”:</p>
 
 <ol>
-  <li><code class="highlighter-rouge">link</code></li>
-  <li><code class="highlighter-rouge">visited</code></li>
-  <li><code class="highlighter-rouge">hover</code></li>
-  <li><code class="highlighter-rouge">focus</code></li>
-  <li><code class="highlighter-rouge">active</code></li>
+  <li>Gdy strona, do której prowadzi link, nie została odwiedzona.</li>
+  <li>Po odwiedzeniu strony.</li>
+  <li>Gdy mysz znajdzie się nad linkiem</li>
+  <li>Kiedy wybierzemy link za pomocą tabulatora.</li>
+  <li>Gdy klikniemy myszką na link.</li>
 </ol>
 
-<p>Now let’s style each one.</p>
+<p>Każdy z tych stanów jest stylizowany niezależnie przy użyciu <strong>pseudoklas</strong>.
+Pseudoklasy możemy uznać za klasy specjalne, których przeglądarka używa do identyfikacji każdego stanu.</p>
 
-<p>To use a pseudo-class you put a <code class="highlighter-rouge">:</code> between the element name and it’s pseudo-class.</p>
+<p>Pseudo-klasy <code class="highlighter-rouge">&lt;a&gt;</code> dla powyższych stanów są następujące:</p>
+
+<ol>
+  <li><code class="highlighter-rouge">link</code> (link podstawowy)</li>
+  <li><code class="highlighter-rouge">visited</code> (link odwiedzony)</li>
+  <li><code class="highlighter-rouge">hover</code> (najechanie myszą)</li>
+  <li><code class="highlighter-rouge">focus</code> (zogniskowanie)</li>
+  <li><code class="highlighter-rouge">active</code> (aktywacja)</li>
+</ol>
+
+<p>Określmy jakiś styl dla każdego z tych stanów.</p>
+
+<p>Aby użyć pseudoklasy wstawiamy dwukropek <code class="highlighter-rouge">:</code> pomiędzy nazwę elementu a jego pseudoklasę.</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>
   <span class="nl">color</span><span class="p">:</span> <span class="m">#778899</span><span class="p">;</span>
@@ -248,15 +246,15 @@ Pseudo classes are like special classes that the browser uses to identify each s
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>We didn’t style <code class="highlighter-rouge">:link</code> here because styling <code class="highlighter-rouge">a</code> does the same thing for our case.</p>
+<p>Nie musimy stylizować <code class="highlighter-rouge">:link</code>, ponieważ wcześniej ustaliliśmy styl dla <code class="highlighter-rouge">a</code>, co jest dokładnie tym samym co <code class="highlighter-rouge">:link</code>.</p>
 
 <p><img src="../assets/css-fancier-links.png" alt="Fancier links" title="Fancier links" class="img-responsive imgbox" /></p>
 
-<p>This order is important because the link styles build on one another, for example the styles in the first rule will apply to all the subsequent ones, and when a link is being activated, it is also being hovered over.  If you put the styles in a different order than you might get weird effects.</p>
+<p>Powyższa kolejność pseudoklas jest ważna, ponieważ style hiperlinków nadpisują się na sobie nawzajem. Na przykład style zdefiniowane wcześniej będą miały zastosowanie do wszystkich następnych. Gdy łącze zostanie aktywowane, zostanie również najechane wskaźnikiem myszy. Jeśli umieścisz style w innej kolejności, możesz uzyskać dziwny efekty.</p>
 
-<p>Note that these are pretty dramatic changes to link styling.  People are mostly used to the underlined text style so be careful changing it too dramatically. It can confuse and annoy people - and if the change is too dramatic, such as a change in font size that moves the text away from the tip of the mouse cursor, it might actually make your link impossible to click on.</p>
+<p>Zauważ, że dokonaliśmy dosyć drastycznych zmian w stylizacji linków. Użytkownicy są przyzwyczajeni do podkreślonego stylu tekstu, dlatego linki należy ostrożnie zmieniać. Duże zmiany mogą prowadzić do dezorientacji i denerwować użytkownika. W przypadku bardzo wyszukanych stylów (na przykład zmiana rozmiaru czcionki, która spowoduje, że tekst ucieknie od kursora myszy) może to uniemożliwić kliknięcie w link.</p>
 
-<p>You can learn much more about styling of links at
+<p>Tutaj dowiedz się więcej na temat stylów hiperlinków:
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links</p>
 
     

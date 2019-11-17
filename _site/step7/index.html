@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML: Stylin&#39; with CSS</title>
-  <meta name="description" content="So far our pages look pretty plain. This is because we haven’t specified any styles for them.">
+  <title>HTML: Używamy CSS</title>
+  <meta name="description" content="Na razie nasze strony wyglądają całkiem zwyczajnie. Jest tak, ponieważ nie określiliśmy dla nich żadnych stylów.">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step7/">
+  <link rel="canonical" href="/step7/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -84,73 +84,73 @@
   
       <li class=''>
         <a href="/step0/">
-          0 - What is the Web?
+          0 - Czym jest sieć web?
         </a>
       </li>
   
       <li class=''>
         <a href="/step1/">
-          1 - Tools of the Trade
+          1 - Narzędzia
         </a>
       </li>
   
       <li class=''>
         <a href="/step2/">
-          2 - Get Setup
+          2 - Konfiguracja
         </a>
       </li>
   
       <li class=''>
         <a href="/step3/">
-          3 - Marking it up
+          3 - Znaczniki
         </a>
       </li>
   
       <li class=''>
         <a href="/step4/">
-          4 - Formatting the Homepage
+          4 - Formatowanie strony głównej
         </a>
       </li>
   
       <li class=''>
         <a href="/step5/">
-          5 - Formatting Recipes
+          5 - Formatowanie przepisów.
         </a>
       </li>
   
       <li class=''>
         <a href="/step6/">
-          6 - Images
+          6 - Obrazki
         </a>
       </li>
   
       <li class='active'>
         <a href="/step7/">
-          7 - Stylin&#39; with CSS
+          7 - Używamy CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step8/">
-          8 - CSS Selectors
+          8 - Selektory CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step9/">
-          9 - Styling Links
+          9 - Hiperłącza
         </a>
       </li>
   
       <li class=''>
         <a href="/step10/">
-          10 - div and span
+          10 - div i span
         </a>
       </li>
   
       <li class=''>
         <a href="/step11/">
-          11 - And What Now?
+          11 - Co teraz?
         </a>
       </li>
   
@@ -161,35 +161,34 @@
   
   <header class="post-header">
       
-    <h2 class="post-title"> Step 7 - Stylin&#39; with CSS</h2>
+    <h2 class="post-title"> Step 7 - Używamy CSS</h2>
     </header>
 
   <div class="post-content">
-    <p>So far our pages look pretty plain.
-This is because we haven’t specified any styles for them.</p>
+    <p>Na razie nasze strony wyglądają całkiem zwyczajnie.
+Jest tak, ponieważ nie określiliśmy dla nich żadnych stylów.</p>
 
-<p>When you don’t specify any styles, the browser uses its default style for the “look” of the page.
-Most browsers use pretty similar default styles.</p>
+<p>Gdy strona nie ma określonych żadnych stylów, przeglądarka użyje swojego domyślnego stylu dla „wyglądu” strony. Większość przeglądarek ma dość podobne style domyślne.</p>
 
-<p>The system used by webpages to specify styles is called <strong>Cascading Style Sheets</strong> or <strong>CSS</strong>.</p>
+<p>System używany przez strony internetowe do określania stylów nosi nazwę <strong>Cascading Style Sheets\Kaskadowe arkusze stylów</strong> lub w skrócie <strong>CSS</strong>.</p>
 
-<p>Let’s create some simple styles for our pages.</p>
+<p>Stwórzmy zatem proste arkusze stylów dla naszych stron.</p>
 
-<p>Create a new file called <code class="highlighter-rouge">tinycakes.css</code> with the following content:</p>
+<p>Utwórz nowy plik o nazwie <code class="highlighter-rouge">tinycakes.css</code> o następującej treści:</p>
 
 <pre><code class="language-CSS">html {
   background-color: pink;
 }
 </code></pre>
 
-<p>Note the American spelling of colour.</p>
+<p>Zauważ, że używamy amerykańskiej pisowni słowa kolor (brytyjska - colour).</p>
 
-<p>Now edit <code class="highlighter-rouge">index.html</code> and each of the recipe pages &amp; add the following line inside the <code class="highlighter-rouge">&lt;head&gt;</code> section of each page.</p>
+<p>Edytuj plik <code class="highlighter-rouge">index.html</code> oraz podstrony z przepisami i w każdej z nich dodaj w sekcji <code class="highlighter-rouge">&lt;head&gt;</code>:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"tinycakes.css"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
-<p>So for example <code class="highlighter-rouge">index.html</code> would have a <code class="highlighter-rouge">&lt;head&gt;</code> that looks like:</p>
+<p>Dla przykładu, w naszym pliku <code class="highlighter-rouge">index.html</code> sekcja <code class="highlighter-rouge">&lt;head&gt;</code> będzie wyglądać teraz tak:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
   <span class="nt">&lt;title&gt;</span>Tiny Cakes!<span class="nt">&lt;/title&gt;</span>
@@ -197,53 +196,51 @@ Most browsers use pretty similar default styles.</p>
 <span class="nt">&lt;/head&gt;</span>
 </code></pre></div></div>
 
-<p>Refresh the page and it should now have a lovely pink background.</p>
+<p>Odśwież stronę. Powinniśmy mieć teraz urocze, różowe tło.</p>
 
 <p><img src="../assets/css-home-background.png" alt="Homepage with pink background" title="Homepage with pink background" class="img-responsive imgbox" /></p>
 
-<p>The <code class="highlighter-rouge">&lt;link&gt;</code> tag tells the page to use <code class="highlighter-rouge">tinycakes.css</code> as a stylesheet.</p>
+<p>Tag <code class="highlighter-rouge">&lt;link&gt;</code> mówi stronie, żeby używała pliku <code class="highlighter-rouge">tinycakes.css</code> jako arkusz stylu.</p>
 
-<p>Stylesheets are made up of one or more styles.
-A style is made up of a <strong>selector</strong> and a list of style <strong>declarations</strong> surrounded by braces.
-Each declaration must have a semicolon at the end.</p>
+<p>Arkusze stylów składają się z jednego lub więcej stylów.
+Styl składa się z <strong>selektora</strong> i listy <strong>deklaracji stylu</strong> otoczonych nawiasami klamrowymi.
+Każda deklaracja musi kończyć się średnikiem.</p>
 
-<p>The selector specifies what elements the style applies to.</p>
+<p>Selektor określa, do których elementów odnosi się styl.</p>
 
-<p>The declarations specify the style properties of the elements to set and what value to set them to.</p>
+<p>Deklaracje określają własności i ich wartości dla danych elementów stylu.</p>
 
-<p>In our example, the selector is <code class="highlighter-rouge">html</code> and the single declaration is <code class="highlighter-rouge">background-color: pink</code>.
-This obviously sets the background colour of the html element to pink.</p>
+<p>W naszym przykładzie selektorem jest <code class="highlighter-rouge">html</code>,  pojedyncza deklaracja (własność stylu: wartość) to<code class="highlighter-rouge"> background-color: pink</code>.
+Jak się można domyślić, ustawia nam to kolor tła elementu HTML, czyli całego dokumentu na różowy.</p>
 
-<p>There are many style properties that you can set on each element.
-You can find a full list of them and how they can be used here:
+<p>Istnieje wiele własności stylu, które można ustawić dla każdego elementu.
+Pełna lista oraz sposób ich wykorzystania znajduje się tutaj:
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</p>
 
 <!-- <div class="aside"> -->
-<h3 id="about-colours">About Colours</h3>
+<h3 id="kolory">Kolory</h3>
 
-<p>There are three different ways you can specify a colour:</p>
+<p>Kolory możemy zdefiniować na trzy sposoby:</p>
 
 <ol>
-  <li>By using a colour keyword: <code class="highlighter-rouge">pink</code> is pink</li>
-  <li>By using functional notation: <code class="highlighter-rouge">rgb(255, 192, 203)</code> is pink</li>
-  <li>By using hexadecimal (HEX) notation: <code class="highlighter-rouge">#ffc0cb</code> is also pink.</li>
+  <li>Możemy użyć słowa kluczowego dla danego koloru: <code class="highlighter-rouge">pink</code> to różowy</li>
+  <li>Możemy użyć notacji RGB: <code class="highlighter-rouge">rgb(255, 192, 203)</code> to różowy</li>
+  <li>Możemy użyć zapisu heksadecymalnego HEX (szesnastkowego): <code class="highlighter-rouge">#ffc0cb</code> to też różowy.</li>
 </ol>
 
-<p>The functional notation uses three values, one for red, one for green, and one for blue, AKA RGB values.
-The values are from 0 to 255.
-There is also a <code class="highlighter-rouge">rgba</code> version of this where you can specify a fourth value, a percentage to represent transparency (or <strong>alpha</strong> value).</p>
+<p>Notacja RGB używa trzech wartości, jednej dla barwy czerwonej, jednej dla barwy zielonej i jednej dla barwy niebieskiej, czyli wartości R(ed)G(reen)B(blue). Wartości znajdują się w przedziale od 0 do 255. Istnieje również rozszerzona wersja „RGBA”, w której można określić czwartą wartość, przeźroczystość, którą określamy w procentach (wartość <strong>alfa</strong>).</p>
 
-<p>The hexadecimal notation has a <code class="highlighter-rouge">#</code> character followed by three numbers in hexadecimal format to represent the same three red, green, and blue values.</p>
+<p>Notacja szesnastkowa HEX zaczyna się znakiem #, po którym następują trzy liczby w formacie szesnastkowym, reprezentujące te same trzy wartości jak w przypadku RGB: czerwony, zielony i niebieski.</p>
 
-<p>Many graphics apps will let you pick a colour and get the hexadecimal or RGB values for it.
-If you Google for colour pickers you will find many apps and web apps that let you do this too.</p>
+<p>Wiele narzędzi pozwala wybrać kolor i znaleźć dla niego wartości HEX lub RGB. Wygoogluj prosty przykład: colour picker.
+Ponadto znajdziesz wiele aplikacji i stron internetowych oferujących podobne funkcje, jak na przykład: coolors.co/app, schemecolor.com, paletton.com.</p>
 
-<p>There is good documentation on colour values here:
+<p>Polecamy poniższą dokumentację dotyczącą kolorów:
 https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
 <!-- </div> --></p>
 
-<p>Let’s add a style for <code class="highlighter-rouge">&lt;body&gt;</code>.
-Add the following to <code class="highlighter-rouge">tinycakes.css</code> after the <code class="highlighter-rouge">html</code> style.</p>
+<p>Dodajmy teraz styl do części <code class="highlighter-rouge">&lt;body&gt;</code>.
+Dodamy arkusz stylu <code class="highlighter-rouge">tinycakes.css</code> zaraz po stylu <code class="highlighter-rouge">html</code>.</p>
 
 <pre><code class="language-CSS">body {
   background-color: white;
@@ -259,14 +256,15 @@ Add the following to <code class="highlighter-rouge">tinycakes.css</code> after 
 <p><img src="../assets/css-home-body-bg.png" alt="A pink background and white body background" title="A pink background and white body background" class="img-responsive imgbox" /></p>
 
 <ol>
-  <li>We set the background color to white.</li>
-  <li>We set the maximum width of the body to 800 pixels.  By default <code class="highlighter-rouge">&lt;body&gt;</code> will have a width of 100% because it is a block element.  Setting <code class="highlighter-rouge">max-width</code> means it will still try to be 100% but will never go wider than 800px.</li>
-  <li>We use the <code class="highlighter-rouge">margin</code> property to set the top and bottom margins to <code class="highlighter-rouge">20px</code> and the left and right margins to <code class="highlighter-rouge">auto</code>.  The <code class="highlighter-rouge">margin</code> property is the space around an element. <code class="highlighter-rouge">auto</code> means it will make both left and right margins equal to the width of the page minus the width of the element.  This effectively centers the element.  Try re-sizing the browser window to see this effect.</li>
-  <li>We set <code class="highlighter-rouge">padding</code> to <code class="highlighter-rouge">20px</code>.  Padding is the space between the outer edge of the element and its content.</li>
-  <li>We specified a sans serif font for the text. By default most browsers use a serif font.  We could have also named a specific font, like “Times New Roman” or “Courier”, but if that font doesn’t exist on the user’s machine then their browser will just use its default font anyway.</li>
+  <li>Ustawiliśmy kolor tła na biały.</li>
+  <li>Ustawiliśmy maksymalną szerokość sekcji &lt;body&gt; na 800 pikseli. Domyślnie <code class="highlighter-rouge">&lt;body&gt;</code> ma szerokość 100%, ponieważ należy do elementów blokowych. Właściwość <code class="highlighter-rouge">max-width</code> oznacza, że ​​&lt;body&gt; nadal będzie “próbowało” osiągnąć szerokość 100%, ale nigdy nie będzie szersze niż 800 pikseli.</li>
+  <li>Użyliśmy deklaracji <code class="highlighter-rouge">margin</code>, aby ustawić wartość  górnego i dolnego marginesu na <code class="highlighter-rouge">20px</code>, a lewego i prawego marginesu na <code class="highlighter-rouge">auto</code>. Właściwość <code class="highlighter-rouge">margin</code> to przestrzeń wokół elementu. Właściwość <code class="highlighter-rouge">auto</code> oznacza, że ​​zarówno lewy, jak i prawy margines będą równe szerokości strony po odjęciu od niej szerokości elementu. Taki zabieg wycentruje element. Spróbuj teraz zmienić rozmiar okna przeglądarki, aby zobaczyć ten efekt.</li>
+  <li>Ustawiliśmy <code class="highlighter-rouge">padding</code> na <code class="highlighter-rouge">20px</code>. Padding to odstęp między zewnętrzną krawędzią elementu a jego zawartością (tzw. margines wewnętrzny).</li>
+  <li>Określiliśmy czcionkę bezszeryfową dla tekstu. Domyślnie większość przeglądarek używa czcionki szeryfowej. Moglibyśmy wybrać konkretną czcionkę, na przykład „Times New Roman” lub „Courier”, ale jeśli ta czcionka nie istnieje na komputerze użytkownika to przeglądarka i tak użyje domyślnej czcionki.</li>
 </ol>
 
-<p>Now that we’ve seen some more examples of style properties let’s go to the next step and examine selectors more carefully.</p>
+<p>W tym kroku poznaliśmy różne przykłady wartości stylu. Przyjrzymy się bliżej selektorom w następnym kroku.</p>
+
 
     
 

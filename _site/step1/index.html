@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML: Tools of the Trade</title>
-  <meta name="description" content="The best thing about making web pages is that you don’t really need very much to get started.">
+  <title>HTML: Narzędzia</title>
+  <meta name="description" content="Najlepszą rzeczą przy tworzeniu stron internetowych jest fakt, że tak naprawdę nie potrzebujesz wiele na start.">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step1/">
+  <link rel="canonical" href="/step1/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -84,73 +84,73 @@
   
       <li class=''>
         <a href="/step0/">
-          0 - What is the Web?
+          0 - Czym jest sieć web?
         </a>
       </li>
   
       <li class='active'>
         <a href="/step1/">
-          1 - Tools of the Trade
+          1 - Narzędzia
         </a>
       </li>
   
       <li class=''>
         <a href="/step2/">
-          2 - Get Setup
+          2 - Konfiguracja
         </a>
       </li>
   
       <li class=''>
         <a href="/step3/">
-          3 - Marking it up
+          3 - Znaczniki
         </a>
       </li>
   
       <li class=''>
         <a href="/step4/">
-          4 - Formatting the Homepage
+          4 - Formatowanie strony głównej
         </a>
       </li>
   
       <li class=''>
         <a href="/step5/">
-          5 - Formatting Recipes
+          5 - Formatowanie przepisów.
         </a>
       </li>
   
       <li class=''>
         <a href="/step6/">
-          6 - Images
+          6 - Obrazki
         </a>
       </li>
   
       <li class=''>
         <a href="/step7/">
-          7 - Stylin&#39; with CSS
+          7 - Używamy CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step8/">
-          8 - CSS Selectors
+          8 - Selektory CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step9/">
-          9 - Styling Links
+          9 - Hiperłącza
         </a>
       </li>
   
       <li class=''>
         <a href="/step10/">
-          10 - div and span
+          10 - div i span
         </a>
       </li>
   
       <li class=''>
         <a href="/step11/">
-          11 - And What Now?
+          11 - Co teraz?
         </a>
       </li>
   
@@ -161,56 +161,44 @@
   
   <header class="post-header">
       
-    <h2 class="post-title"> Step 1 - Tools of the Trade</h2>
+    <h2 class="post-title"> Step 1 - Narzędzia</h2>
     </header>
 
   <div class="post-content">
-    <p>The best thing about making web pages is that you don’t really need very much to get started.</p>
+    <p>Najlepszą rzeczą przy tworzeniu stron internetowych jest fakt, że tak naprawdę nie potrzebujesz wiele na start.</p>
 
-<p>You need:</p>
+<p>Potrzebujesz:</p>
 
 <ol>
-  <li>A Web Browser to view &amp; test your pages.</li>
-  <li>A Text Editor to edit your pages</li>
+  <li>Przeglądarkę internetową by zobaczyć i przetestować swoją stronę.</li>
+  <li>Edytor tekstowy zaprojektowany do tworzenia i edycji stron web, tzw. edytor kodu.</li>
 </ol>
 
-<p>Any of the major browsers is fine (Firefox, Chrome, Internet Explorer, Edge, Safari).
-Use which ever one you prefer to use for browsing.</p>
+<p>Możesz użyć jakiejkolwiek popularnej przeglądarki (Firefox, Chrome, Internet Explorer, Edge, Safari). Wybierz tą, z której korzystasz na co dzień.</p>
 
-<h2 id="text-editors-source-code--plain-text">Text Editors, source code &amp; plain text</h2>
+<h2 id="edytory-kodu-kod-źródłowy-i-czysty-tekst">Edytory kodu, kod źródłowy i czysty tekst</h2>
 
-<p>You can’t use a word processor like Microsoft Word, Apple Pages, or Google Docs to edit the source code of web pages.</p>
+<p>Niestety, normalne edytory tekstu (właściwie procesory tekstu) jak Microsoft Word, Apple Page czy Google Docs nie nadają się do edycji kodu źródłowego strony web.</p>
 
-<p>The reason you can’t use a word processor is because what those programs actually write into their files is more than just the text, it includes all sorts of extra formatting information those programs insert formatting information into the files.  Some of them let you export a document as a webpage, but it is far from ideal.</p>
+<p>Nie używamy programu do edycji dokumentów tekstowych (np. Word), ponieważ tego typu programy zapisują do plików znacznie więcej informacji niż tylko czysty tekst. W formatach dokumentów pojawiają się niewidoczne dla nas informacje o formatowaniu treści (styl tekstu, czcionka, rozkład marginesów itp.) zbędnych dla pliku pisanego w html. Niektóre z edytorów owszem, pozwalają na zapisanie pliku na potrzeby <em>webowe</em>, ale wynik będzie daleki od oczekiwanego.</p>
 
-<p>You need to use type of program called a <strong>text editor</strong> to edit the code.</p>
+<p>Program, którego potrzebujesz to  <strong>edytor tekstu</strong> lub <strong>edytor kodu</strong>. Na start polecamy przyjazny początkującym program Visual Studio Code (dalej w tekście będziemy używać skrótu VSC) o przyjemnym interfejsie. <a href="http://code.visualstudio.com">Kliknij tutaj by pobrać VSC</a>.</p>
 
-<p>We recommend getting started with an editor called Atom.<br />
-You can download Atom from its <a href="http://atom.io">website</a>.</p>
+<p>Edytor tekstu to program, który zapisuje nasze komendy rozumiane przez komputer w najprostszy możliwy sposób. Pozwala nam pisać i edytować czysty tekst bez formatowania jak pogrubienie czy kursywa. Jest to o tyle ważne, że kod źródłowy stron oraz inne programy są pisane zawsze czystym tekstem.</p>
 
-<p><img src="../assets/atom-editor.png" alt="The Atom text editor" title="The Atom text editor" class="img-responsive imgbox" /></p>
-
-<p>A text editor is a program that lets you write and edit plain text.  Just the text.  Nothing but the text.  There is no formatting.  There is no bold, no italics, nothing.  Just the text.</p>
-
-<p>This is important because source code for webpages and all other software is always in plain text.</p>
-
-<p>You actually already have a text editor on your computer, Notepad on Windows and TextEdit on macOS.
-While those programs will work, we don’t recommend it except in an emergency because they lack features that make coding easier.</p>
-
-<p>Many text editors like Atom are actually designed specifically for coding and include features to make it easier.</p>
+<p>Prawdopodobnie posiadasz już jakiś edytor tekstu na swoim komputerze. To właśnie stary, poczciwy Notatnik w przypadku systemu Windows, bądź TexEdit w systemie macOS. Użytkownicy Linuxa zapewne posiadają Leafpad. Programy te oczywiście działają i choć wielu programistów zaczynało swoją karierę od nich to nie są polecane są do codziennego użytku. Lepsze będą <strong>edytory kodu</strong>, które posiadają specjalne udogodnienia ułatwiające pisanie kodu. Zostały one bowiem specjalnie zaprojektowane dla programistów by ułatwić im prace i posiadają przydatne funkcje:</p>
 
 <ul>
-  <li>A project or file explorer view so you don’t have to switch between your editor &amp; file manager</li>
-  <li>Multiple editor tabs so you can have multiple files open and switch between them easily.</li>
-  <li>Syntax highlighting which colours different parts of your code depending on the type of code.  This can make it easier to read your code.</li>
+  <li>Widok kontekstu projektu lub pliku, dzięki któremu nie musisz przełączać się między edytorem a menedżerem plików.</li>
+  <li>Możliwość otworzenie wielu kart edytora, co ułatwia przełączanie się między plikami (np. między plikiem HTML a CSS).</li>
+  <li>Podświetlanie składni czyli różne zabarwienie części kodu w zależności od jego rodzaju. Pomaga to w odczytaniu kodu.</li>
 </ul>
 
-<p>Some editors can also detect when your code doesn’t make any sense and highlight this for you.</p>
+<p>Niektóre z edytorów kodu dodatkowo potrafią znaleźć i wskazać błąd w twoim kodzie np. po przez podkreślenie oraz podpowiedzieć poprawkę.</p>
 
-<p>We assume you are using Atom for this workshop, but there are many other excellent editors available.
-They all have their pros and cons and users that swear by them.</p>
+<p>Przyjmiemy, że na potrzeby tych warsztatów będziesz korzystać z VSC, ale oczywiście istnieje wiele innych, świetnych edytorów kodu (Sublime, Atom itp.). Wszystkie mają swoje plusy i minusy oraz oddanych użytkowników. Wybór narzędzia zależy już od osobistych preferencji.</p>
 
-<p>Download <a href="http://atom.io">Atom</a>, install it and continue to the next step.</p>
+<p>Jeśli nie posiadasz jeszcze VSC, <a href="http://code.visualstudio.com">zainstaluj</a> go teraz i przejdź do następnego kroku.</p>
 
     
 

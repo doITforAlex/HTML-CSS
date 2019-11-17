@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML: Get Setup</title>
-  <meta name="description" content="What we’re building">
+  <title>HTML: Konfiguracja</title>
+  <meta name="description" content="Co fajnego stworzymy?">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step2/">
+  <link rel="canonical" href="/step2/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -84,73 +84,73 @@
   
       <li class=''>
         <a href="/step0/">
-          0 - What is the Web?
+          0 - Czym jest sieć web?
         </a>
       </li>
   
       <li class=''>
         <a href="/step1/">
-          1 - Tools of the Trade
+          1 - Narzędzia
         </a>
       </li>
   
       <li class='active'>
         <a href="/step2/">
-          2 - Get Setup
+          2 - Konfiguracja
         </a>
       </li>
   
       <li class=''>
         <a href="/step3/">
-          3 - Marking it up
+          3 - Znaczniki
         </a>
       </li>
   
       <li class=''>
         <a href="/step4/">
-          4 - Formatting the Homepage
+          4 - Formatowanie strony głównej
         </a>
       </li>
   
       <li class=''>
         <a href="/step5/">
-          5 - Formatting Recipes
+          5 - Formatowanie przepisów.
         </a>
       </li>
   
       <li class=''>
         <a href="/step6/">
-          6 - Images
+          6 - Obrazki
         </a>
       </li>
   
       <li class=''>
         <a href="/step7/">
-          7 - Stylin&#39; with CSS
+          7 - Używamy CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step8/">
-          8 - CSS Selectors
+          8 - Selektory CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step9/">
-          9 - Styling Links
+          9 - Hiperłącza
         </a>
       </li>
   
       <li class=''>
         <a href="/step10/">
-          10 - div and span
+          10 - div i span
         </a>
       </li>
   
       <li class=''>
         <a href="/step11/">
-          11 - And What Now?
+          11 - Co teraz?
         </a>
       </li>
   
@@ -161,32 +161,29 @@
   
   <header class="post-header">
       
-    <h2 class="post-title"> Step 2 - Get Setup</h2>
+    <h2 class="post-title"> Step 2 - Konfiguracja</h2>
     </header>
 
   <div class="post-content">
-    <h2 id="what-were-building">What we’re building</h2>
+    <h2 id="co-fajnego-stworzymy">Co fajnego stworzymy?</h2>
 
-<p>So we are going to learn HTML &amp; CSS by creating a simple recipes website with a few pages.</p>
+<p>Naszym zadaniem jest nauczenie się HTML i CSS poprzez stworzenie prostej strony z przepisami.</p>
 
-<p><img src="../assets/css-fixed-homepage.png" alt="Tiny Cakes!" title="Tiny Cakes!" class="img-responsive imgbox" /></p>
+<p><img src="../assets/css-fixed-homepage.png" alt="Mini Torciki!" title="Mini Torciki!" class="img-responsive imgbox" /></p>
 
-<h2 id="setup">Setup</h2>
+<h2 id="konfiguracja">Konfiguracja</h2>
 
-<p>Create a folder somewhere on your computer that makes sense for you and call it <code class="highlighter-rouge">learn-html-workshop</code>.
-Everything we create in this workshop will be created in that folder.
-It could be on your desktop, or your documents folder, or wherever.</p>
+<p>Utwórz folder w wybranym dla siebie miejscu na komputerze (najlepiej pulpicie, żeby nie szukać później) i nazwij go <code class="highlighter-rouge">warsztaty-html</code>. Wszystko co stworzymy dzisiaj umieścimy w tym folderze.</p>
 
-<p>Now open Atom.  If this is the first time you have launched it it display the Welcome Guide.
-Close those two tabs for now.</p>
+<p>Teraz otworzymy sobie program VSC. To pierwszy raz kiedy go uruchamiasz, więc pojawi Ci się powitanie i porady. Zamknij je na razie.</p>
 
-<p>Go to the <code class="highlighter-rouge">File</code> menu, select <code class="highlighter-rouge">Add Project Folder</code>, browse to your <code class="highlighter-rouge">learn-html-workshop</code> folder and click <code class="highlighter-rouge">open</code>.</p>
+<p>Przejdź w menu do zakładki <code class="highlighter-rouge">File</code> i wybierz <code class="highlighter-rouge">Open Folder</code>, następnie znajdź nasz folder <code class="highlighter-rouge">warsztaty-html</code> i otwórz go.</p>
 
-<p>Now you should see the Project view open on the left side with your folder visible.</p>
+<p>Teraz po lewej stronie programu powinien pojawić się <code class="highlighter-rouge">Explorer</code> z widokiem Twojego folderu.</p>
 
 <p><img src="../assets/atom-blank.png" alt="Creating a project in Atom" title="Creating a project in Atom" class="img-responsive imgbox" /></p>
 
-<p>Now we will create the three files that we will be working on.  The file names are:</p>
+<p>Teraz sobie utworzymy 3 różne pliki na których będziemy pracować. Będą to:</p>
 
 <ul>
   <li><code class="highlighter-rouge">index.html</code></li>
@@ -194,25 +191,23 @@ Close those two tabs for now.</p>
   <li><code class="highlighter-rouge">muffins.html</code></li>
 </ul>
 
-<p>To create a new file in Atom, right-click on the folder in the Project view, select <code class="highlighter-rouge">New File</code> from the menu, and type in the filename in the popup-box.</p>
+<p>Aby utworzyć nowy plik w programie, najedź kursorem myszy na otwarty w explorerze folder <code class="highlighter-rouge">warsztaty-html</code>. Teraz przy nazwie folderu powinny pojawić się 4 ikony. Kliknij na pierwszą od lewej i wprowadź nazwę pliku w okienku, które pojawi się pod folderem. Możesz również skorzystać z menu file -&gt; new file, ale dzięki użyciu explorera Twój plik od razu zostanie utworzony w miejscu, którym chcesz.</p>
 
-<p>As each file is created it will be automatically opened in a new editor tab by Atom.</p>
+<p>Każdy nowo utworzony plik zostanie automatycznie otworzony w nowej karcie programu.</p>
 
 <p><img src="../assets/atom-empty-files.png" alt="Empty files in Atom" title="Empty files in Atom" class="img-responsive imgbox" /></p>
 
-<p>Once you have created all three new files, open each one by selecting it in the Project view (or clicking on its tab if it’s already open) and pasting in the following content below.</p>
-
-<p>Each file has its own block of content to add.</p>
+<p>Po utworzeniu trzech nowych plików o podanych wcześniej nazwach, otwórz każdy z nich w nowej karcie i wklej teksty, które znajdziesz poniżej. Dodaj je do każdego pliku z osobna.</p>
 
 <p><img src="../assets/atom-unformatted-files.png" alt="Content added to files" title="Content added to files" class="img-responsive imgbox" /></p>
 
-<p>Don’t forget to save each file as you make changes.  You can save using the <code class="highlighter-rouge">File</code> menu, <code class="highlighter-rouge">ctrl</code>-<code class="highlighter-rouge">s</code> on Windows/Linux, or  <code class="highlighter-rouge">CMD</code>-<code class="highlighter-rouge">s</code> on macOS.</p>
+<p>Nie zapomnij zapisać zmian w swoich plikach.  Możesz to zrobić w menu <code class="highlighter-rouge">File</code>, bądź użyć skrótów klawiszowych: <code class="highlighter-rouge">CTRL</code>+<code class="highlighter-rouge">s</code> dla systemów Windows oraz Linux, <code class="highlighter-rouge">CMD ⌘</code>+<code class="highlighter-rouge">s</code> w przypadku systemu macOS.</p>
 
-<p>Hint: When an file in Atom has unsaved content you will see a little blue dot on the right on it’s tab.</p>
+<p>Porada: Jeśli w pliku pojawiły się niezapisane zmiany zauważysz małą kropkę po prawej stronie zakładki.</p>
 
-<h2 id="our-content">Our content</h2>
+<h2 id="nasza-treść">Nasza treść</h2>
 
-<h3 id="indexhtml">index.html</h3>
+<h3 id="dla-pliku-indexhtml">Dla pliku index.html</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tiny Cakes!
 -----------
@@ -225,7 +220,7 @@ Here are the recipes that we have:
 * Muffins
 </code></pre></div></div>
 
-<h3 id="traditional-cupcakeshtml">traditional-cupcakes.html</h3>
+<h3 id="dla-pliku-traditional-cupcakeshtml">Dla pliku traditional-cupcakes.html</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Traditional Cupcakes
 --------------------
@@ -259,7 +254,7 @@ Method:
 9. Decorate with sprinkles.
 </code></pre></div></div>
 
-<h3 id="muffinshtml">muffins.html</h3>
+<h3 id="dla-pliku-muffinshtml">Dla pliku muffins.html</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Muffins
 -------
@@ -308,7 +303,7 @@ Bacon Muffins:
  * Add 3 strips bacon, fried crisp and crumbled, to the batter.
 </code></pre></div></div>
 
-<p>Once you’ve added the content to each file continue to the next step.</p>
+<p>Pod dodaniu zawartości do każdego pliku przejdź do kolejnego etapu :)</p>
 
     
 

@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML: Images</title>
-  <meta name="description" content="Images">
+  <title>HTML: Obrazki</title>
+  <meta name="description" content="Obrazki">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step6/">
+  <link rel="canonical" href="/step6/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -84,73 +84,73 @@
   
       <li class=''>
         <a href="/step0/">
-          0 - What is the Web?
+          0 - Czym jest sieć web?
         </a>
       </li>
   
       <li class=''>
         <a href="/step1/">
-          1 - Tools of the Trade
+          1 - Narzędzia
         </a>
       </li>
   
       <li class=''>
         <a href="/step2/">
-          2 - Get Setup
+          2 - Konfiguracja
         </a>
       </li>
   
       <li class=''>
         <a href="/step3/">
-          3 - Marking it up
+          3 - Znaczniki
         </a>
       </li>
   
       <li class=''>
         <a href="/step4/">
-          4 - Formatting the Homepage
+          4 - Formatowanie strony głównej
         </a>
       </li>
   
       <li class=''>
         <a href="/step5/">
-          5 - Formatting Recipes
+          5 - Formatowanie przepisów.
         </a>
       </li>
   
       <li class='active'>
         <a href="/step6/">
-          6 - Images
+          6 - Obrazki
         </a>
       </li>
   
       <li class=''>
         <a href="/step7/">
-          7 - Stylin&#39; with CSS
+          7 - Używamy CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step8/">
-          8 - CSS Selectors
+          8 - Selektory CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step9/">
-          9 - Styling Links
+          9 - Hiperłącza
         </a>
       </li>
   
       <li class=''>
         <a href="/step10/">
-          10 - div and span
+          10 - div i span
         </a>
       </li>
   
       <li class=''>
         <a href="/step11/">
-          11 - And What Now?
+          11 - Co teraz?
         </a>
       </li>
   
@@ -161,53 +161,53 @@
   
   <header class="post-header">
       
-    <h2 class="post-title"> Step 6 - Images</h2>
+    <h2 class="post-title"> Step 6 - Obrazki</h2>
     </header>
 
   <div class="post-content">
-    <h2 id="images">Images</h2>
+    <h2 id="obrazki">Obrazki</h2>
 
-<p>We can add images to our pages using the <strong>image</strong> tag, <code class="highlighter-rouge">&lt;img&gt;</code>.</p>
+<p>Obrazki na naszą stronę dodajemy za pomocą tagu <strong>image/obrazek</strong> <code class="highlighter-rouge">&lt;img&gt;</code>.</p>
 
-<p>Let’s add a logo to our homepage above the <code class="highlighter-rouge">Tiny Cakes!</code> heading.</p>
+<p>Dodajmy zatem logo naszej strony powyżej nagłówka <code class="highlighter-rouge">Tiny Cakes!</code>.</p>
 
-<p>First of course you will need some images to use.  Go to https://openclipart.org/detail/298756/cupcake-2 and download the small version.  Move the downloaded file to our workshop folder and rename it to <code class="highlighter-rouge">tinycakes.png</code></p>
+<p>Oczywiście będziemy potrzebowali jakiś obrazków.  Przejdź do https://openclipart.org/detail/298756/cupcake-2 i ściągnij na swój komputer mniejszy obrazek.  Przenieś teraz plik do folderu w którym stworzyliśmy nasze strony i zmień jego nazwę na <code class="highlighter-rouge">tinycakes.png</code></p>
 
-<p>Edit <code class="highlighter-rouge">index.html</code> and put the following on the line before the  <code class="highlighter-rouge">&lt;h1&gt;</code>:</p>
+<p>Otwórz <code class="highlighter-rouge">index.html</code> i wklej poniższy kod przed znacznikiem  <code class="highlighter-rouge">&lt;h1&gt;</code>:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"tinycakes.png"</span> <span class="na">title=</span><span class="s">"Tiny Cakes!"</span> <span class="na">alt=</span><span class="s">"The Tiny Cakes logo, a stylized cartoon cupcake."</span><span class="nt">/&gt;</span>
 </code></pre></div></div>
 
-<p>Save it and refresh the page.</p>
+<p>Zapisz i odśwież stronę.</p>
 
 <p><img src="../assets/browser-homepage-image.png" alt="The home page with an image" title="The home page with an image" class="img-responsive imgbox" /></p>
 
-<p>Nice. So what do we have here?</p>
+<p>Nieźle! Spójrzmy na nowy fragment kodu.</p>
 
-<p>The <code class="highlighter-rouge">src</code> attribute specifies the URL for the image.  This can be a relative path or a whole URL, just like the <code class="highlighter-rouge">href</code> attribute of <code class="highlighter-rouge">&lt;a&gt;</code>.</p>
+<p>Atrybut <code class="highlighter-rouge">src</code> informuje o ścieżce (adresie url) obrazu. 
+Może to być ścieżka względna lub cały adres URL, podobnie jak w przypadku atrybutu <code class="highlighter-rouge">href</code> parametru<code class="highlighter-rouge"> &lt;a&gt; </code>.</p>
 
-<p>The <code class="highlighter-rouge">title</code> attribute should be the title of the image.  Some browsers display this as a tool tip on the image.</p>
+<p>W atrybucie <code class="highlighter-rouge">title</code> umieszczamy nazwę obrazka.  W niektórych przeglądarkach wyświetli się ona jako tool tip, czyli napis w bloku, który pojawia się po najechaniu kursora na obrazek.</p>
 
-<p>The <code class="highlighter-rouge">alt</code> attribute should be a description of the image.  This gets displayed when the image cannot be displayed.</p>
+<p>Atrybut <code class="highlighter-rouge">alt</code> powinien zawierać opis obrazka. Tekst wprowadzony tutaj wyświetli się, kiedy obrazek nie będzie mógł zostać wyświetlony przez przeglądarkę.</p>
 
-<p>The <code class="highlighter-rouge">title</code> and <code class="highlighter-rouge">alt</code> attributes are very important for people with limited sight as they might be relying on software to read a page to them.</p>
+<p>Atrybuty <code class="highlighter-rouge">title</code> i <code class="highlighter-rouge">alt</code> są ważne dla osób niewidomych bądź słabym wzroku, gdyż mogą one korzystać ze specjalnych oprogramowań czytających dla nich strony web.</p>
 
-<p>You can set the <code class="highlighter-rouge">height</code> and <code class="highlighter-rouge">width</code> attributes on an image as well to control its size.</p>
+<p>Atrybuty<code class="highlighter-rouge">height</code> i <code class="highlighter-rouge">width</code> służą do kontrolowania wielkości obrazu.</p>
 
-<p>Update the image tag as follows to make the size a little more reasonable:</p>
+<p>Może zaktualizujemy nasz tag <code class="highlighter-rouge">&lt;img&gt;</code> aby nasz obrazek był nieco mniejszy.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"tinycakes.png"</span> <span class="na">title=</span><span class="s">"Tiny Cakes!"</span> <span class="na">alt=</span><span class="s">"The Tiny Cakes logo, a stylized cartoon cupcake."</span> <span class="na">height=</span><span class="s">"47"</span> <span class="na">width=</span><span class="s">"37"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
+<p>Zauważ, że tag img nie znaczników otwierających i zamykających. Po prostu kończy się <code class="highlighter-rouge">/&gt;</code> zamiast <code class="highlighter-rouge">&gt;</code>.  Nazywa się to <strong>tagiem samozamykającym</strong>. Takich tagów jest w HTML kilka. Zwykle są to tagi określające element strony, który nie jest tekstem. W naszym przypadku obraz.</p>
 
-<p>Notice that the image tag doesn’t have opening &amp; closing tags.  It just has a <code class="highlighter-rouge">/&gt;</code> instead of <code class="highlighter-rouge">&gt;</code> in the tag.  This is called a <strong>self-closing tag</strong>.  There are a few of these in HTML.  Usually they are tags that specify an element of the page that isn’t text.  In this case an image.</p>
-
-<p>Before you go to the next step, try to add an appropriate image to each recipe page.  Use a stock image site like https://www.stockfreeimages.com/ to find and save a photo of cupcakes and one of muffins and add them to each of the recipe pages.</p>
+<p>Zanim przejdziesz do następnego kroku, spróbuj dodać odpowiedni obraz do każdej strony z przepisami. Skorzystaj ze strony z obrazkami, np. https://www.stockfreeimages.com/, aby znaleźć i zapisać zdjęcia babeczek i muffinek oraz dodać je do odpowiednich podstron z przepisami.</p>
 
 <p><img src="../assets/browser-cupcakes-image.png" alt="The cupcakes page with an image" title="The cupcakes page with an image" class="img-responsive imgbox" /></p>
 
 <p><img src="../assets/browser-muffins-image.png" alt="The muffins page with an image" title="The muffins page with an image" class="img-responsive imgbox" /></p>
 
-<p>In the next step we will learn how to use CSS to take those plain pages and jazz them up a little.</p>
+<p>W następnym kroku poznasz i nauczysz się jak korzystać CSS by odpicować nieco nasze proste strony.</p>
 
     
 

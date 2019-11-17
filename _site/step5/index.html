@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML: Formatting Recipes</title>
-  <meta name="description" content="Ok now that our homepage is looking better lets get our recipe pages looking nice.">
+  <title>HTML: Formatowanie przepisów.</title>
+  <meta name="description" content="Nasza strona domowa wygląda zdecydowanie lepiej, więc teraz czas zająć się upiększaniem naszych podstron z przepisami.">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step5/">
+  <link rel="canonical" href="/step5/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -84,73 +84,73 @@
   
       <li class=''>
         <a href="/step0/">
-          0 - What is the Web?
+          0 - Czym jest sieć web?
         </a>
       </li>
   
       <li class=''>
         <a href="/step1/">
-          1 - Tools of the Trade
+          1 - Narzędzia
         </a>
       </li>
   
       <li class=''>
         <a href="/step2/">
-          2 - Get Setup
+          2 - Konfiguracja
         </a>
       </li>
   
       <li class=''>
         <a href="/step3/">
-          3 - Marking it up
+          3 - Znaczniki
         </a>
       </li>
   
       <li class=''>
         <a href="/step4/">
-          4 - Formatting the Homepage
+          4 - Formatowanie strony głównej
         </a>
       </li>
   
       <li class='active'>
         <a href="/step5/">
-          5 - Formatting Recipes
+          5 - Formatowanie przepisów.
         </a>
       </li>
   
       <li class=''>
         <a href="/step6/">
-          6 - Images
+          6 - Obrazki
         </a>
       </li>
   
       <li class=''>
         <a href="/step7/">
-          7 - Stylin&#39; with CSS
+          7 - Używamy CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step8/">
-          8 - CSS Selectors
+          8 - Selektory CSS
         </a>
       </li>
   
       <li class=''>
         <a href="/step9/">
-          9 - Styling Links
+          9 - Hiperłącza
         </a>
       </li>
   
       <li class=''>
         <a href="/step10/">
-          10 - div and span
+          10 - div i span
         </a>
       </li>
   
       <li class=''>
         <a href="/step11/">
-          11 - And What Now?
+          11 - Co teraz?
         </a>
       </li>
   
@@ -161,32 +161,32 @@
   
   <header class="post-header">
       
-    <h2 class="post-title"> Step 5 - Formatting Recipes</h2>
+    <h2 class="post-title"> Step 5 - Formatowanie przepisów.</h2>
     </header>
 
   <div class="post-content">
-    <p>Ok now that our homepage is looking better lets get our recipe pages looking nice.</p>
+    <p>Nasza strona domowa wygląda zdecydowanie lepiej, więc teraz czas zająć się upiększaniem naszych podstron z przepisami.</p>
 
-<p>Let’s do <code class="highlighter-rouge">traditional-cupcakes.html</code> first.</p>
+<p>Zacznijmy od <code class="highlighter-rouge">traditional-cupcakes.html</code>.</p>
 
-<p>Instead of showing you the completed page I’m going to provide some direction and let you figure out the right markup.</p>
+<p>Tym razem nie podam Ci od razu gotowego kodu do skopiowania. Na początek mam dla Ciebie instrukcje do pogłówkowania i znalezienia samodzielnie odpowiedniego znacznika HTML.</p>
 
 <ol>
-  <li>The document title should be <code class="highlighter-rouge">Traditional Cupcakes</code>.</li>
-  <li><code class="highlighter-rouge">Traditional Cupcakes</code> in the first line should be a level 1 heading.  Remove the line of <code class="highlighter-rouge">-</code>.</li>
-  <li>Before the level 1 heading, put a link back to our <code class="highlighter-rouge">index.html</code> with the text of <code class="highlighter-rouge">HOME</code>.</li>
-  <li>Description should be a paragraph.</li>
-  <li>Make <code class="highlighter-rouge">Ingredients:</code> a level 2 heading. The ingredients should be in an unordered list.</li>
-  <li><code class="highlighter-rouge">Method:</code> should be a level 2 heading as well, but the method directions should be an ordered list.</li>
+  <li>Tytuł dokumentu powinien brzmieć <code class="highlighter-rouge">Traditional Cupcakes</code>.</li>
+  <li>Napis <code class="highlighter-rouge">Traditional Cupcakes</code> powinien być nagłówkiem poziomu 1. Usuń linię <code class="highlighter-rouge">-</code>.</li>
+  <li>Przed nagłówkiem poziomu 1 umieść link powrotny do naszego <code class="highlighter-rouge">index.html</code>. Link nazwijmy <code class="highlighter-rouge">HOME</code>.</li>
+  <li>Opis powinien być akapitem.</li>
+  <li>Zamień <code class="highlighter-rouge">Ingredients:</code> na nagłówek poziomu 2. Składniki powinny znajdować się na liście nieuporządkowanej.</li>
+  <li><code class="highlighter-rouge">Method</code> również zamień na nagłówek poziomu 2, ale tym razem kolejne kroki przygotowania babeczek powinny być uporządkowaną listą.</li>
 </ol>
 
-<p>Step 7 of the method is trickier, right? The good news is, you can nest most things inside of list items - including other lists.</p>
+<p>W punkcie 4 możesz mieć trudność z krokiem 7. Podpowiemy, że wewnątrz elementów listy, również da się zagnieździć inne znaczniki HTML, w tym nawet inne listy.</p>
 
-<p>When you’re done, your file should look something like this:</p>
+<p>Kiedy już skończysz, nasz plik powinien wyglądać tak:</p>
 
 <p><img src="../assets/browser-cupcakes-formatted.png" alt="The marked-up cupcakes page" title="The marked-up cupcakes page" class="img-responsive imgbox" /></p>
 
-<p>Refer to our completed <code class="highlighter-rouge">traditional-cupcakes.html</code> for hints.</p>
+<p>Jeśli potrzebujesz wskazówek spójrz na poniższy kod <code class="highlighter-rouge">traditional-cupcakes.html</code>:</p>
 
 <div class="language-html solution highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;head&gt;</span>
@@ -236,22 +236,22 @@
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
-<p>How did you go?</p>
+<p>Jak poszło?</p>
 
-<p>Now do <code class="highlighter-rouge">muffins.html</code> as well.  Use the same directions plus the following:</p>
+<p>Teraz przejdziemy do pliku <code class="highlighter-rouge">muffins.html</code>, zainspiruj się poprzednimi wskazówkami jak i poniższymi:</p>
 
 <ol>
-  <li>Make sure the document has an appropriate title.</li>
-  <li><code class="highlighter-rouge">Variations:</code> should be a level 2 heading.</li>
-  <li>Each variation name (i.e. Blueberry, Pecan, etc.) should be a level 3 heading.</li>
-  <li>Make the variant steps an unordered list.</li>
+  <li>Upewnij się, że dokument ma odpowiedni tytuł.</li>
+  <li><code class="highlighter-rouge">Variations:</code> powinien być nagłówkiem poziomu 2.</li>
+  <li>Każda nazwa odmiany babeczki (tj. Blueberry, Pecan itp.) powinna być nagłówkiem poziomu 3.</li>
+  <li>Ustaw kroki wariantów babeczek jako nieuporządkowaną listę.</li>
 </ol>
 
-<p>When you’re done, your file should look something like this:</p>
+<p>Jeśli skończysz to Twój plik na pewno będzie wyglądać tak:</p>
 
 <p><img src="../assets/browser-muffins-formatted.png" alt="The marked-up muffins page" title="The marked-up muffins page" class="img-responsive imgbox" /></p>
 
-<p>Refer to our completed <code class="highlighter-rouge">muffins.html</code> for hints.</p>
+<p>Popatrz na poniższy kod <code class="highlighter-rouge">muffins.html</code> jeśli potrzebujesz pomocy.</p>
 
 <div class="language-html solution highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;head&gt;</span>
@@ -314,9 +314,9 @@
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
-<p>Ok.  Now we have our three pages: two recipes and a homepage.</p>
+<p>Super, stworzyliśmy 3 strony: jedną domową i dwie podstrony z przepisami.</p>
 
-<p>But it’s a bit plain isn’t it?  Most recipe sites have images.  Let’s look at them in the next step.</p>
+<p>Nasze strony są jednak trochę za proste, prawda? Większość stron kulinarnych posiada obrazki. Tym zajmiemy się w kolejnym kroku.</p>
 
     
 
