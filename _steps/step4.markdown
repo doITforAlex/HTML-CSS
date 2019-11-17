@@ -1,7 +1,7 @@
 ---
 layout: step
 number: 4
-title: Formatowanie strony głównej
+title: Formatowanie
 permalink: step4/
 ---
 

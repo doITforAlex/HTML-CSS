@@ -103,8 +103,8 @@ article.post { max-width: 750px; vertical-align: top; display: inline-block; pad
 
 .post-header { margin-bottom: 30px; }
 
-.post-title { font-size: 2em; letter-spacing: -1px; line-height: 1; }
-@media screen and (max-width: 1000px) { .post-title { font-size: 36px; } }
+.post-title { font-size: 32px; letter-spacing: -1px; line-height: 1; }
+@media screen and (max-width: 1000px) { .post-title { font-size: 28.8px; } }
 
 .post-content { margin-bottom: 30px; padding-bottom: 150px; }
 .post-content h2 { margin-top: 60px; }
