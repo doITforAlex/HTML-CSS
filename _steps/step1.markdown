@@ -21,6 +21,8 @@ Nie używamy programu do edycji dokumentów tekstowych (np. Word), ponieważ teg
 
 Program, którego potrzebujesz to  **edytor tekstu** lub **edytor kodu**. Na start polecamy przyjazny początkującym program Visual Studio Code (dalej w tekście będziemy używać skrótu VSC) o przyjemnym interfejsie. [Kliknij tutaj by pobrać VSC](http://code.visualstudio.com).
 
+![Program Visual Studio Code](../assets/vsc-editor.png){:title="Program Visual Studio Code" class="img-responsive imgbox"}
+
 Edytor tekstu to program, który zapisuje nasze komendy rozumiane przez komputer w najprostszy możliwy sposób. Pozwala nam pisać i edytować czysty tekst bez formatowania jak pogrubienie czy kursywa. Jest to o tyle ważne, że kod źródłowy stron oraz inne programy są pisane zawsze czystym tekstem.
 
 Prawdopodobnie posiadasz już jakiś edytor tekstu na swoim komputerze. To właśnie stary, poczciwy Notatnik w przypadku systemu Windows, bądź TexEdit w systemie macOS. Użytkownicy Linuxa zapewne posiadają Leafpad. Programy te oczywiście działają i choć wielu programistów zaczynało swoją karierę od nich to nie są polecane są do codziennego użytku. Lepsze będą **edytory kodu**, które posiadają specjalne udogodnienia ułatwiające pisanie kodu. Zostały one bowiem specjalnie zaprojektowane dla programistów by ułatwić im prace i posiadają przydatne funkcje:
