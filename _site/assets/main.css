@@ -207,13 +207,13 @@ table.reference tbody tr td:first-child { padding: 8px 5px 5px 12px; font-weight
 
 .hidden { display: none; }
 
-h5.toggle { font-size: 20px; background-color: #773575; border: 2px solid #542552; border-radius: 4px; padding: 7px 10px 5px 10px; cursor: pointer; margin: 0px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+h5.toggle { font-size: 20px; color: #fff; background-color: #773575; border: 2px solid #542552; border-radius: 4px; padding: 7px 10px 5px 10px; cursor: pointer; margin: 0px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
 h5.showing { border-radius: 4px 4px 0px 0px !important; }
 
-h5.hiding span.action:before { content: "show"; }
+h5.hiding span.action:before { content: "zobaczyć"; }
 
-h5.showing span.action:before { content: "hide"; }
+h5.showing span.action:before { content: "ukryć"; }
 
 div#watermark { display: block; padding: 3px 15px; background-color: lightseagreen; color: white; font-size: 28px; margin: 10px; border: 3px solid lightseagreen; border-radius: 7px; }
 

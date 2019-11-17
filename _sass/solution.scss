@@ -4,6 +4,7 @@
 
 h5.toggle {
   font-size: 20px;
+  color: #fff;
   background-color: $violet;
   border: 2px solid darken($violet, 10%);
   border-radius: 4px;
@@ -23,9 +24,9 @@ h5.showing {
 }
 
 h5.hiding span.action:before {
-  content: 'show'
+  content: 'zobaczyć'
 }
 
 h5.showing span.action:before {
-  content: 'hide'
+  content: 'ukryć'
 }
