@@ -9,7 +9,7 @@ permalink: step2/
 
 Naszym zadaniem jest nauczenie się HTML i CSS poprzez stworzenie prostej strony z przepisami.
 
-![Mini Torciki!](../assets/css-fixed-homepage.png){:title="Mini Torciki!" class="img-responsive imgbox"}
+![Strona z przepisami](../assets/css-fixed-homepage.png){:title="Strona z przepisami" class="img-responsive imgbox"}
 
 ## Konfiguracja
 
@@ -21,7 +21,7 @@ Przejdź w menu do zakładki `File` i wybierz `Open Folder`, następnie znajdź 
 
 Teraz po lewej stronie programu powinien pojawić się `Explorer` z widokiem Twojego folderu.
 
-![Creating a project in Atom](../assets/atom-blank.png){:title="Creating a project in Atom" class="img-responsive imgbox"}
+![Tworzenie projektu w VSC](../assets/vsc-blank.png){:title="Tworzenie projektu w VSC" class="img-responsive imgbox"}
 
 Teraz sobie utworzymy 3 różne pliki na których będziemy pracować. Będą to:
 
@@ -33,12 +33,12 @@ Aby utworzyć nowy plik w programie, najedź kursorem myszy na otwarty w explore
 
 Każdy nowo utworzony plik zostanie automatycznie otworzony w nowej karcie programu.
 
-![Empty files in Atom](../assets/atom-empty-files.png){:title="Empty files in Atom" class="img-responsive imgbox"}
+![Puste pliki w VSC](../assets/vsc-empty-files.png){:title="Puste pliki w VSC" class="img-responsive imgbox"}
 
 
 Po utworzeniu trzech nowych plików o podanych wcześniej nazwach, otwórz każdy z nich w nowej karcie i wklej teksty, które znajdziesz poniżej. Dodaj je do każdego pliku z osobna.
 
-![Content added to files](../assets/atom-unformatted-files.png){:title="Content added to files" class="img-responsive imgbox"}
+![Dodawanie treści do pliku](../assets/vsc-unformatted-files.png){:title="Dodawanie treści do pliku" class="img-responsive imgbox"}
 
 Nie zapomnij zapisać zmian w swoich plikach.  Możesz to zrobić w menu `File`, bądź użyć skrótów klawiszowych: `CTRL`+`s` dla systemów Windows oraz Linux, `CMD ⌘`+`s` w przypadku systemu macOS.  
 

@@ -43,7 +43,7 @@ Może zaktualizujemy nasz tag `<img>` aby nasz obrazek był nieco mniejszy.
 ```
 Zauważ, że tag img nie znaczników otwierających i zamykających. Po prostu kończy się `/>` zamiast `>`.  Nazywa się to **tagiem samozamykającym**. Takich tagów jest w HTML kilka. Zwykle są to tagi określające element strony, który nie jest tekstem. W naszym przypadku obraz.
 
-Zanim przejdziesz do następnego kroku, spróbuj dodać odpowiedni obraz do każdej strony z przepisami. Skorzystaj ze strony z obrazkami, np. https://www.stockfreeimages.com/, aby znaleźć i zapisać zdjęcia babeczek i muffinek oraz dodać je do odpowiednich podstron z przepisami.
+Zanim przejdziesz do następnego kroku, spróbuj dodać odpowiedni obraz do każdej strony z przepisami. Skorzystaj ze strony z obrazkami, np. https://www.stockfreeimages.com/, aby znaleźć i zapisać zdjęcia babeczek i mufinek oraz dodać je do odpowiednich podstron z przepisami.
 
 ![The cupcakes page with an image](../assets/browser-cupcakes-image.png){:title="The cupcakes page with an image" class="img-responsive imgbox"}
 

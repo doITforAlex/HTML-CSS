@@ -146,4 +146,4 @@ W ten sposób:
 
 ![Fancy temperatures](../assets/css-fancy-temperatures.png){:title="Fancy temperatures" class="img-responsive imgbox"}
 
-Możesz dodać określony styl dla konkretnego tekstu. Wystraczy, że wrzucisz między znaczniki `<span>` i `</span>`, nadasz klasę i napiszesz styl dla danej klasy w CSS.
+Możesz dodać określony styl dla konkretnego tekstu. Wystarczy, że wrzucisz między znaczniki `<span>` i `</span>`, nadasz klasę i napiszesz styl dla danej klasy w CSS.

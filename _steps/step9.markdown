@@ -93,5 +93,5 @@ Powyższa kolejność pseudoklas jest ważna, ponieważ style hiperlinków nadpi
 
 Zauważ, że dokonaliśmy dosyć drastycznych zmian w stylizacji linków. Użytkownicy są przyzwyczajeni do podkreślonego stylu tekstu, dlatego linki należy ostrożnie zmieniać. Duże zmiany mogą prowadzić do dezorientacji i denerwować użytkownika. W przypadku bardzo wyszukanych stylów (na przykład zmiana rozmiaru czcionki, która spowoduje, że tekst ucieknie od kursora myszy) może to uniemożliwić kliknięcie w link.
 
-Tutaj dowiedz się więcej na temat stylów hiperlinków:
-https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
+[Tutaj](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links) dowiedz się więcej na temat stylów hiperlinków.
+
