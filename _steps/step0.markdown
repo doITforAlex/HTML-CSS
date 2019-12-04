@@ -5,37 +5,37 @@ title: Czym jest sieć web?
 permalink: step0/
 ---
 
-Obecnie każdy korzysta z Internetu, ale rzadko zastanawiamy się, co się dzieje pod spodem, dlaczego nasz komputer i nasza przeglądarka są wstanie pokazać coś, co napisała osoba setki kilometrów stąd. Czy wiesz, że... World Wide Web (czyli WWW) powstało w 1989! Tak w tym roku obchodziło swoje [30-lecie](https://www.flynerd.pl/2019/03/krotka-historia-30-urodziny-sieci-www.html).
+Obecnie każdy korzysta z Internetu, ale rzadko zastanawiamy się, co się dzieje pod spodem, dlaczego nasz komputer i nasza przeglądarka są w stanie pokazać coś, co napisała osoba setki kilometrów stąd. Czy wiesz, że... World Wide Web (czyli WWW) powstało w 1989! Tak, w tym roku obchodziło swoje [30-lecie](https://www.flynerd.pl/2019/03/krotka-historia-30-urodziny-sieci-www.html).
 
 ## Co będziemy dzisiaj robić?
 
-Celem dzisiejszych warsztatów jest nauczenie się jak tworzyć strony www.
+Celem dzisiejszych warsztatów jest nauczenie się, jak tworzyć strony www.
  
 W tym celu użyjemy dwóch języków komputerowych:
 
-- HTML (HyperText Markup Language po polsku hipertekstowy język znaczników), oraz
-- CSS (Cascading Style Sheets czyli kaskadowe arkusze stylów)
+- HTML (HyperText Markup Language, po polsku hipertekstowy język znaczników), oraz
+- CSS (Cascading Style Sheets, czyli kaskadowe arkusze stylów)
 
 Strony internetowe mogą zawierać wiele innych elementów, które nie będą elementami języka HTML lub CSS np. obrazy, dźwięk audio czy też skrypty kodu takiego jak JavaScript. Póki co, do stworzenia prostej strony wystarczy Ci tylko HTML i CSS.
 
-Zanim jednak przejdziemy do nauki wcześniej wspomnianych języków poświęćmy chwilę na upewnienie się czy rozumiemy dane pojęcia.
+Zanim jednak przejdziemy do nauki wcześniej wspomnianych języków, poświęćmy chwilę na upewnienie się, czy rozumiemy dane pojęcia.
 
 ## Web (WWW, W3, World Wide Web)
 
 Porozmawiajmy na początku o sieci Web oraz samym Internecie.
 
-My wszyscy korzystamy z sieci Web:
-wpisaliśmy adres w oknie przeglądarki (Firefox, Internet Explorer) by otworzyć daną stronę i kliknęliśmy w link, który przekierował nas do relewantnej podstrony.
+Wszyscy korzystamy z sieci Web:
+wpisaliśmy adres w oknie przeglądarki (Firefox, Internet Explorer) by otworzyć daną stronę i kliknęliśmy w link, który przekierował nas na odpowiednią podstronę.
 
-Ale czy wiesz jak to wszystko wygląda od kuchni? Co dokładnie się dzieje kiedy klikasz w link bądź otwierasz daną stronę w przeglądarce?
+Ale czy wiesz, jak to wszystko wygląda od kuchni? Co dokładnie się dzieje, kiedy klikasz w link bądź otwierasz daną stronę w przeglądarce?
 
-Mimo, że nasze działania wydają się być banalne to tak naprawdę w naszym komputerze dzieje się sporo!
+Mimo, że nasze działania wydają się być banalne, to tak naprawdę w naszym komputerze dzieje się sporo!
 
 Ale dobra wiadomość jest taka, że nie musisz dokładnie wszystkiego wiedzieć :)
 
-Potrzebujesz jedynie wiedzieć jak mniej-więcej działa sieć WWW by zacząć tworzyć swoje własne strony.
+Potrzebujesz jedynie wiedzieć jak mniej-więcej działa sieć WWW, by zacząć tworzyć swoje własne strony.
 
-Resztę rzeczy można poznawać stopniowo np. gdy w procesie nauki pojawi się jakiś błąd bądź masz pomysł i nie wiesz jak go zrealizować.
+Resztę rzeczy można poznawać stopniowo, np. gdy w procesie nauki pojawi się jakiś błąd bądź masz pomysł i nie wiesz jak go zrealizować.
 
 Nie trzeba od razu uczyć się wszystkiego. Poznawanie nowych pojęć stopniowo, kiedy są one potrzebne, jest częścią pracy developera.
 
@@ -54,17 +54,17 @@ Omówimy to teraz bardziej szczegółowo.
 
 Zwykle wpisujesz adres strony internetowej w przeglądarce lub klikasz w link (zawierający jakiś adres), aby wysłać żądanie o daną stronę internetową.
 
-Adres strony internetowej nazywamy **URL**, co jest rozwinięciem skrótu Uniform Address Locator. Po polsku tłumaczymy to jako Jednolity Lokalizator Zasobów.
+Adres strony internetowej nazywamy **URL**, co jest rozwinięciem skrótu Uniform Resource Locator. Na polski tłumaczymy to jako Jednolity Lokalizator Zasobów.
 
 Każdy adres URL składa się z trzech części:
 
-1. Z **protokołu** czyli sposóbu wysłania strony internetowej. W przypadku stron internetowych jest to zwykle **http** lub **https**.
-2. Z **hosta (nazwy serwera)** czyli nazwy komputera, który zawiera żądaną stronę.
-3. Z **ścieżki do zasobu** czyli lokalizacji strony na komputerze, na którym jest zapisana.
+1. Z **protokołu**, czyli sposóbu wysłania strony internetowej. W przypadku stron internetowych jest to zwykle **http** lub **https**.
+2. Z **hosta (nazwy serwera)**, czyli nazwy komputera, który zawiera żądaną stronę.
+3. Z **ścieżki do zasobu**, czyli lokalizacji strony na komputerze, na którym jest zapisana.
 
 ### 2. Twoja przeglądarka wysyła zapytanie o daną stronę do innego komputera
 
-Części składowe adresu URL zapewniają Twojej przeglądarce wszystkie potrzebne informacje aby ta wysłała żądanie o zapytana stronę do odpowiedniego komputera. Komputery, które zawierają informację o danych stronach i dostarczają informację o nich na żądanie nazywamy serwerami sieci Web. (dopisek -) Taki komputer-serwer jest podłączony na stałe do sieci.
+Części składowe adresu URL zapewniają Twojej przeglądarce wszystkie potrzebne informacje, aby ta wysłała żądanie o zapytana stronę do odpowiedniego komputera. Komputery, które zawierają informację o danych stronach i dostarczają informację o nich na żądanie nazywamy serwerami sieci Web. (dopisek -) Taki komputer-serwer jest podłączony na stałe do sieci.
 
 Przeanalizujmy adres URL strony FlyNerd dla Alexa `https://flynerd.pl/alex/index.html`:
 
@@ -91,7 +91,7 @@ Twoja przeglądarka odczytuje język HTML i CSS na stronie. Stosuje się do ich 
 
 Przykład, który omówiliśmy był dosyć prosty - serwer posiada plik z daną stroną web i wysyła go do Ciebie za każdym razem, gdy o niego poprosisz.
 
-Tak naprawdę serwer sieciowy nie zawsze ma gotowe pliku dla każdego żądanego adresu URL.
+Tak naprawdę serwer sieciowy nie zawsze ma gotowe pliki dla każdego żądanego adresu URL.
 
 Czasami serwery internetowe używają specjalnego oprogramowania do sprawdzania przychodzących żądań przeglądarki i tworzenia stron internetowych dla każdego konkretnego żądania na bieżąco. Jednak dzisiaj nie zamierzamy się zajmować takimi przypadkami. Zaczniemy od zbudowania kilku prostych stron.
 
@@ -101,7 +101,7 @@ Czasami serwery internetowe używają specjalnego oprogramowania do sprawdzania 
 
 Na dzisiejszych warsztatach zrobimy coś odmiennego.
 
-Stawianie własnego serwera może być trochę zbyt skomplikowane. Na szczęście przeglądarki umożliwiają otwieranie plików, które znajdują się lokalnie, na dysku Twojego komputera. Kiedy wykonujemy taką operację korzystamy z protokołu **file**. Zauważysz to w adresie URL, gdy zaczniemy warsztat!
+Stawianie własnego serwera może być trochę zbyt skomplikowane. Na szczęście przeglądarki umożliwiają otwieranie plików, które znajdują się lokalnie, na dysku Twojego komputera. Kiedy wykonujemy taką operację, korzystamy z protokołu **file**. Zauważysz to w adresie URL, gdy zaczniemy warsztat!
 
 Protokół będzie jedyną rzeczą, którą zamierzamy zmienić.
 Podstawowy HTML i CSS będą dokładnie takie same.

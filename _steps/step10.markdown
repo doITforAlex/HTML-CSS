@@ -39,7 +39,7 @@ Ale pojawił się nowy problem. Cała reszta zawartości też jest skierowana do
 
 Tutaj może nam pomóc umiejętne wykorzystanie `<div>`.
 
-Umieśćmy wszystko, co będzie miało odstęp od lewej do `<div>` z klasą `container`. Zacznijmy od pliku muffins.html i umieścimy w `<div>` odnośnik do strony głównej, tytuł i opis przepisu.
+Wrzućmy wszystko, co będzie miało odstęp od lewej do elementu `<div>` z klasą `container`. Zacznijmy od pliku muffins.html i umieścimy w `<div>` odnośnik do strony głównej, tytuł i opis przepisu.
 
 ```html
 <body>
@@ -116,11 +116,11 @@ Ale wiemy jak to łatwo naprawić. Dodaj `<div>` z klasą `container` wokół ws
 
 Znacznie lepiej.
 
-`<div>` to taki zbiornik, który pozwala Ci umieszczenie w nim elementów dla których chcemy ustalić konkretny styl. Jest bardzo przydatny.
+`<div>` to taki zbiornik, który pozwala Ci umieszczenie w nim elementów, dla których chcemy ustalić konkretny styl. Jest bardzo przydatny.
 
 ## Używanie `<span>`
 
-`<span>` jest trochę podobny do `<div>`, ponieważ jest to również element ogólnego przeznaczenia, ale liniowy a nie blokowy jak `<div>`. Możesz użyć `<span>` do określenia stylu dla konkretnego fragmentu tekstu.
+`<span>` jest trochę podobny do `<div>`, ponieważ jest to również element ogólnego przeznaczenia, ale liniowy, a nie blokowy jak `<div>`. Możesz użyć `<span>` do określenia stylu dla konkretnego fragmentu tekstu.
 
 Wykorzystamy znacznik <span> do stworzenia specjalnego formatowania temperatur w przepisach.
 

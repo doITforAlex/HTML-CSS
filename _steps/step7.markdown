@@ -34,7 +34,7 @@ Dla przykładu, w naszym pliku `index.html` sekcja `<head>` będzie wyglądać t
 ```html
 <head>
   <title>Tiny Cakes!</title>
-    <link rel="stylesheet" href="tinycakes.css" />
+  <link rel="stylesheet" href="tinycakes.css" />
 </head>
 ```
 
@@ -52,7 +52,7 @@ Selektor określa, do których elementów odnosi się styl.
 
 Deklaracje określają własności i ich wartości dla danych elementów stylu.
 
-W naszym przykładzie selektorem jest `html`,  pojedyncza deklaracja (własność stylu: wartość) to` background-color: pink`.
+W naszym przykładzie selektorem jest `html`, pojedyncza deklaracja (własność stylu: wartość) to `background-color: pink`.
 Jak się można domyślić, ustawia nam to kolor tła elementu HTML, czyli całego dokumentu na różowy.
 
 Istnieje wiele własności stylu, które można ustawić dla każdego elementu.
@@ -64,11 +64,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 
 Kolory możemy zdefiniować na trzy sposoby:
 
-1. Możemy użyć słowa kluczowego dla danego koloru: `pink` to różowy
+1. Możemy użyć słowa kluczowego (angielskiej) dla danego koloru: `pink` to różowy
 2. Możemy użyć notacji RGB: `rgb(255, 192, 203)` to różowy
 3. Możemy użyć zapisu heksadecymalnego HEX (szesnastkowego): `#ffc0cb` to też różowy.
+<!--
+A co z HSL?
+Wydaje się bardziej intuicyjny od RGB, mimo że mnogość reprezentacji może być przytłaczająca.
+-->
 
-Notacja RGB używa trzech wartości, jednej dla barwy czerwonej, jednej dla barwy zielonej i jednej dla barwy niebieskiej, czyli wartości R(ed)G(reen)B(blue). Wartości znajdują się w przedziale od 0 do 255. Istnieje również rozszerzona wersja „RGBA”, w której można określić czwartą wartość, przeźroczystość, którą określamy w procentach (wartość **alfa**).
+Notacja RGB używa trzech wartości, jednej dla barwy czerwonej, jednej dla barwy zielonej i jednej dla barwy niebieskiej, czyli wartości R(ed) G(reen), B(blue). Wartości znajdują się w przedziale od 0 do 255. Istnieje również rozszerzona wersja „RGBA”, w której można określić czwartą wartość, przeźroczystość, którą określamy w procentach (wartość **alfa**).
 
 Notacja szesnastkowa HEX zaczyna się znakiem #, po którym następują trzy liczby w formacie szesnastkowym, reprezentujące te same trzy wartości jak w przypadku RGB: czerwony, zielony i niebieski.
 
@@ -93,7 +97,7 @@ body {
 }
 ```
 
-Refresh our page.  That looks a bit nicer.  Lets have a look at what we did.
+Odśwież stronę. Prawda, że wygląda trochę lepiej? Przyjrzyjmy się teraz, co zrobiliśmy.
 
 ![A pink background and white body background](../assets/css-home-body-bg.png){:title="A pink background and white body background" class="img-responsive imgbox"}
 
@@ -103,5 +107,5 @@ Refresh our page.  That looks a bit nicer.  Lets have a look at what we did.
 4. Ustawiliśmy `padding` na `20px`. Padding to odstęp między zewnętrzną krawędzią elementu a jego zawartością (tzw. margines wewnętrzny).
 5. Określiliśmy czcionkę bezszeryfową dla tekstu. Domyślnie większość przeglądarek używa czcionki szeryfowej. Moglibyśmy wybrać konkretną czcionkę, na przykład „Times New Roman” lub „Courier”, ale jeśli ta czcionka nie istnieje na komputerze użytkownika to przeglądarka i tak użyje domyślnej czcionki.
 
-W tym kroku poznaliśmy różne przykłady wartości stylu. Przyjrzymy się bliżej selektorom w następnym kroku.
+W tym kroku poznaliśmy różne przykłady wartości stylu. W następnym kroku przyjrzymy się bliżej selektorom.
 

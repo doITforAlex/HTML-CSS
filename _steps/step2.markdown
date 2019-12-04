@@ -15,7 +15,7 @@ Naszym zadaniem jest nauczenie się HTML i CSS poprzez stworzenie prostej strony
 
 ## Konfiguracja
 
-Utwórz folder w wybranym dla siebie miejscu na komputerze (najlepiej pulpicie, żeby nie szukać później) i nazwij go `warsztaty-html`. Wszystko co stworzymy dzisiaj umieścimy w tym folderze.
+Utwórz folder w wybranym dla siebie miejscu na komputerze (najlepiej pulpicie, żeby nie szukać później) i nazwij go `warsztaty-html`. Wszystko, co stworzymy dzisiaj, umieścimy w tym folderze.
 
 Teraz otworzymy sobie program VSC. To pierwszy raz kiedy go uruchamiasz, więc pojawi Ci się powitanie i porady. Zamknij je na razie.
 
@@ -31,9 +31,9 @@ Teraz sobie utworzymy 3 różne pliki na których będziemy pracować. Będą to
  * `traditional-cupcakes.html`
  * `muffins.html`
 
-Aby utworzyć nowy plik w programie, najedź kursorem myszy na otwarty w explorerze folder `warsztaty-html`. Teraz przy nazwie folderu powinny pojawić się 4 ikony. Kliknij na pierwszą od lewej i wprowadź nazwę pliku w okienku, które pojawi się pod folderem. Możesz również skorzystać z menu file -> new file, ale dzięki użyciu explorera Twój plik od razu zostanie utworzony w miejscu, którym chcesz.
+Aby utworzyć nowy plik w programie, najedź kursorem myszy na otwarty w explorerze folder `warsztaty-html`. Teraz przy nazwie folderu powinny pojawić się 4 ikony. Kliknij na pierwszą od lewej i wprowadź nazwę pliku w okienku, które pojawi się pod folderem. Możesz również skorzystać z menu File &rarr; New File, ale dzięki użyciu explorera Twój plik od razu zostanie utworzony w miejscu, którym chcesz.
 
-Każdy nowo utworzony plik zostanie automatycznie otworzony w nowej karcie programu.
+Każdy nowo utworzony plik zostanie automatycznie otwarty w nowej karcie programu.
 
 ![Puste pliki w VSC](../assets/vsc-empty-files.png){:title="Puste pliki w VSC" class="img-responsive imgbox"}
 
@@ -44,7 +44,7 @@ Po utworzeniu trzech nowych plików o podanych wcześniej nazwach, otwórz każd
 
 Nie zapomnij zapisać zmian w swoich plikach.  Możesz to zrobić w menu `File`, bądź użyć skrótów klawiszowych: `CTRL`+`s` dla systemów Windows oraz Linux, `CMD ⌘`+`s` w przypadku systemu macOS.  
 
-Porada: Jeśli w pliku pojawiły się niezapisane zmiany zauważysz małą kropkę po prawej stronie zakładki.
+Porada: Jeśli w pliku pojawiły się niezapisane zmiany, zauważysz małą kropkę po prawej stronie zakładki.
 
 ## Nasza treść
 
