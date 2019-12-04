@@ -14,7 +14,7 @@ No to nie wygląda za dobrze...
 
 Twoja przeglądarka traktuje pliki z rozszerzeniem `.html` oraz `.htm` jako pliki zawierające kod HTML i wyświetla je w ten sposób. Nie zamieściliśmy w naszym pliku żadnego kodu HTML, więc przeglądarka interpretuje jedynie surowy tekst. HTML ignoruje znaki białej linii (enter, tabulator, multi spacja itp.), dlatego cały tekst wyświetlony jest w jednym akapicie. 
 
-Zauważ, że karta przeglądarki pokazuje ścieżkę do pliku, z prefiksem `file: //`. Nie wygląda to ładnie, prawda?
+Zauważ, że karta przeglądarki pokazuje ścieżkę do pliku, z prefiksem `file://`. Nie wygląda to ładnie, prawda?
 
 Nie o to nam chodziło. Dodamy do naszego pliku trochę HTML.
 
@@ -42,17 +42,17 @@ Zaktualizuj plik `index.html` i wklej do niego poniższy kod:
 ```
 Zapisz i odśwież swoją przeglądarkę. Niby wygląda tak samo, ale popatrz znowu na kartę przeglądarki. Teraz zamiast ścieżki pliku pojawił się napis "Tiny Cakes!".
 
-![Zatytułowana strona ](../assets/browser-unformatted-title.png){:title="The titled but un-marked-up home page" class="img-responsive imgbox"}
+![Zatytułowana strona](../assets/browser-unformatted-title.png){:title="The titled but un-marked-up home page" class="img-responsive imgbox"}
 
-Dodaliśmy kilka fragmentów HTML, które są jak szkielet lub ramkę dokumentu. Nie dodaliśmy jeszcze żadnych instrukcji formatowania, dlatego sam tekst wygląda nadal tak samo.
+Dodaliśmy kilka fragmentów HTML, które są jak szkielet lub ramka dokumentu. Nie dodaliśmy jeszcze żadnych instrukcji formatowania, dlatego sam tekst wygląda nadal tak samo.
 
-Przeanalizujemy poszczególne elementy, które dodaliśmy i dowiedzmy się co one oznaczają.
+Przeanalizujemy poszczególne elementy, które dodaliśmy i dowiedzmy się, co one oznaczają.
 
 1. `<!DOCTYPE html>`
 
     Pierwszy wiersz to deklaracja typu dokumentu. To informuje przeglądarkę, w jakiej wersji HTML został napisany dokument.
 
-    Samo słowo „html” w deklaracji oznacza najnowszą wersję html. Obecnie najnowszą wersją jest wersja 5, i nie wygląda na to by zmieniło się to w najbliższym czasie.
+    Samo słowo „html” w deklaracji oznacza najnowszą wersję html. Obecnie najnowszą wersją jest wersja 5 i nie wygląda na to, by zmieniło się to w najbliższym czasie.
 
     Możesz natknąć się na deklaracje dotyczące starszych wersji HTML. Są one bardziej skomplikowane:
 
@@ -64,7 +64,7 @@ Przeanalizujemy poszczególne elementy, które dodaliśmy i dowiedzmy się co on
 
 2. `<html>`
 
-    Każdy dokument powinien zacząć się od znacznika `<html>` a skończyć znacznikiem `</html>`. Wszystko co zamieścimy między tymi znacznikami będzie uznane za część dokumentu. Większość znaczników (tagów) posiada znacznik otwierający(`<html>`) i zamykający (`</html>`).
+    Każdy dokument powinien zacząć się od znacznika `<html>` a skończyć znacznikiem `</html>`. Wszystko co zamieścimy między tymi znacznikami będzie uznane za część dokumentu. Większość znaczników (tagów) posiada znacznik otwierający (`<html>`) i zamykający (`</html>`).
 
 3. `<head>` i `<title>`
 
@@ -72,7 +72,7 @@ Przeanalizujemy poszczególne elementy, które dodaliśmy i dowiedzmy się co on
 
     `<title>` informuje przeglądarkę o tytule naszego dokumentu. Większość przeglądarek wyświetla tytuł dokumentu w zakładce lub oknie. Tytuł przydaje się również, kiedy zapisujemy daną stronę do zakładek. Rozumiesz już dlaczego przeglądarka wyświetla teraz _Tiny Cakes!_ zamiast ścieżki? Dokładnie. Zdefiniowaliśmy nasz tytuł za pomocą znacznika `<title>`.
 
-    Tag `<meta>` to sposób na podanie przeglądarce dodatkowych informacji na temat strony. Tutaj używamy go w celu ustalenia jakiego kodowania znaków użyjemy. My zdecydowaliśmy się na UTF-8. Jest to opcjonalny krok, ale jeśli chcemy mieć pewność że znaki unicode (np. polskie znaki) będą wyświetlane prawidłowo to nie powinniśmy go ominąć.
+    Tag `<meta>` to sposób na podanie przeglądarce dodatkowych informacji na temat strony. Tutaj używamy go w celu ustalenia jakiego kodowania znaków użyjemy. My zdecydowaliśmy się na UTF-8. Jest to opcjonalny krok, ale jeśli chcemy mieć pewność, że znaki unicode (np. polskie znaki) będą wyświetlane prawidłowo, to nie powinniśmy go ominąć.
 
     Istnieje oczywiście więcej znaczników, które możemy zamieścić w sekcji head naszej strony. Na dzisiaj wystarczą nam jednak te dwa.
 

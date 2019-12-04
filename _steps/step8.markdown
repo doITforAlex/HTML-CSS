@@ -50,7 +50,7 @@ Teraz jedynie `<h1>` posiadający id  `sitetitle` będzie różowy.  Pozostałe 
 
 Tak jest o wiele lepiej. To zajmijmy się teraz nagłówkami na naszych podstronach i ulepszmy je trochę.
 
-Na początek zaktualizuj nagłówki ingredients, method, i variations aby miały klasę o nazwie `recipepart`, w ten sposób:
+Na początek zaktualizuj nagłówki _ingredients_, _method_ i _variations_, aby miały klasę o nazwie `recipepart`, w ten sposób:
 
 ```html
 <h2 class="recipepart">Ingredients:</h2>
@@ -83,24 +83,24 @@ Co się zmieniło?
 Ustawiając odstęp tzw. padding, od razu ustaliliśmy 4 wartości za jednym razem. Można tak zrobić ustalając wartości `padding` jak i `margin`. Wartości tych własności można określić na cztery sposoby:
 
 1. Podając jedną wartość. Wtedy przyjmą ją wszystkie strony (prawo, lewo, góra, dół)  
-2. Podając 2 wartości, pierwsza określi górę i dół, a druga prawo i lewą stronę.  
-3. Podając 3 wartości, pierwsza odniesie się do góry, druga do prawej i lewej strony, natomiast trzecia do dolnej części.  
-4. Podając 4 wartości, oznaczą kolejno górę, prawą stronę, dół i lewą stronę.
+2. Podając 2 wartości: pierwsza określi górę i dół, a druga prawą i lewą stronę.  
+3. Podając 3 wartości: pierwsza odniesie się do góry, druga do prawej i lewej strony, natomiast trzecia do dolnej części.  
+4. Podając 4 wartości: oznaczają one kolejno górę, prawą stronę, dół i lewą stronę.
 
 Istnieją specjalne parametry dla `padding` i `margin` dla każdej stony elementu:
 
  * `padding-top`, `padding-left`, `padding-right` i `padding-bottom` (kolejno: górny odstęp, lewy odstęp,  prawy odstęp, dolny odstęp) 
  * `margin-top`, `margin-left`, `margin-right` i `margin-bottom` (kolejno: górny margines, lewy margines, prawy margines i dolny margines)
 
-Możesz ich używać osobno w przypadku kiedy stylu  powinien oddziaływać tylko dla jednej ze stron.
+Możesz ich używać osobno w przypadku kiedy styl powinien oddziaływać tylko dla jednej ze stron.
 
-W naszym przypadku ustaliliśmy border, ramkę aż dwa razy. Postąpiliśmy tak dlatego, że chcieliśmy, żeby trzy strony miały taką samą wartość, natomiast dla lewej strony ustawiliśmy inną wartość. Moglibyśmy użyć wyżej wymienionych parametrów, ale nasz sposób jest szybszy i mamy mniej kodu. Kod działa, gdyż kolejność deklaracji stylu ma znaczenie. Spróbuj zmienić kolejność linijek i umieścić `border-left` przed  `border`. Jeśli tak zrobisz to `border-left` zostanie nadpisane przez `border`.
+W naszym przypadku ustaliliśmy `border` (ramkę) aż dwa razy. Postąpiliśmy tak dlatego, że chcieliśmy, żeby trzy strony miały taką samą wartość, natomiast dla lewej strony ustawiliśmy inną wartość. Moglibyśmy użyć wyżej wymienionych parametrów, ale nasz sposób jest szybszy i mamy mniej kodu. Kod działa, gdyż kolejność deklaracji stylu ma znaczenie. Spróbuj zmienić kolejność linijek i umieścić `border-left` przed  `border`. Jeśli tak zrobisz to `border-left` zostanie nadpisane przez `border`.
 
 Nasz nagłówek wygląda lepiej, ale jest trochę za szaro, nie sądzisz? Zmieńmy kolor grubszej, lewej ramki na inny dla każdego nagłówka.
 
 Elementy mogą posiadać kilka klas, wystarczy oddzielić je spacją.
 
-Zaktualizujemy nasz znacznik `<h2>` o dodatkowe klasy tak aby odpowiadały temu czego dany nagłówek dotyczy.
+Zaktualizujemy nasz znacznik `<h2>` o dodatkowe klasy tak aby odpowiadały temu, czego dany nagłówek dotyczy.
 
 W ten sposób:
 
@@ -128,7 +128,7 @@ h2.variations {
 
 ![Fancier second-level headings](../assets/css-fancier-subheadings.png){:title="Fancier second-level headings" class="img-responsive imgbox"}
 
-CSS pozwala nam na utworzenie wielu różnych stylów, których selektory się nachodzą na siebie. Dzięki temu możemy zastosować zestaw stylów do wielu elementów, a następnie osobno dodatkowe style dla każdego z elementów. Jest to o wiele przyjemniejsze niż pisanie wszystkich stylów osobno.
+CSS pozwala nam na utworzenie wielu różnych stylów, których selektory nachodzą na siebie. Dzięki temu możemy zastosować zestaw stylów do wielu elementów, a następnie osobno dodatkowe style dla każdego z nich. Jest to o wiele przyjemniejsze niż pisanie wszystkich stylów osobno.
 
 ## Selektor uniwersalny
 
@@ -166,7 +166,7 @@ about <strong>Tiny Cakes!</strong>
 Here are the recipes that we have:
 </p>
 ```
-Domyślnie będzie to wyglądać jak dwa akapity oddzielone nagłówkiem. Dodaj tylko następujący styl (nadaje wszystkim akapitom zielone tło) to zobaczysz coś dziwnego.
+Domyślnie będzie to wyglądać jak dwa akapity oddzielone nagłówkiem. Dodaj tylko następujący styl (nadaje wszystkim akapitom zielone tło), to zobaczysz coś dziwnego.
 
 ```css
 p {
@@ -178,9 +178,9 @@ p {
 
 Drugi akapit nie ma zielonego tła. Dlaczego?
 
-Jeśli użyjesz narzędzi deweloperów w swojej przeglądarce do sprawdzenia strony (Ctrl+Sthift+I dla Chrome), zobaczysz, że drugi akapit nie znajduje się w tagach `<p>`.
+Jeśli użyjesz narzędzi deweloperów w swojej przeglądarce do sprawdzenia strony (Ctrl+Shift+I dla Chrome), zobaczysz, że drugi akapit nie znajduje się w tagach `<p>`.
 Dzieje się tak, ponieważ pojawiło się coś w HTML jest dziwne (nagłówek w akapicie) i przeglądarka spróbowała zinterpretować i wyświetlić to w jakiś sensowniejszy sposób.
 
 Zachowaj ostrożność, pisząc HTML. Postaraj się postawić na prostotę w swoim kodzie. Chyba nie chcesz, aby przeglądarka musiała wykonywać jakieś sztuczki, tak by Twoja strona działała. W końcu może się zdarzyć, że i tak nie zadziała w oczekiwany sposób.
 
-Dodatkowo Twoja strona może wyglądać zupełnie inaczej na każdej różnej przeglądarce.
+Dodatkowo Twoja strona może wyglądać zupełnie inaczej na różnych przeglądarkach.

@@ -11,19 +11,19 @@ Zacznijmy od `traditional-cupcakes.html`.
 Tym razem nie podam Ci od razu gotowego kodu do skopiowania. Na początek mam dla Ciebie instrukcje do pogłówkowania i znalezienia samodzielnie odpowiedniego znacznika HTML.
 
 1. Tytuł dokumentu powinien brzmieć `Traditional Cupcakes`.
-1. Napis `Traditional Cupcakes` powinien być nagłówkiem poziomu 1. Usuń linię `-`.
-2. Przed nagłówkiem poziomu 1 umieść link powrotny do naszego `index.html`. Link nazwijmy `HOME`.
-2. Opis powinien być akapitem.
-3. Zamień `Ingredients:` na nagłówek poziomu 2. Składniki powinny znajdować się na liście nieuporządkowanej.
-4. `Method` również zamień na nagłówek poziomu 2, ale tym razem kolejne kroki przygotowania babeczek powinny być uporządkowaną listą.
+2. Napis `Traditional Cupcakes` powinien być nagłówkiem poziomu 1. Usuń linię `-`.
+3. Przed nagłówkiem poziomu 1 umieść link powrotny do naszego `index.html`. Link nazwijmy `HOME`.
+4. Opis powinien być akapitem.
+5. Zamień `Ingredients:` na nagłówek poziomu 2. Składniki powinny znajdować się na liście nieuporządkowanej.
+6. `Method` również zamień na nagłówek poziomu 2, ale tym razem kolejne kroki przygotowania babeczek powinny być uporządkowaną listą.
 
-W punkcie 4 możesz mieć trudność z krokiem 7. Podpowiemy, że wewnątrz elementów listy, również da się zagnieździć inne znaczniki HTML, w tym nawet inne listy.
+W ostatnim punkcie możesz mieć trudność z krokiem 7. przepisu. Podpowiemy, że wewnątrz elementów listy również da się zagnieździć inne znaczniki HTML, w tym nawet inne listy.
 
 Kiedy już skończysz, nasz plik powinien wyglądać tak:
 
 ![The marked-up cupcakes page](../assets/browser-cupcakes-formatted.png){:title="The marked-up cupcakes page" class="img-responsive imgbox"}
 
-Jeśli potrzebujesz wskazówek spójrz na poniższy kod `traditional-cupcakes.html`:
+Jeśli potrzebujesz wskazówek, spójrz na poniższy kod `traditional-cupcakes.html`:
 
 ```html
 <html>
@@ -77,18 +77,18 @@ Jeśli potrzebujesz wskazówek spójrz na poniższy kod `traditional-cupcakes.ht
 
 Jak poszło?
 
-Teraz przejdziemy do pliku `muffins.html`, zainspiruj się poprzednimi wskazówkami jak i poniższymi:
+Teraz przejdziemy do pliku `muffins.html`. Zainspiruj się poprzednimi wskazówkami jak i poniższymi:
 
 1. Upewnij się, że dokument ma odpowiedni tytuł.
 2. `Variations:` powinien być nagłówkiem poziomu 2.
 3. Każda nazwa odmiany babeczki (tj. Blueberry, Pecan itp.) powinna być nagłówkiem poziomu 3.
 4. Ustaw kroki wariantów babeczek jako nieuporządkowaną listę.
 
-Jeśli skończysz to Twój plik na pewno będzie wyglądać tak:
+Jeśli skończysz, to Twój plik na pewno będzie wyglądać tak:
 
 ![The marked-up muffins page](../assets/browser-muffins-formatted.png){:title="The marked-up muffins page" class="img-responsive imgbox"}
 
-Popatrz na poniższy kod `muffins.html` jeśli potrzebujesz pomocy.
+Popatrz na poniższy kod `muffins.html`, jeśli potrzebujesz pomocy.
 
 ```html
 <html>

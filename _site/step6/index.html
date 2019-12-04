@@ -12,7 +12,7 @@
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step6/">
+  <link rel="canonical" href="/step6/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -173,7 +173,7 @@
 
 <p>Dodajmy zatem logo naszej strony powyżej nagłówka <code class="highlighter-rouge">Tiny Cakes!</code>.</p>
 
-<p>Oczywiście będziemy potrzebowali jakiś obrazków.  Przejdź do https://openclipart.org/detail/298756/cupcake-2 i ściągnij na swój komputer mniejszy obrazek.  Przenieś teraz plik do folderu w którym stworzyliśmy nasze strony i zmień jego nazwę na <code class="highlighter-rouge">tinycakes.png</code></p>
+<p>Oczywiście będziemy potrzebowali jakichś obrazków. Przejdź do https://openclipart.org/detail/298756/cupcake-2 i ściągnij na swój komputer mniejszy obrazek.  Przenieś teraz plik do folderu w którym stworzyliśmy nasze strony i zmień jego nazwę na <code class="highlighter-rouge">tinycakes.png</code></p>
 
 <p>Otwórz <code class="highlighter-rouge">index.html</code> i wklej poniższy kod przed znacznikiem  <code class="highlighter-rouge">&lt;h1&gt;</code>:</p>
 
@@ -186,22 +186,23 @@
 
 <p>Nieźle! Spójrzmy na nowy fragment kodu.</p>
 
-<p>Atrybut <code class="highlighter-rouge">src</code> informuje o ścieżce (adresie url) obrazu. 
-Może to być ścieżka względna lub cały adres URL, podobnie jak w przypadku atrybutu <code class="highlighter-rouge">href</code> parametru<code class="highlighter-rouge"> &lt;a&gt; </code>.</p>
+<p>Atrybut <code class="highlighter-rouge">src</code> informuje o ścieżce (adresie URL) obrazu. 
+Może to być ścieżka względna lub cały adres URL, podobnie jak w przypadku atrybutu <code class="highlighter-rouge">href</code> znacznika <code class="highlighter-rouge">&lt;a&gt;</code>.</p>
 
-<p>W atrybucie <code class="highlighter-rouge">title</code> umieszczamy nazwę obrazka.  W niektórych przeglądarkach wyświetli się ona jako tool tip, czyli napis w bloku, który pojawia się po najechaniu kursora na obrazek.</p>
+<p>W atrybucie <code class="highlighter-rouge">title</code> umieszczamy nazwę obrazka. W niektórych przeglądarkach wyświetli się ona jako <em>tooltip</em>, czyli napis w bloku, który pojawia się po najechaniu kursora na obrazek.</p>
 
 <p>Atrybut <code class="highlighter-rouge">alt</code> powinien zawierać opis obrazka. Tekst wprowadzony tutaj wyświetli się, kiedy obrazek nie będzie mógł zostać wyświetlony przez przeglądarkę.</p>
 
-<p>Atrybuty <code class="highlighter-rouge">title</code> i <code class="highlighter-rouge">alt</code> są ważne dla osób niewidomych bądź słabym wzroku, gdyż mogą one korzystać ze specjalnych oprogramowań czytających dla nich strony web.</p>
+<p>Atrybuty <code class="highlighter-rouge">title</code> i <code class="highlighter-rouge">alt</code> są ważne dla osób niewidomych bądź słabym wzroku, gdyż mogą one korzystać ze specjalnych programów czytających dla nich strony web.</p>
 
-<p>Atrybuty<code class="highlighter-rouge">height</code> i <code class="highlighter-rouge">width</code> służą do kontrolowania wielkości obrazu.</p>
+<p>Atrybuty <code class="highlighter-rouge">height</code> i <code class="highlighter-rouge">width</code> służą do kontrolowania wielkości obrazu.</p>
 
-<p>Może zaktualizujemy nasz tag <code class="highlighter-rouge">&lt;img&gt;</code> aby nasz obrazek był nieco mniejszy.</p>
+<p>Może zaktualizujemy nasz tag <code class="highlighter-rouge">&lt;img&gt;</code> aby nasz obrazek był nieco mniejszy?</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"tinycakes.png"</span> <span class="na">title=</span><span class="s">"Tiny Cakes!"</span> <span class="na">alt=</span><span class="s">"The Tiny Cakes logo, a stylized cartoon cupcake."</span> <span class="na">height=</span><span class="s">"47"</span> <span class="na">width=</span><span class="s">"37"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
-<p>Zauważ, że tag img nie znaczników otwierających i zamykających. Po prostu kończy się <code class="highlighter-rouge">/&gt;</code> zamiast <code class="highlighter-rouge">&gt;</code>.  Nazywa się to <strong>tagiem samozamykającym</strong>. Takich tagów jest w HTML kilka. Zwykle są to tagi określające element strony, który nie jest tekstem. W naszym przypadku obraz.</p>
+<p>Zauważ, że tag img nie znaczników otwierających i zamykających. Po prostu kończy się <code class="highlighter-rouge">/&gt;</code> zamiast <code class="highlighter-rouge">&gt;</code>.  Nazywa się to <strong>tagiem samozamykającym</strong>. Takich tagów jest w HTML kilka. Zwykle są to tagi określające element strony, który nie jest tekstem. W naszym przypadku obraz.
+<!-- przecież html5 nie wymaga zamykania przez /> --></p>
 
 <p>Zanim przejdziesz do następnego kroku, spróbuj dodać odpowiedni obraz do każdej strony z przepisami. Skorzystaj ze strony z obrazkami, np. https://www.stockfreeimages.com/, aby znaleźć i zapisać zdjęcia babeczek i mufinek oraz dodać je do odpowiednich podstron z przepisami.</p>
 

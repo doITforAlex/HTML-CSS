@@ -7,7 +7,7 @@ permalink: step9/
 
 Nasze hiperlinki wyglądają bardzo zwyczajnie. To podkreślony, niebieski tekst, który zmieni się na fiolet, gdy na niego klikniesz.
 
-Zmieńmy to tak aby wpasowywało się w styl naszej strony Tiny Cakes!
+Zmieńmy to tak, aby wpasowywało się w styl naszej strony Tiny Cakes!
 
 Najpierw zmieńmy wygląd `<a>`:
 
@@ -24,7 +24,7 @@ Odświeżmy stronę i zobaczmy co się zmieniło.
 
 ![Fancy links](../assets/css-fancy-links.png){:title="Fancy links" class="img-responsive imgbox"}
 
-Deklaracja `text-decoration` wpływa na podkreślenie tekstu. Tutaj, ustawiliśmy wartość na `none` by pozbyć się podkreślenia. Następnie użyliśmy właściwości `border-bottom` aby zdefiniować nasze własne podkreślenie, któremu nadaliśmy wartość `dashed`. Pozwoliło nam to na otrzymanie lini przerywanej.
+Deklaracja `text-decoration` wpływa na podkreślenie tekstu. Tutaj ustawiliśmy wartość na `none` by pozbyć się podkreślenia. Następnie użyliśmy właściwości `border-bottom` aby zdefiniować nasze własne podkreślenie, któremu nadaliśmy wartość `dashed`. Pozwoliło nam to na otrzymanie lini przerywanej.
 
 Hmmm, wygląda to ładniej, ale jeśli spojrzymy na stronę główną, to nasze hiperłącza trochę zlewają się ze sobą.
 Zróbmy trochę odstępu między elementami listy, są zdecydowanie za blisko siebie.
@@ -58,12 +58,12 @@ Pseudo-klasy `<a>` dla powyższych stanów są następujące:
 1. `link` (link podstawowy)
 2. `visited` (link odwiedzony)
 3. `hover` (najechanie myszą)
-4. `focus` (zogniskowanie)
+4. `focus` (zogniskowanie) <!-- To jest mocno optyczne określenie... Jak to inaczej nazwać? -->
 5. `active` (aktywacja)
 
 Określmy jakiś styl dla każdego z tych stanów.
 
-Aby użyć pseudoklasy wstawiamy dwukropek `:` pomiędzy nazwę elementu a jego pseudoklasę.
+Aby użyć pseudoklasy, wstawiamy dwukropek `:` pomiędzy nazwę elementu a jego pseudoklasę.
 
 ```css
 a:visited {
@@ -89,7 +89,7 @@ Nie musimy stylizować `:link`, ponieważ wcześniej ustaliliśmy styl dla `a`, 
 
 ![Fancier links](../assets/css-fancier-links.png){:title="Fancier links" class="img-responsive imgbox"}
 
-Powyższa kolejność pseudoklas jest ważna, ponieważ style hiperlinków nadpisują się na sobie nawzajem. Na przykład style zdefiniowane wcześniej będą miały zastosowanie do wszystkich następnych. Gdy łącze zostanie aktywowane, zostanie również najechane wskaźnikiem myszy. Jeśli umieścisz style w innej kolejności, możesz uzyskać dziwny efekty.
+Powyższa kolejność pseudoklas jest ważna, ponieważ style hiperlinków nakładają się na siebie nawzajem. Na przykład style zdefiniowane wcześniej będą miały zastosowanie do wszystkich następnych. Gdy łącze zostanie aktywowane, zostanie również najechane wskaźnikiem myszy. Jeśli umieścisz style w innej kolejności, możesz uzyskać dziwne efekty.
 
 Zauważ, że dokonaliśmy dosyć drastycznych zmian w stylizacji linków. Użytkownicy są przyzwyczajeni do podkreślonego stylu tekstu, dlatego linki należy ostrożnie zmieniać. Duże zmiany mogą prowadzić do dezorientacji i denerwować użytkownika. W przypadku bardzo wyszukanych stylów (na przykład zmiana rozmiaru czcionki, która spowoduje, że tekst ucieknie od kursora myszy) może to uniemożliwić kliknięcie w link.
 
