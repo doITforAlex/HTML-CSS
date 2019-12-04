@@ -12,7 +12,7 @@
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step9/">
+  <link rel="canonical" href="/step9/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -167,7 +167,7 @@
   <div class="post-content">
     <p>Nasze hiperlinki wyglądają bardzo zwyczajnie. To podkreślony, niebieski tekst, który zmieni się na fiolet, gdy na niego klikniesz.</p>
 
-<p>Zmieńmy to tak aby wpasowywało się w styl naszej strony Tiny Cakes!</p>
+<p>Zmieńmy to tak, aby wpasowywało się w styl naszej strony Tiny Cakes!</p>
 
 <p>Najpierw zmieńmy wygląd <code class="highlighter-rouge">&lt;a&gt;</code>:</p>
 
@@ -183,7 +183,7 @@
 
 <p><img src="../assets/css-fancy-links.png" alt="Fancy links" title="Fancy links" class="img-responsive imgbox" /></p>
 
-<p>Deklaracja <code class="highlighter-rouge">text-decoration</code> wpływa na podkreślenie tekstu. Tutaj, ustawiliśmy wartość na <code class="highlighter-rouge">none</code> by pozbyć się podkreślenia. Następnie użyliśmy właściwości <code class="highlighter-rouge">border-bottom</code> aby zdefiniować nasze własne podkreślenie, któremu nadaliśmy wartość <code class="highlighter-rouge">dashed</code>. Pozwoliło nam to na otrzymanie lini przerywanej.</p>
+<p>Deklaracja <code class="highlighter-rouge">text-decoration</code> wpływa na podkreślenie tekstu. Tutaj ustawiliśmy wartość na <code class="highlighter-rouge">none</code> by pozbyć się podkreślenia. Następnie użyliśmy właściwości <code class="highlighter-rouge">border-bottom</code> aby zdefiniować nasze własne podkreślenie, któremu nadaliśmy wartość <code class="highlighter-rouge">dashed</code>. Pozwoliło nam to na otrzymanie lini przerywanej.</p>
 
 <p>Hmmm, wygląda to ładniej, ale jeśli spojrzymy na stronę główną, to nasze hiperłącza trochę zlewają się ze sobą.
 Zróbmy trochę odstępu między elementami listy, są zdecydowanie za blisko siebie.</p>
@@ -219,13 +219,13 @@ Pseudoklasy możemy uznać za klasy specjalne, których przeglądarka używa do 
   <li><code class="highlighter-rouge">link</code> (link podstawowy)</li>
   <li><code class="highlighter-rouge">visited</code> (link odwiedzony)</li>
   <li><code class="highlighter-rouge">hover</code> (najechanie myszą)</li>
-  <li><code class="highlighter-rouge">focus</code> (zogniskowanie)</li>
+  <li><code class="highlighter-rouge">focus</code> (zogniskowanie) <!-- To jest mocno optyczne określenie... Jak to inaczej nazwać? --></li>
   <li><code class="highlighter-rouge">active</code> (aktywacja)</li>
 </ol>
 
 <p>Określmy jakiś styl dla każdego z tych stanów.</p>
 
-<p>Aby użyć pseudoklasy wstawiamy dwukropek <code class="highlighter-rouge">:</code> pomiędzy nazwę elementu a jego pseudoklasę.</p>
+<p>Aby użyć pseudoklasy, wstawiamy dwukropek <code class="highlighter-rouge">:</code> pomiędzy nazwę elementu a jego pseudoklasę.</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>
   <span class="nl">color</span><span class="p">:</span> <span class="m">#778899</span><span class="p">;</span>
@@ -250,7 +250,7 @@ Pseudoklasy możemy uznać za klasy specjalne, których przeglądarka używa do 
 
 <p><img src="../assets/css-fancier-links.png" alt="Fancier links" title="Fancier links" class="img-responsive imgbox" /></p>
 
-<p>Powyższa kolejność pseudoklas jest ważna, ponieważ style hiperlinków nadpisują się na sobie nawzajem. Na przykład style zdefiniowane wcześniej będą miały zastosowanie do wszystkich następnych. Gdy łącze zostanie aktywowane, zostanie również najechane wskaźnikiem myszy. Jeśli umieścisz style w innej kolejności, możesz uzyskać dziwny efekty.</p>
+<p>Powyższa kolejność pseudoklas jest ważna, ponieważ style hiperlinków nakładają się na siebie nawzajem. Na przykład style zdefiniowane wcześniej będą miały zastosowanie do wszystkich następnych. Gdy łącze zostanie aktywowane, zostanie również najechane wskaźnikiem myszy. Jeśli umieścisz style w innej kolejności, możesz uzyskać dziwne efekty.</p>
 
 <p>Zauważ, że dokonaliśmy dosyć drastycznych zmian w stylizacji linków. Użytkownicy są przyzwyczajeni do podkreślonego stylu tekstu, dlatego linki należy ostrożnie zmieniać. Duże zmiany mogą prowadzić do dezorientacji i denerwować użytkownika. W przypadku bardzo wyszukanych stylów (na przykład zmiana rozmiaru czcionki, która spowoduje, że tekst ucieknie od kursora myszy) może to uniemożliwić kliknięcie w link.</p>
 

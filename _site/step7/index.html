@@ -12,7 +12,7 @@
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step7/">
+  <link rel="canonical" href="/step7/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -192,7 +192,7 @@ Jest tak, ponieważ nie określiliśmy dla nich żadnych stylów.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
   <span class="nt">&lt;title&gt;</span>Tiny Cakes!<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"tinycakes.css"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"tinycakes.css"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
 </code></pre></div></div>
 
@@ -210,7 +210,7 @@ Każda deklaracja musi kończyć się średnikiem.</p>
 
 <p>Deklaracje określają własności i ich wartości dla danych elementów stylu.</p>
 
-<p>W naszym przykładzie selektorem jest <code class="highlighter-rouge">html</code>,  pojedyncza deklaracja (własność stylu: wartość) to<code class="highlighter-rouge"> background-color: pink</code>.
+<p>W naszym przykładzie selektorem jest <code class="highlighter-rouge">html</code>, pojedyncza deklaracja (własność stylu: wartość) to <code class="highlighter-rouge">background-color: pink</code>.
 Jak się można domyślić, ustawia nam to kolor tła elementu HTML, czyli całego dokumentu na różowy.</p>
 
 <p>Istnieje wiele własności stylu, które można ustawić dla każdego elementu.
@@ -223,12 +223,16 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</p>
 <p>Kolory możemy zdefiniować na trzy sposoby:</p>
 
 <ol>
-  <li>Możemy użyć słowa kluczowego dla danego koloru: <code class="highlighter-rouge">pink</code> to różowy</li>
+  <li>Możemy użyć słowa kluczowego (angielskiej) dla danego koloru: <code class="highlighter-rouge">pink</code> to różowy</li>
   <li>Możemy użyć notacji RGB: <code class="highlighter-rouge">rgb(255, 192, 203)</code> to różowy</li>
-  <li>Możemy użyć zapisu heksadecymalnego HEX (szesnastkowego): <code class="highlighter-rouge">#ffc0cb</code> to też różowy.</li>
+  <li>Możemy użyć zapisu heksadecymalnego HEX (szesnastkowego): <code class="highlighter-rouge">#ffc0cb</code> to też różowy.
+<!--
+A co z HSL?
+Wydaje się bardziej intuicyjny od RGB, mimo że mnogość reprezentacji może być przytłaczająca.
+--></li>
 </ol>
 
-<p>Notacja RGB używa trzech wartości, jednej dla barwy czerwonej, jednej dla barwy zielonej i jednej dla barwy niebieskiej, czyli wartości R(ed)G(reen)B(blue). Wartości znajdują się w przedziale od 0 do 255. Istnieje również rozszerzona wersja „RGBA”, w której można określić czwartą wartość, przeźroczystość, którą określamy w procentach (wartość <strong>alfa</strong>).</p>
+<p>Notacja RGB używa trzech wartości, jednej dla barwy czerwonej, jednej dla barwy zielonej i jednej dla barwy niebieskiej, czyli wartości R(ed) G(reen), B(blue). Wartości znajdują się w przedziale od 0 do 255. Istnieje również rozszerzona wersja „RGBA”, w której można określić czwartą wartość, przeźroczystość, którą określamy w procentach (wartość <strong>alfa</strong>).</p>
 
 <p>Notacja szesnastkowa HEX zaczyna się znakiem #, po którym następują trzy liczby w formacie szesnastkowym, reprezentujące te same trzy wartości jak w przypadku RGB: czerwony, zielony i niebieski.</p>
 
@@ -251,7 +255,7 @@ Dodamy arkusz stylu <code class="highlighter-rouge">tinycakes.css</code> zaraz p
 }
 </code></pre>
 
-<p>Refresh our page.  That looks a bit nicer.  Lets have a look at what we did.</p>
+<p>Odśwież stronę. Prawda, że wygląda trochę lepiej? Przyjrzyjmy się teraz, co zrobiliśmy.</p>
 
 <p><img src="../assets/css-home-body-bg.png" alt="A pink background and white body background" title="A pink background and white body background" class="img-responsive imgbox" /></p>
 
@@ -263,7 +267,7 @@ Dodamy arkusz stylu <code class="highlighter-rouge">tinycakes.css</code> zaraz p
   <li>Określiliśmy czcionkę bezszeryfową dla tekstu. Domyślnie większość przeglądarek używa czcionki szeryfowej. Moglibyśmy wybrać konkretną czcionkę, na przykład „Times New Roman” lub „Courier”, ale jeśli ta czcionka nie istnieje na komputerze użytkownika to przeglądarka i tak użyje domyślnej czcionki.</li>
 </ol>
 
-<p>W tym kroku poznaliśmy różne przykłady wartości stylu. Przyjrzymy się bliżej selektorom w następnym kroku.</p>
+<p>W tym kroku poznaliśmy różne przykłady wartości stylu. W następnym kroku przyjrzymy się bliżej selektorom.</p>
 
 
     

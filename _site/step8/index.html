@@ -12,7 +12,7 @@
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step8/">
+  <link rel="canonical" href="/step8/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -207,7 +207,7 @@ Nasz tytuł jest <code class="highlighter-rouge">&lt;h1&gt;</code>, więc dodamy
 
 <p>Tak jest o wiele lepiej. To zajmijmy się teraz nagłówkami na naszych podstronach i ulepszmy je trochę.</p>
 
-<p>Na początek zaktualizuj nagłówki ingredients, method, i variations aby miały klasę o nazwie <code class="highlighter-rouge">recipepart</code>, w ten sposób:</p>
+<p>Na początek zaktualizuj nagłówki <em>ingredients</em>, <em>method</em> i <em>variations</em>, aby miały klasę o nazwie <code class="highlighter-rouge">recipepart</code>, w ten sposób:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"recipepart"</span><span class="nt">&gt;</span>Ingredients:<span class="nt">&lt;/h2&gt;</span>
 </code></pre></div></div>
@@ -241,9 +241,9 @@ Nasz tytuł jest <code class="highlighter-rouge">&lt;h1&gt;</code>, więc dodamy
 
 <ol>
   <li>Podając jedną wartość. Wtedy przyjmą ją wszystkie strony (prawo, lewo, góra, dół)</li>
-  <li>Podając 2 wartości, pierwsza określi górę i dół, a druga prawo i lewą stronę.</li>
-  <li>Podając 3 wartości, pierwsza odniesie się do góry, druga do prawej i lewej strony, natomiast trzecia do dolnej części.</li>
-  <li>Podając 4 wartości, oznaczą kolejno górę, prawą stronę, dół i lewą stronę.</li>
+  <li>Podając 2 wartości: pierwsza określi górę i dół, a druga prawą i lewą stronę.</li>
+  <li>Podając 3 wartości: pierwsza odniesie się do góry, druga do prawej i lewej strony, natomiast trzecia do dolnej części.</li>
+  <li>Podając 4 wartości: oznaczają one kolejno górę, prawą stronę, dół i lewą stronę.</li>
 </ol>
 
 <p>Istnieją specjalne parametry dla <code class="highlighter-rouge">padding</code> i <code class="highlighter-rouge">margin</code> dla każdej stony elementu:</p>
@@ -253,15 +253,15 @@ Nasz tytuł jest <code class="highlighter-rouge">&lt;h1&gt;</code>, więc dodamy
   <li><code class="highlighter-rouge">margin-top</code>, <code class="highlighter-rouge">margin-left</code>, <code class="highlighter-rouge">margin-right</code> i <code class="highlighter-rouge">margin-bottom</code> (kolejno: górny margines, lewy margines, prawy margines i dolny margines)</li>
 </ul>
 
-<p>Możesz ich używać osobno w przypadku kiedy stylu  powinien oddziaływać tylko dla jednej ze stron.</p>
+<p>Możesz ich używać osobno w przypadku kiedy styl powinien oddziaływać tylko dla jednej ze stron.</p>
 
-<p>W naszym przypadku ustaliliśmy border, ramkę aż dwa razy. Postąpiliśmy tak dlatego, że chcieliśmy, żeby trzy strony miały taką samą wartość, natomiast dla lewej strony ustawiliśmy inną wartość. Moglibyśmy użyć wyżej wymienionych parametrów, ale nasz sposób jest szybszy i mamy mniej kodu. Kod działa, gdyż kolejność deklaracji stylu ma znaczenie. Spróbuj zmienić kolejność linijek i umieścić <code class="highlighter-rouge">border-left</code> przed  <code class="highlighter-rouge">border</code>. Jeśli tak zrobisz to <code class="highlighter-rouge">border-left</code> zostanie nadpisane przez <code class="highlighter-rouge">border</code>.</p>
+<p>W naszym przypadku ustaliliśmy <code class="highlighter-rouge">border</code> (ramkę) aż dwa razy. Postąpiliśmy tak dlatego, że chcieliśmy, żeby trzy strony miały taką samą wartość, natomiast dla lewej strony ustawiliśmy inną wartość. Moglibyśmy użyć wyżej wymienionych parametrów, ale nasz sposób jest szybszy i mamy mniej kodu. Kod działa, gdyż kolejność deklaracji stylu ma znaczenie. Spróbuj zmienić kolejność linijek i umieścić <code class="highlighter-rouge">border-left</code> przed  <code class="highlighter-rouge">border</code>. Jeśli tak zrobisz to <code class="highlighter-rouge">border-left</code> zostanie nadpisane przez <code class="highlighter-rouge">border</code>.</p>
 
 <p>Nasz nagłówek wygląda lepiej, ale jest trochę za szaro, nie sądzisz? Zmieńmy kolor grubszej, lewej ramki na inny dla każdego nagłówka.</p>
 
 <p>Elementy mogą posiadać kilka klas, wystarczy oddzielić je spacją.</p>
 
-<p>Zaktualizujemy nasz znacznik <code class="highlighter-rouge">&lt;h2&gt;</code> o dodatkowe klasy tak aby odpowiadały temu czego dany nagłówek dotyczy.</p>
+<p>Zaktualizujemy nasz znacznik <code class="highlighter-rouge">&lt;h2&gt;</code> o dodatkowe klasy tak aby odpowiadały temu, czego dany nagłówek dotyczy.</p>
 
 <p>W ten sposób:</p>
 
@@ -287,7 +287,7 @@ Nasz tytuł jest <code class="highlighter-rouge">&lt;h1&gt;</code>, więc dodamy
 
 <p><img src="../assets/css-fancier-subheadings.png" alt="Fancier second-level headings" title="Fancier second-level headings" class="img-responsive imgbox" /></p>
 
-<p>CSS pozwala nam na utworzenie wielu różnych stylów, których selektory się nachodzą na siebie. Dzięki temu możemy zastosować zestaw stylów do wielu elementów, a następnie osobno dodatkowe style dla każdego z elementów. Jest to o wiele przyjemniejsze niż pisanie wszystkich stylów osobno.</p>
+<p>CSS pozwala nam na utworzenie wielu różnych stylów, których selektory nachodzą na siebie. Dzięki temu możemy zastosować zestaw stylów do wielu elementów, a następnie osobno dodatkowe style dla każdego z nich. Jest to o wiele przyjemniejsze niż pisanie wszystkich stylów osobno.</p>
 
 <h2 id="selektor-uniwersalny">Selektor uniwersalny</h2>
 
@@ -323,7 +323,7 @@ about <span class="nt">&lt;strong&gt;</span>Tiny Cakes!<span class="nt">&lt;/str
 Here are the recipes that we have:
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
-<p>Domyślnie będzie to wyglądać jak dwa akapity oddzielone nagłówkiem. Dodaj tylko następujący styl (nadaje wszystkim akapitom zielone tło) to zobaczysz coś dziwnego.</p>
+<p>Domyślnie będzie to wyglądać jak dwa akapity oddzielone nagłówkiem. Dodaj tylko następujący styl (nadaje wszystkim akapitom zielone tło), to zobaczysz coś dziwnego.</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
   <span class="nl">background-color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
@@ -334,12 +334,12 @@ Here are the recipes that we have:
 
 <p>Drugi akapit nie ma zielonego tła. Dlaczego?</p>
 
-<p>Jeśli użyjesz narzędzi deweloperów w swojej przeglądarce do sprawdzenia strony (Ctrl+Sthift+I dla Chrome), zobaczysz, że drugi akapit nie znajduje się w tagach <code class="highlighter-rouge">&lt;p&gt;</code>.
+<p>Jeśli użyjesz narzędzi deweloperów w swojej przeglądarce do sprawdzenia strony (Ctrl+Shift+I dla Chrome), zobaczysz, że drugi akapit nie znajduje się w tagach <code class="highlighter-rouge">&lt;p&gt;</code>.
 Dzieje się tak, ponieważ pojawiło się coś w HTML jest dziwne (nagłówek w akapicie) i przeglądarka spróbowała zinterpretować i wyświetlić to w jakiś sensowniejszy sposób.</p>
 
 <p>Zachowaj ostrożność, pisząc HTML. Postaraj się postawić na prostotę w swoim kodzie. Chyba nie chcesz, aby przeglądarka musiała wykonywać jakieś sztuczki, tak by Twoja strona działała. W końcu może się zdarzyć, że i tak nie zadziała w oczekiwany sposób.</p>
 
-<p>Dodatkowo Twoja strona może wyglądać zupełnie inaczej na każdej różnej przeglądarce.</p>
+<p>Dodatkowo Twoja strona może wyglądać zupełnie inaczej na różnych przeglądarkach.</p>
 
     
 

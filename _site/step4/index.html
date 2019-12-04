@@ -12,7 +12,7 @@
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step4/">
+  <link rel="canonical" href="/step4/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -167,7 +167,7 @@
   <div class="post-content">
     <p>Aby przeglądarka wiedziała, jak wyświetlać treść, musimy wskazać jej która część jest czym np. nagłówkiem, akapitem, listą itp.</p>
 
-<p>Patrząc na treść na naszej stronie głównej, widzimy, że mamy nagłówek, dwa akapity każdy składający się z jednego zdania, a następnie wypunktowaną listę dwóch elementów.</p>
+<p>Patrząc na treść na naszej stronie głównej, widzimy, że mamy nagłówek, dwa akapity (każdy składający się z jednego zdania), a następnie wypunktowaną listę dwóch elementów.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tiny Cakes!
 -----------
@@ -181,7 +181,7 @@ Here are the recipes that we have:
 </code></pre></div></div>
 <p>Musimy teraz dodać odpowiednie znaczniki HTML by to oddać. Taki zabieg nazywamy znakowaniem/oznaczaniem tekstu (marking up).</p>
 
-<p>Sama koncepcja oznaczania tekstu istniała w przemyśle wydawniczego, gdzie edytor zapisywał na manuskrypcie w jaki sposób tekst powinien zostać sformatowany do wydruku. Wraz z rozwojem technologii możliwe stało się skomputeryzowanie procesu wydruku a przepisywanie ponownie tekstu stało się zbędne. <a href="https://pl.wikipedia.org/wiki/J%C4%99zyk_znacznik%C3%B3w#Historia">Wikipedia</a></p>
+<p>Sama koncepcja oznaczania tekstu istniała w przemyśle wydawniczym, gdzie edytor zapisywał na manuskrypcie w jaki sposób tekst powinien zostać sformatowany do wydruku. Wraz z rozwojem technologii możliwe stało się skomputeryzowanie procesu wydruku, a przepisywanie ponownie tekstu stało się zbędne. <a href="https://pl.wikipedia.org/wiki/J%C4%99zyk_znacznik%C3%B3w#Historia">Wikipedia</a></p>
 
 <p>Zamieńmy teraz treść naszego <code class="highlighter-rouge">&lt;body&gt;</code> dokumentu <code class="highlighter-rouge">index.html</code> na poniższy tekst:</p>
 
@@ -211,7 +211,7 @@ Here are the recipes that we have:
 <dl>
   <dt><code class="highlighter-rouge">&lt;h1&gt;</code></dt>
   <dd>To znacznik nagłówka, a dokładniej odnosi się do
- <strong>nagłówka najwyższego poziomu</strong>. Jak się domyślacie istnieją <code class="highlighter-rouge">&lt;h2&gt;</code>, <code class="highlighter-rouge">&lt;h3&gt;</code> itd. aż do <code class="highlighter-rouge">&lt;h6&gt;</code>.  Używamy ich do zaznaczenia nagłówków i podtytułów. Wyższy numer oznacza niższy poziom,wtedy również rozmiar czcionki nagłówka zmniejsza się.</dd>
+ <strong>nagłówka najwyższego poziomu</strong>. Jak się domyślacie, istnieją <code class="highlighter-rouge">&lt;h2&gt;</code>, <code class="highlighter-rouge">&lt;h3&gt;</code> itd. aż do <code class="highlighter-rouge">&lt;h6&gt;</code>.  Używamy ich do zaznaczenia nagłówków i podtytułów. Wyższy numer oznacza niższy poziom, wtedy również rozmiar czcionki nagłówka zmniejsza się.</dd>
   <dt><code class="highlighter-rouge">&lt;p&gt;</code></dt>
   <dd><strong>paragraf</strong> oznacza blok tekstu.<br />
 <!-- Note that HTML doesn't display line breaks. --></dd>
@@ -220,17 +220,17 @@ Here are the recipes that we have:
   <dt><code class="highlighter-rouge">&lt;em&gt;</code></dt>
   <dd>czyli <strong>emphasis/emfaza</strong> , tag używany dla podkreślenia tekstu, wyświetlany jako kursywa.</dd>
   <dt><code class="highlighter-rouge">&lt;ul&gt;</code></dt>
-  <dd>oznacza  <strong>unordered list/nienumerowaną listę</strong> i korzystamy z niego gdy chcemy stworzyć listę wypunktowaną.</dd>
+  <dd>oznacza  <strong>unordered list/nienumerowaną listę</strong> i korzystamy z niego, gdy chcemy stworzyć listę wypunktowaną.</dd>
 </dl>
 
-<p>Dla porównania <strong>ordered list/numerowaną listę</strong> stworzysz tagiem <code class="highlighter-rouge">&lt;ol&gt;</code>.</p>
+<p>Dla porównania, <strong>ordered list/numerowaną listę</strong> stworzysz tagiem <code class="highlighter-rouge">&lt;ol&gt;</code>.</p>
 
 <dl>
   <dt><code class="highlighter-rouge">&lt;li&gt;</code></dt>
   <dd><strong>list item/element listy</strong> to znacznik używany przy wymienianiu kolejnych elementów list, zarówno numerowanej jak i wypunktowanej.</dd>
 </dl>
 
-<p>Czy jest to tak trudne jak się wydaje? Oczywiście istnieje więcej znaczników niż te, które wymieniliśmy przed chwilą ale obowiązują je te same zasady:</p>
+<p>Czy jest to tak trudne jak się wydaje? Oczywiście istnieje więcej znaczników niż te, które wymieniliśmy przed chwilą, ale obowiązują je te same zasady:</p>
 
 <ol>
   <li>Używamy znaczników HTML aby sprecyzować w jaki sposób przeglądarka powinna wyświetlać poszczególne elementy zawartości strony.</li>
@@ -241,13 +241,13 @@ Here are the recipes that we have:
 
 <p>Istnieją dwa główne typy znaczników <strong>inline/liniowe</strong> oraz <strong>block/blokowe</strong>.</p>
 
-<p>Znaczniki blokowe zawsze zaczynają nową linię i zajmą jej całą przestrzeń. Dla odmiany, znaczniki liniowe nie zaczną się od nowej linii i zajmą tylko tyle miejsca ile będzie im potrzebne (w praktyce jest to trochę bardziej skomplikowane, ale na tę chwilę niech wystarczy nam takie rozróżnienie).</p>
+<p>Znaczniki blokowe zawsze zaczynają nową linię i zajmą jej całą przestrzeń. Dla odmiany, znaczniki liniowe nie zaczną się od nowej linii i zajmą tylko tyle miejsca, ile będzie im potrzebne (w praktyce jest to trochę bardziej skomplikowane, ale na tę chwilę niech wystarczy nam takie rozróżnienie).</p>
 
-<p>Wszystkie znaczniki, których użyliśmy do tej pory poza <code class="highlighter-rouge">&lt;em&gt;</code> i <code class="highlighter-rouge">&lt;strong&gt;</code> są znacznikami blokowymi.</p>
+<p>Wszystkie znaczniki, których użyliśmy do tej pory (poza <code class="highlighter-rouge">&lt;em&gt;</code> i <code class="highlighter-rouge">&lt;strong&gt;</code>) są znacznikami blokowymi.</p>
 
 <p>Zauważ, że znaczniki <code class="highlighter-rouge">&lt;em&gt;</code> i <code class="highlighter-rouge">&lt;strong&gt;</code> umieściliśmy w  paragrafie <code class="highlighter-rouge">&lt;p&gt;</code>?  Taki zabieg nazywamy <strong>nesting/zagnieżdżaniem</strong> elementów.</p>
 
-<p>W zasadzie <em>możesz</em> zagnieździć każdy znacznik. Chociaż wynik takiego zabiegu może wyglądać satysfakcjonująco to nie zawsze ma on sens.</p>
+<p>W zasadzie <em>możesz</em> zagnieździć każdy znacznik. Chociaż wynik takiego zabiegu może wyglądać satysfakcjonująco, to nie zawsze ma on sens.</p>
 
 <p>Przypatrzmy się poniższemu przykładowi:</p>
 
@@ -260,12 +260,12 @@ Here are the recipes that we have:
 </code></pre></div></div>
 <p>Ten kawałek kodu może spowodować problemy. Przeglądarki nie są zawsze konsekwentne w interpretacji takiego kodowego misz-maszu. Kiedy zaczniesz używać później CSS, zobaczysz że taki kod nie jest przyjazny CSS.</p>
 
-<p>Kolejna sprawa. Niektóre znaczniki <em>muszą</em> zostać zagnieżdżone w środku innych, ponieważ nie będą działać poprawnie bez nich. Takim przykładem jest tag <code class="highlighter-rouge">&lt;li&gt;</code>, który musi znaleźć się w środku <code class="highlighter-rouge">&lt;ol&gt;</code> lub <code class="highlighter-rouge">&lt;ul&gt;</code>. Nie możemy przecież stworzyć element listy bez listy.</p>
+<p>Kolejna sprawa. Niektóre znaczniki <em>muszą</em> zostać zagnieżdżone w środku innych, ponieważ nie będą działać poprawnie bez nich. Takim przykładem jest tag <code class="highlighter-rouge">&lt;li&gt;</code>, który musi znaleźć się w środku <code class="highlighter-rouge">&lt;ol&gt;</code> lub <code class="highlighter-rouge">&lt;ul&gt;</code>. Nie możemy przecież stworzyć elementu listy bez listy.</p>
 
 <h2 id="hiperlinki">Hiperlinki</h2>
 
 <p>Kolejną istotnym znacznikiem HTML, który musimy przedstawić zanim przejdziemy do kolejnego kroku
-jest <code class="highlighter-rouge">&lt;a&gt;</code>, <strong>anchor/kotwica</strong> inaczej znacznik hiperlinku.</p>
+jest <code class="highlighter-rouge">&lt;a&gt;</code>: <strong>anchor/kotwica</strong>, inaczej znacznik hiperlinku.</p>
 
 <p>Hiperlinki tworzymy tagiem <code class="highlighter-rouge">&lt;a&gt;</code>. Są to odnośniki do innych stron www.</p>
 
@@ -283,7 +283,7 @@ Zamień całą sekcję <code class="highlighter-rouge">&lt;ul&gt;</code> na poni
 
 <p>Jeśli klikniesz jeden z odnośników, przeglądarka przejdzie do strony odnośnika. Zobaczysz niesformatowaną treść. Nie dodaliśmy w końcu tam jeszcze żadnych znaczników. Kliknij przycisk Wstecz w przeglądarce, aby wrócić do oryginalnej strony.</p>
 
-<p>Widzisz w tagu część <code class="highlighter-rouge">href="muffins.html"</code>? Nazywamy ją atrybutem. W szczególności jest to atrybut <strong>odwołania hipertekstowego</strong>. Cytaty zawierają adres URL, do którego prowadzi łącze. Tutaj po prostu umieszczamy tylko nazwę pliku strony bez protokołu (http) i nazwy hosta (mojadomena.pl), ponieważ wszystkie nasze pliki znajdują się w tym samym katalogu.</p>
+<p>Widzisz w tagu część <code class="highlighter-rouge">href="muffins.html"</code>? Nazywamy ją atrybutem. W szczególności jest to atrybut <strong>odwołania hipertekstowego</strong>. W cudzysłowie znajduje się adres URL, do którego prowadzi łącze. Tutaj po prostu umieszczamy tylko nazwę pliku strony bez protokołu (http) i nazwy hosta (mojadomena.pl), ponieważ wszystkie nasze pliki znajdują się w tym samym katalogu.</p>
 
 <p>Gdybyśmy chcieli dać odnośnik do innej strony niż nasza, to wtedy musimy podać kompletny już adres:</p>
 

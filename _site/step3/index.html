@@ -12,7 +12,7 @@
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/step3/">
+  <link rel="canonical" href="/step3/">
   <link rel="alternate" type="application/rss+xml" title="Do IT for Alex" href="/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -175,7 +175,7 @@
 
 <p>Twoja przeglądarka traktuje pliki z rozszerzeniem <code class="highlighter-rouge">.html</code> oraz <code class="highlighter-rouge">.htm</code> jako pliki zawierające kod HTML i wyświetla je w ten sposób. Nie zamieściliśmy w naszym pliku żadnego kodu HTML, więc przeglądarka interpretuje jedynie surowy tekst. HTML ignoruje znaki białej linii (enter, tabulator, multi spacja itp.), dlatego cały tekst wyświetlony jest w jednym akapicie.</p>
 
-<p>Zauważ, że karta przeglądarki pokazuje ścieżkę do pliku, z prefiksem <code class="highlighter-rouge">file: //</code>. Nie wygląda to ładnie, prawda?</p>
+<p>Zauważ, że karta przeglądarki pokazuje ścieżkę do pliku, z prefiksem <code class="highlighter-rouge">file://</code>. Nie wygląda to ładnie, prawda?</p>
 
 <p>Nie o to nam chodziło. Dodamy do naszego pliku trochę HTML.</p>
 
@@ -202,11 +202,11 @@
 </code></pre></div></div>
 <p>Zapisz i odśwież swoją przeglądarkę. Niby wygląda tak samo, ale popatrz znowu na kartę przeglądarki. Teraz zamiast ścieżki pliku pojawił się napis “Tiny Cakes!”.</p>
 
-<p><img src="../assets/browser-unformatted-title.png" alt="Zatytułowana strona " title="The titled but un-marked-up home page" class="img-responsive imgbox" /></p>
+<p><img src="../assets/browser-unformatted-title.png" alt="Zatytułowana strona" title="The titled but un-marked-up home page" class="img-responsive imgbox" /></p>
 
-<p>Dodaliśmy kilka fragmentów HTML, które są jak szkielet lub ramkę dokumentu. Nie dodaliśmy jeszcze żadnych instrukcji formatowania, dlatego sam tekst wygląda nadal tak samo.</p>
+<p>Dodaliśmy kilka fragmentów HTML, które są jak szkielet lub ramka dokumentu. Nie dodaliśmy jeszcze żadnych instrukcji formatowania, dlatego sam tekst wygląda nadal tak samo.</p>
 
-<p>Przeanalizujemy poszczególne elementy, które dodaliśmy i dowiedzmy się co one oznaczają.</p>
+<p>Przeanalizujemy poszczególne elementy, które dodaliśmy i dowiedzmy się, co one oznaczają.</p>
 
 <ol>
   <li>
@@ -214,7 +214,7 @@
 
     <p>Pierwszy wiersz to deklaracja typu dokumentu. To informuje przeglądarkę, w jakiej wersji HTML został napisany dokument.</p>
 
-    <p>Samo słowo „html” w deklaracji oznacza najnowszą wersję html. Obecnie najnowszą wersją jest wersja 5, i nie wygląda na to by zmieniło się to w najbliższym czasie.</p>
+    <p>Samo słowo „html” w deklaracji oznacza najnowszą wersję html. Obecnie najnowszą wersją jest wersja 5 i nie wygląda na to, by zmieniło się to w najbliższym czasie.</p>
 
     <p>Możesz natknąć się na deklaracje dotyczące starszych wersji HTML. Są one bardziej skomplikowane:</p>
 
@@ -226,7 +226,7 @@
   <li>
     <p><code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code></p>
 
-    <p>Każdy dokument powinien zacząć się od znacznika <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> a skończyć znacznikiem <code class="highlighter-rouge">&lt;/html&gt;</code>. Wszystko co zamieścimy między tymi znacznikami będzie uznane za część dokumentu. Większość znaczników (tagów) posiada znacznik otwierający(<code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code>) i zamykający (<code class="highlighter-rouge">&lt;/html&gt;</code>).</p>
+    <p>Każdy dokument powinien zacząć się od znacznika <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> a skończyć znacznikiem <code class="highlighter-rouge">&lt;/html&gt;</code>. Wszystko co zamieścimy między tymi znacznikami będzie uznane za część dokumentu. Większość znaczników (tagów) posiada znacznik otwierający (<code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code>) i zamykający (<code class="highlighter-rouge">&lt;/html&gt;</code>).</p>
   </li>
   <li>
     <p><code class="highlighter-rouge">&lt;head&gt;</code> i <code class="highlighter-rouge">&lt;title&gt;</code></p>
@@ -235,7 +235,7 @@
 
     <p><code class="highlighter-rouge">&lt;title&gt;</code> informuje przeglądarkę o tytule naszego dokumentu. Większość przeglądarek wyświetla tytuł dokumentu w zakładce lub oknie. Tytuł przydaje się również, kiedy zapisujemy daną stronę do zakładek. Rozumiesz już dlaczego przeglądarka wyświetla teraz <em>Tiny Cakes!</em> zamiast ścieżki? Dokładnie. Zdefiniowaliśmy nasz tytuł za pomocą znacznika <code class="highlighter-rouge">&lt;title&gt;</code>.</p>
 
-    <p>Tag <code class="highlighter-rouge">&lt;meta&gt;</code> to sposób na podanie przeglądarce dodatkowych informacji na temat strony. Tutaj używamy go w celu ustalenia jakiego kodowania znaków użyjemy. My zdecydowaliśmy się na UTF-8. Jest to opcjonalny krok, ale jeśli chcemy mieć pewność że znaki unicode (np. polskie znaki) będą wyświetlane prawidłowo to nie powinniśmy go ominąć.</p>
+    <p>Tag <code class="highlighter-rouge">&lt;meta&gt;</code> to sposób na podanie przeglądarce dodatkowych informacji na temat strony. Tutaj używamy go w celu ustalenia jakiego kodowania znaków użyjemy. My zdecydowaliśmy się na UTF-8. Jest to opcjonalny krok, ale jeśli chcemy mieć pewność, że znaki unicode (np. polskie znaki) będą wyświetlane prawidłowo, to nie powinniśmy go ominąć.</p>
 
     <p>Istnieje oczywiście więcej znaczników, które możemy zamieścić w sekcji head naszej strony. Na dzisiaj wystarczą nam jednak te dwa.</p>
   </li>
